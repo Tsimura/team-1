@@ -1,0 +1,148 @@
+<!-- Сделать заказ -->
+<section class="make-order">
+    <h1 class="make-order__head">ЗРОБИТИ ЗАМОВЛЕННЯ</h1>
+    <!-- Первая коробка -->
+    <div class="make-order__first-thumb">
+        <picture>
+            <img src="" alt="">
+        </picture>
+    </div>
+    <!-- Вторая коробка -->
+    <div class="make-order__second-thumb">
+        <p class="make-order__description">На цій сторінці ви можете зробити замовлення заповнивши форму і ми
+            зв'яжемося
+            з вами.</p>
+        <p class="make-order__description">Наші фахівці допоможуть підібрати оптимальні для вас параметри і дадуть
+            відповідь на всі ваші запитання.</p>
+
+        <div class="make-order-gallery">
+            <ul class="make-order-gallery__scroll">
+                <li class="make-order-gallery__item"></li>
+                <li class="make-order-gallery__item"></li>
+                <li class="make-order-gallery__item"></li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+<!-- Связаться с  нами (форма)-->
+<section class="contact-us">
+    <h2 class="contact-us__head">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+    <form class="form" method="POST" action="#">
+        <!-- Имя пользователя -->
+        <span class="form__field">
+            <label for="name">Ім’я</label>
+            <input type="text" name="user-name" id="name" required pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}">
+        </span>
+        <!-- Email пользователя -->
+        <span class="form__field">
+            <label for="mail">Email</label>
+            <input type="mail" name="user-mail" id="mail" required>
+        </span>
+        <!-- Виды пластика -->
+        <span class="form__field">
+            <label for="variety-list">Види пластика</label>
+            <select name="variety" id="variety-list">
+                <option value="v1">ABS</option>
+                <option value="v2">PLA</option>
+                <option value="v3">TPU</option>
+                <option value="v4">PETG</option>
+                <option value="v5">HIPS</option>
+                <option value="v6">Проконсультувати у виборі</option>
+
+            </select>
+        </span>
+
+
+        <!-- Качество пластика -->
+        <span class="form__field">
+            <label for="quality-list">Якість друку</label>
+            <select name="quality" id="quality-list">
+                <option value="q1">300 мікрон</option>
+                <option value="q2">200 мікрон</option>
+                <option value="q3">100 мікрон</option>
+                <option value="q4">Труднощі у виборі - ми допоможемо</option>
+            </select>
+        </span>
+        <!-- Цвет пластика -->
+        <span class="form__field">
+            <label for="color-list">Колір</label>
+            <select name="color" id="color-list">
+                <option value="c1">Чорний</option>
+                <option value="c2">Зелений</option>
+                <option value="c3">Червоний</option>
+                <option value="c4">Синій</option>
+                <option value="c5">Підберемо для Вас особливий колір</option>
+
+            </select>
+        </span>
+
+
+
+
+        <!-- Сообщение пользователя и файл -->
+        <div class="form__field">
+            <label for="text">Повідомлення</label>
+            <textarea name="uxer-text" id="text" rows="10" placeholder="Залишіть своє повідомлення"></textarea>
+        </div>
+        <div class="form__field">
+            <label for="file">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</label>
+            <input type="file" name="user-file" id="file">
+        </div>
+
+        <button type="submit">ВІДПРАВИТИ</button>
+    </form>
+</section>
+<!-- Контакты и график работы -->
+<section class="information">
+    <!-- скрытый заголовок-->
+    <h2 class="information__head">КОНТАКТИ</h2>
+    <!--  -->
+
+    <!-- номера телефонов -->
+    <ul class="information-scroll">
+        <li class="information-scroll__thumb">
+            <h3 class="information-scroll__head">ТЕЛЕФОНИ</h3>
+            <ul class="information-scroll-numbers">
+                <li class="information-scroll-numbers__items">
+                    <a href="tel:+380957384551">+38 (095) -73-84-551</a>
+                </li>
+                <li class="information-scroll-numbers__items">
+                    <a href="tel:+380980025235">+38 (098) -00-25-235</a>
+                </li>
+            </ul>
+        </li>
+        <!-- электронная почта -->
+        <li class="information-scroll__thumb">
+            <h3 class="information-scroll__head">Email</h3>
+            <ul class="information-scroll-mail">
+                <li class="information-scroll-mail__item">
+                    <a href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
+                </li>
+
+            </ul>
+        </li>
+        <!-- график работы -->
+        <li class="information-scroll__thumb">
+            <h3 class="information-scroll__head">Робочий час</h3>
+            <ul class="information-scroll-date">
+                <li class="information-scroll-date__item">
+                    <p class="information-scroll-date__description">Пн-пт: з 8:00 до 19:00</p>
+                </li>
+                <li class="information-scroll-date__item">
+                    <p class="information-scroll-date__description">Сб, Нд: з 10:00 до 17:00</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <div>
+                <picture>
+                    <img src="" alt="эмблема компании">
+                </picture>
+            </div>
+        </li>
+
+    </ul>
+
+</section>
