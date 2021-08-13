@@ -17,23 +17,9 @@
 
   background-color: #ffffff;
 
-  // // ставимо необхідні фото: для mobile
-  // background-image: url("../images/bg-hero-mobile.jpg");
-  // @include retina($image: "../images/bg-hero-mobile@2x.jpg", $width: 320px);
-  // // ставимо необхідні фото: для tablet
-  // background-image: url("../images/bg-hero-tablet.jpg");
-  // @include retina($image: "../images/bg-hero-tablet@2x.jpg", $width: 768px);
-
-  // ставимо необхідні фото: для desktop
-
-  // Помилка, потрібно усунути
-  // background-image: url('../images/bg-hero-desktop.jpg');
-  // @include retina($image: '../images/bg-hero-desktop@2x.jpg', $width: 1444px);
-
-  background-position: center;
-  background-size: cover;
   // якщо потрібна внутрішня тінь
-  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
+    inset -1px -1px 16px #ffffff;
   // якщо потрібна зовнішня тінь
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
 }
