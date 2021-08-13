@@ -1,4 +1,4 @@
-// НАПРИКЛАД, для мобільної версії секції we-create заголовка h1 "МИ СТВОРЮЄМО":
+// НАПРИКЛАД, для мобільної версії секції we-create заголовка h2 "МИ СТВОРЮЄМО":
 // .we-create__title {
 //     @include title-main( $fs: 24px, $lh: 30px);
 // }
@@ -12,7 +12,8 @@
 // }
 // кінець приклада
 
-//       title-main       //
+//   title-main  (всі заголовки, які у нас h2     //
+//   нагадую, заголовки h1, окрім першої секції, пишемо самі і додаємо в HTML class="visually-hidden"      //
 
 // for mobile {
 //     @include title-main( $fs: 24px, $lh: 30px);
@@ -27,18 +28,20 @@
   $fs,
   $fw: 700,
   $lh,
+  $t-transform: uppercase,
   $t-align: left,
   $color: var(--color-accent)
 ) {
   font-size: $fs;
   font-weight: $fw;
   line-height: decimal-round($lh/$fs, 2);
+  text-transform: $t-transform;
   text-align: $t-align;
   color: $color;
 }
 //      кінець title-main       //
 
-//             title-secondary          //
+//             title-secondary  заголовки h3        //
 // for mobile {
 //     @include title-secondary($fs: 18px, $lh: 23px);
 //   }
@@ -124,11 +127,7 @@
   color: $color;
 }
 
-@mixin retina(
-  $ratio: 2,
-  $image: "../images/bg-hero-mobile.jpg",
-  $width: 320px
-) {
+@mixin retina($ratio: 2, $image: "../images/mobile.jpg", $width: 320px) {
   @media screen and (min-device-pixel-ratio: $ratio) and (min-width: $width),
     screen and (min-resolution: 192dpi) and (min-width: $width),
     screen and (min-resolution: 2dppx) and (min-width: $width) {
