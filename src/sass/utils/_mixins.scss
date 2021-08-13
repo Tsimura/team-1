@@ -1,0 +1,102 @@
+// НАПРИКЛАД, для мобільної версії секції we-create заголовка h1 "МИ СТВОРЮЄМО":
+// .we-create__title {
+//     @include title-h1( $fs: 24px, $lh: 30px);
+// }
+// при цьому у css створиться такий стиль:
+// .we-create__title {
+// font-size: 24px;
+// font-weight: 700;
+// line-height: 30px;
+// text-align: left;
+// color: #487996;
+// }
+
+// title-h1 mixin for mobile {
+//     @include title-h1( $fs: 24px, $lh: 30px);
+//   }
+// title-h1 mixin for tablet {
+//     @include title-h1( $fs: 36px, $lh: 45px);
+//   }
+// title-h1 mixin for desktop {
+//     @include title-h1( $fs: 48px, $lh: 60px);
+//   }
+@mixin title-h1(
+  $fs,
+  $fw: 700,
+  $lh,
+  $t-align: left,
+  $color: var(--color-accent)
+) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: decimal-round($lh/$fs, 2);
+  text-align: $t-align;
+  color: $color;
+}
+
+// title-h2 mixin for mobile {
+//     @include title-h2($fs: 18px, $lh: 23px);
+//   }
+// title-h2 mixin for tablet {
+//     @include title-h2($fs: 24px, $lh: 30px);
+//   }
+// title-h2 mixin for desktop {
+//     @include title-h2( $fs: 36px, $lh: 45px);
+//   }
+@mixin title-h2(
+  $fs,
+  $fw: 700,
+  $lh,
+  $t-transform: uppercase,
+  $t-align: left,
+  $color: var(--color-accent)
+) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: decimal-round($lh/$fs, 2);
+  text-transform: $t-transform;
+  text-align: $t-align;
+  color: $color;
+}
+
+// title-h3 mixin for mobile {
+//     @include title-h2($fs: 18px, $lh: 23px);
+//   }
+// title-h3 mixin for tablet {
+//     @include title-h2($fs: 24px, $lh: 30px);
+//   }
+// title-h2 mixin for desktop {
+//     @include title-h2( $fs: 36px, $lh: 45px);
+//   }
+
+// text mixin for tablet, mobile {
+//     @include txt($fs: 16px, $lh: 20px);
+//   }
+// text mixin for desktop {
+//     @include txt($fs: 18px, $lh: 23px);
+//   }
+@mixin txt($fs, $fw: 300, $lh, $t-align: left, $color: var(--color-main)) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: decimal-round($lh/$fs, 2);
+  text-align: $t-align;
+  color: $color;
+}
+
+@mixin retina(
+  $ratio: 2,
+  $dpi: 192dpi,
+  $image: "#",
+  // $image: "../images/bg-hero-mobile.jpg",
+    $width: 480px
+) {
+  @media screen and (min-device-pixel-ratio: $ratio) and (min-width: $width),
+    screen and (min-resolution: $dpi) and (min-width: $width),
+    screen and (min-resolution: 2dppx) and (min-width: $width) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url($image);
+  }
+}
