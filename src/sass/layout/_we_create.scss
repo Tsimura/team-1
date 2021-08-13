@@ -1,0 +1,10 @@
+.we-create__title {
+  @include title-main($fs: 24px, $lh: 30px);
+}
+.we-create__subtitle-products {
+  @include txt($fs: 14px, $fw: 400, $lh: 17px, $color: var(--color-accent));
+  text-transform: uppercase;
+}
+.we-create__txt {
+  @include txt($fs: 16px, $lh: 20px);
+}

@@ -1,0 +1,143 @@
+// НАПРИКЛАД, для мобільної версії секції we-create заголовка h1 "МИ СТВОРЮЄМО":
+// .we-create__title {
+//     @include title-main( $fs: 24px, $lh: 30px);
+// }
+// при цьому у css створиться такий стиль:
+// .we-create__title {
+// font-size: 24px;
+// font-weight: 700;
+// line-height: 30px;
+// text-align: left;
+// color: #487996;
+// }
+// кінець приклада
+
+//       title-main       //
+
+// for mobile {
+//     @include title-main( $fs: 24px, $lh: 30px);
+//   }
+// for tablet {
+//     @include title-main( $fs: 36px, $lh: 45px);
+//   }
+// for desktop {
+//     @include title-main( $fs: 48px, $lh: 60px);
+//   }
+@mixin title-main(
+  $fs,
+  $fw: 700,
+  $lh,
+  $t-align: left,
+  $color: var(--color-accent)
+) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: decimal-round($lh/$fs, 2);
+  text-align: $t-align;
+  color: $color;
+}
+//      кінець title-main       //
+
+//             title-secondary          //
+// for mobile {
+//     @include title-secondary($fs: 18px, $lh: 23px);
+//   }
+// for tablet {
+//     @include title-secondary($fs: 24px, $lh: 30px);
+//   }
+// for desktop {
+//     @include title-secondary( $fs: 36px, $lh: 45px);
+//   }
+//           кінець title-secondary           //
+
+// Владу      title-secondary  для секції Make Order       //
+// Дине      title-secondary  для секції Contact    //
+// for mobile {
+//     @include title-secondary($fs: 18px, $lh: 23px);
+//   }
+// for tablet
+//   по центру {
+//     @include title-secondary($fs: 24px, $lh: 30px,  $t-align: center);
+//   }
+//   ліворуч {
+//     @include title-secondary($fs: 24px, $lh: 30px);
+//   }
+//   праворуч {
+//     @include title-secondary($fs: 24px, $lh: 30px, $t-align: right);
+//   }
+
+// for desktop
+//   ліворуч {
+//     @include title-secondary( $fs: 36px, $lh: 45px);
+//   }
+//   праворуч {
+//     @include title-secondary($fs: 24px, $lh: 30px, $t-align: right);
+//   }
+//     кінець  title-secondary  для секції Make Order       //
+
+@mixin title-secondary(
+  $fs,
+  $fw: 700,
+  $lh,
+  $t-transform: uppercase,
+  $t-align: left,
+  $color: var(--color-accent)
+) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: decimal-round($lh/$fs, 2);
+  text-transform: $t-transform;
+  text-align: $t-align;
+  color: $color;
+}
+
+//     mixin  Для загального тексту       //
+// for tablet, mobile {
+//     @include txt($fs: 16px, $lh: 20px);
+//   }
+// for desktop {
+//     @include txt($fs: 18px, $lh: 23px);
+//   }
+//    кінець mixin Для загального тексту       //
+
+//  Юра       Для підпису під фото ГАЛЕРЕЯ      //
+//  text mixin for tablet, mobile {
+//     @include txt($fs: 16px, $lh: 20px, $color: var(--color-accent));
+//   }
+// text mixin for desktop {
+//     @include txt($fs: 18px, $lh: 23px, $color: var(--color-accent));
+//   }
+
+//  Сергій     Для підпису під фото 3D-scan       //
+//  для tablet, mobile {
+//     @include txt($fs: 14px, $fw: 400, $lh: 17px, $color: var(--color-accent));
+//   }
+//  для desktop {
+//     @include txt($fs: 18px, $lh: 23px, $color: var(--color-accent));
+//   }
+
+@mixin txt($fs, $fw: 300, $lh, $t-align: left, $color: var(--color-main)) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: decimal-round($lh/$fs, 2);
+  text-align: $t-align;
+  color: $color;
+}
+
+@mixin retina(
+  $ratio: 2,
+  $dpi: 192dpi,
+  $image: "#",
+  // $image: "../images/bg-hero-mobile.jpg",
+    $width: 480px
+) {
+  @media screen and (min-device-pixel-ratio: $ratio) and (min-width: $width),
+    screen and (min-resolution: $dpi) and (min-width: $width),
+    screen and (min-resolution: 2dppx) and (min-width: $width) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url($image);
+  }
+}
