@@ -28,3 +28,13 @@ img {
 .link {
   text-decoration: none;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
