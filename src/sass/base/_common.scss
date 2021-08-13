@@ -31,3 +31,13 @@ img {
   text-decoration: none;
   color: var(--color-main);
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
