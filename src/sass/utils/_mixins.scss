@@ -38,7 +38,7 @@
 }
 //      кінець title-main       //
 
-//           title-secondary          //
+//             title-secondary          //
 // for mobile {
 //     @include title-secondary($fs: 18px, $lh: 23px);
 //   }
@@ -75,7 +75,7 @@
 //   }
 //     кінець  title-secondary  для секції Make Order       //
 
-@mixin title-h2(
+@mixin title-secondary(
   $fs,
   $fw: 700,
   $lh,
@@ -102,18 +102,18 @@
 
 //  Юра       Для підпису під фото ГАЛЕРЕЯ      //
 //  text mixin for tablet, mobile {
-//     @include txt($fs: 16px, $lh: 20px, $color: var(--color-accent);
+//     @include txt($fs: 16px, $lh: 20px, $color: var(--color-accent));
 //   }
 // text mixin for desktop {
-//     @include txt($fs: 18px, $lh: 23px, $color: var(--color-accent);
+//     @include txt($fs: 18px, $lh: 23px, $color: var(--color-accent));
 //   }
 
 //  Сергій     Для підпису під фото 3D-scan       //
-//  text mixin for tablet, mobile {
-//     @include txt($fs: 14px, $fw: 400, $lh: 17px, $color: var(--color-accent);
+//  для tablet, mobile {
+//     @include txt($fs: 14px, $fw: 400, $lh: 17px, $color: var(--color-accent));
 //   }
-// text mixin for desktop {
-//     @include txt($fs: 18px, $lh: 23px, $color: var(--color-accent);
+//  для desktop {
+//     @include txt($fs: 18px, $lh: 23px, $color: var(--color-accent));
 //   }
 
 @mixin txt($fs, $fw: 300, $lh, $t-align: left, $color: var(--color-main)) {
