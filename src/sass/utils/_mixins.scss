@@ -1,6 +1,6 @@
 // НАПРИКЛАД, для мобільної версії секції we-create заголовка h1 "МИ СТВОРЮЄМО":
 // .we-create__title {
-//     @include title-h1( $fs: 24px, $lh: 30px);
+//     @include title-main( $fs: 24px, $lh: 30px);
 // }
 // при цьому у css створиться такий стиль:
 // .we-create__title {
@@ -10,17 +10,20 @@
 // text-align: left;
 // color: #487996;
 // }
+// кінець приклада
 
-// title-h1 mixin for mobile {
-//     @include title-h1( $fs: 24px, $lh: 30px);
+//       title-main       //
+
+// for mobile {
+//     @include title-main( $fs: 24px, $lh: 30px);
 //   }
-// title-h1 mixin for tablet {
-//     @include title-h1( $fs: 36px, $lh: 45px);
+// for tablet {
+//     @include title-main( $fs: 36px, $lh: 45px);
 //   }
-// title-h1 mixin for desktop {
-//     @include title-h1( $fs: 48px, $lh: 60px);
+// for desktop {
+//     @include title-main( $fs: 48px, $lh: 60px);
 //   }
-@mixin title-h1(
+@mixin title-main(
   $fs,
   $fw: 700,
   $lh,
@@ -33,16 +36,45 @@
   text-align: $t-align;
   color: $color;
 }
+//      кінець title-main       //
 
-// title-h2 mixin for mobile {
-//     @include title-h2($fs: 18px, $lh: 23px);
+//           title-secondary          //
+// for mobile {
+//     @include title-secondary($fs: 18px, $lh: 23px);
 //   }
-// title-h2 mixin for tablet {
-//     @include title-h2($fs: 24px, $lh: 30px);
+// for tablet {
+//     @include title-secondary($fs: 24px, $lh: 30px);
 //   }
-// title-h2 mixin for desktop {
-//     @include title-h2( $fs: 36px, $lh: 45px);
+// for desktop {
+//     @include title-secondary( $fs: 36px, $lh: 45px);
 //   }
+//           кінець title-secondary           //
+
+// Владу      title-secondary  для секції Make Order       //
+// Дине      title-secondary  для секції Contact    //
+// for mobile {
+//     @include title-secondary($fs: 18px, $lh: 23px);
+//   }
+// for tablet
+//   по центру {
+//     @include title-secondary($fs: 24px, $lh: 30px,  $t-align: center);
+//   }
+//   ліворуч {
+//     @include title-secondary($fs: 24px, $lh: 30px);
+//   }
+//   праворуч {
+//     @include title-secondary($fs: 24px, $lh: 30px, $t-align: right);
+//   }
+
+// for desktop
+//   ліворуч {
+//     @include title-secondary( $fs: 36px, $lh: 45px);
+//   }
+//   праворуч {
+//     @include title-secondary($fs: 24px, $lh: 30px, $t-align: right);
+//   }
+//     кінець  title-secondary  для секції Make Order       //
+
 @mixin title-h2(
   $fs,
   $fw: 700,
@@ -59,22 +91,31 @@
   color: $color;
 }
 
-// title-h3 mixin for mobile {
-//     @include title-h2($fs: 18px, $lh: 23px);
-//   }
-// title-h3 mixin for tablet {
-//     @include title-h2($fs: 24px, $lh: 30px);
-//   }
-// title-h2 mixin for desktop {
-//     @include title-h2( $fs: 36px, $lh: 45px);
-//   }
-
-// text mixin for tablet, mobile {
+//     mixin  Для загального тексту       //
+// for tablet, mobile {
 //     @include txt($fs: 16px, $lh: 20px);
 //   }
-// text mixin for desktop {
+// for desktop {
 //     @include txt($fs: 18px, $lh: 23px);
 //   }
+//    кінець mixin Для загального тексту       //
+
+//  Юра       Для підпису під фото ГАЛЕРЕЯ      //
+//  text mixin for tablet, mobile {
+//     @include txt($fs: 16px, $lh: 20px, $color: var(--color-accent);
+//   }
+// text mixin for desktop {
+//     @include txt($fs: 18px, $lh: 23px, $color: var(--color-accent);
+//   }
+
+//  Сергій     Для підпису під фото 3D-scan       //
+//  text mixin for tablet, mobile {
+//     @include txt($fs: 14px, $fw: 400, $lh: 17px, $color: var(--color-accent);
+//   }
+// text mixin for desktop {
+//     @include txt($fs: 18px, $lh: 23px, $color: var(--color-accent);
+//   }
+
 @mixin txt($fs, $fw: 300, $lh, $t-align: left, $color: var(--color-main)) {
   font-size: $fs;
   font-weight: $fw;
