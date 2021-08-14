@@ -41,43 +41,58 @@
             <input type="email" name="user-mail" id="mail" required>
         </span>
         <!-- Виды пластика -->
-        <span class="form__field">
-            <label for="variety-list">Види пластика</label>
-            <select name="variety" id="variety-list">
-                <option value="v1">ABS</option>
-                <option value="v2">PLA</option>
-                <option value="v3">TPU</option>
-                <option value="v4">PETG</option>
-                <option value="v5">HIPS</option>
-                <option value="v6">Проконсультувати у виборі</option>
 
-            </select>
-        </span>
+
+
+
+        <div class="form-group">
+            <div class="dropdown">
+                <button class="dropdown__button"> Види пластика</button>
+                <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="v1">ABS</li>
+                    <li class="dropdown__list-item" data-value="v2">PLA</li>
+                    <li class="dropdown__list-item" data-value="v3">PETG</li>
+                    <li class="dropdown__list-item" data-value="v4">HIPS</li>
+                </ul>
+                <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+            </div>
+        </div>
 
 
         <!-- Качество пластика -->
-        <span class="form__field">
-            <label for="quality-list">Якість друку</label>
-            <select name="quality" id="quality-list">
-                <option value="q1">300 мікрон</option>
-                <option value="q2">200 мікрон</option>
-                <option value="q3">100 мікрон</option>
-                <option value="q4">Труднощі у виборі - ми допоможемо</option>
-            </select>
-        </span>
+
+
+
+        <div class="form-group">
+            <div class="dropdown">
+                <button class="dropdown__button"> Якість друку</button>
+                <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="q1">300 мікрон</li>
+                    <li class="dropdown__list-item" data-value="q2">200 мікрон</li>
+                    <li class="dropdown__list-item" data-value="q3">100 мікрон</li>
+                    <li class="dropdown__list-item" data-value="q4">Труднощі у виборі - ми допоможемо</li>
+                </ul>
+                <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+            </div>
+        </div>
+
+
+
+
         <!-- Цвет пластика -->
-        <span class="form__field">
-            <label for="color-list">Колір</label>
-            <select name="color" id="color-list">
-                <option value="c1">Чорний</option>
-                <option value="c2">Зелений</option>
-                <option value="c3">Червоний</option>
-                <option value="c4">Синій</option>
-                <option value="c5">Підберемо для Вас особливий колір</option>
 
-            </select>
-        </span>
-
+        <div class="form-group">
+            <div class="dropdown">
+                <button class="dropdown__button"> Колір</button>
+                <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="c1">Чорний</li>
+                    <li class="dropdown__list-item" data-value="c2">Зелений</li>
+                    <li class="dropdown__list-item" data-value="c3">Червоний</li>
+                    <li class="dropdown__list-item" data-value="c4">Синій</li>
+                </ul>
+                <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+            </div>
+        </div>
 
 
 
