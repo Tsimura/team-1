@@ -1,10 +1,14 @@
 /* Расстановка хедера */
 
 .header {
-  padding: 32px 22px 27px 19px;
-
   &-logo {
     z-index: 11;
+    margin-right: 24px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 10px;
+      margin-right: 176px;
+    }
   }
 
   &-menu {
@@ -33,6 +37,21 @@
 
 .icon-tell {
   fill: #008cef;
+  margin-right: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 6px;
+  }
+}
+
+.tablet-tell {
+  margin-right: 7px;
+}
+
+@media screen and (max-width: 767px) {
+  .tablet-tell {
+    display: none;
+  }
 }
 
 /* Анимация бургера */
@@ -59,6 +78,10 @@
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
   z-index: 11;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 83px;
+  }
 
   &:focus {
     outline: none;
@@ -142,8 +165,12 @@
 /* Выбор языка */
 
 .custom-select {
+  font-family: var(--font-secondary);
   position: relative;
   z-index: 11;
+  @media screen and (min-width: 768px) {
+    margin-right: 33px;
+  }
 
   & select {
     display: none;
@@ -182,11 +209,14 @@
 .window-tell {
   position: relative;
   z-index: 11;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .tell-menu {
   position: absolute;
-  display: none;
   top: 50px;
   left: -25px;
   width: 162px;
@@ -194,12 +224,6 @@
   z-index: 11;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.header-button:hover + .tell-menu,
-.header-button:focus + .tell-menu,
-.header-button:active + .tell-menu {
-  display: block;
 }
 
 .numbers {
