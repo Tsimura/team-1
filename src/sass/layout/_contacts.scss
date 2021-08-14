@@ -1,14 +1,17 @@
 .contacts {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 76px;
 }
 .title-cont {
   height: 30px;
   left: 20px;
   top: 93px;
-
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 30px;
+
+  color: #487996;
 }
 .container-video {
   margin-bottom: 16px;
@@ -46,6 +49,9 @@
   /* identical to box height */
 
   color: #487996;
+}
+.container-coments {
+  padding-bottom: 26px;
 }
 .form {
   width: 280px;
@@ -117,4 +123,70 @@
   text-transform: uppercase;
 
   color: #487996;
+}
+.title-phone {
+  width: 247px;
+  height: 23px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #487996;
+}
+.contacts-nav {
+  padding-top: 26px;
+  padding-bottom: 8px;
+}
+.phone {
+  display: flex;
+  margin-bottom: 8px;
+  flex-direction: column;
+  width: 247px;
+  height: 20px;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #2b2b2b;
+  text-decoration: none;
+  list-style: none;
+}
+.title-email {
+  width: 72px;
+  height: 23px;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #487996;
+}
+.contacts-email {
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+.email {
+  width: 247px;
+  height: 20px;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #2b2b2b;
+  text-decoration: none;
+  list-style: none;
+}
+.title-work-time {
+  width: 280px;
+  height: 23px;
+  font-size: 18px;
+  margin-bottom: 8px;
+  line-height: 23px;
+  text-transform: uppercase;
+
+  color: #487996;
+}
+.work-time {
+  height: 40px;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-left: 0;
+  margin-bottom: 8px;
+  color: #2b2b2b;
 }
