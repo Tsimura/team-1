@@ -1,4 +1,14 @@
 .hero {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 26px;
+    @media screen and (min-width: 768px) {
+        padding-top: 35px;
+    }
+        @media screen and (min-width: 1444px) {
+        padding-bottom: 50px;
+        padding-top: 12px;
+    }
     &__title {
         font-family: var(--font-secondary);
         font-weight: 400;
@@ -9,19 +19,44 @@
         color: var(--color-main);
 
         margin-bottom: 32px;
+        @media screen and (min-width: 768px) {
+        font-size: 24px;
+        margin-bottom: 64px;
+        }
+        @media screen and (min-width: 1444px) {
+        font-size: 48px;
+        margin-bottom: 68px;
+        max-width: 624px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
     }
     &__list {
         display: flex;
         justify-content: center;
         margin-bottom: 32px;
+        // background-color: #E5E5E5;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 65px;}
+        @media screen and (min-width: 1444px) {
+            margin-bottom: 100px;
+        }
+
     }
     &__item {
         margin-right: 15px;
-    }
-    &__item:last child {
+        @media screen and (min-width: 768px) {
+            margin-right: 20px;}
+        @media screen and (min-width: 1444px) {
+            margin-right: 35px;}
+            }
+    &__item:last-child {
         margin-right: 0px;
     }
     &__picture {
+        // width: 83px;
+        // height: 83px;
         &--top-right {
             border-radius: 0px 35px 0px 0px;
             box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
@@ -35,8 +70,27 @@
             box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
         }}
     &__link {
-            display: none;
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+
+        left: 135px;
+        bottom: 107px;
+    }
+    @media screen and (min-width: 1444px) {
+        left: 240px;
+        bottom: 100px;
+    }
+            }
+    &__icon {
+        fill: #008CEF;
+        @media screen and (min-width: 1444px) {
+            width: 18px;
+            height: 28px;
         }
+        
+    }
     }
 
 .slogan {
@@ -44,7 +98,12 @@
     font-family: var(--font-secondary);
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.18;
+    line-height: 1.16;
 
     text-align: center;
-}
+    @media screen and (min-width: 768px) {
+        font-size: 18px;}
+    @media screen and (min-width: 1444px) {
+        font-size: 36px;
+    }
+        }
