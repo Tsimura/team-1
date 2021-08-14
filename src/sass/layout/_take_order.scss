@@ -164,3 +164,41 @@ Select c dropdown на JS
 .dropdown__input-hidden {
   display: none;
 }
+
+// +++++++++++++++++++++++++++++++++
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field {
+  position: relative;
+}
+
+.form__input {
+  width: 100%;
+
+  padding-top: 4px;
+  padding-bottom: 7px;
+  padding-left: 50px;
+  border: transparent;
+  border-bottom: 1px solid #487996;
+}
+
+.form_name {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-left: 2px;
+
+  transform: translateY(-50%);
+}
+
+.form_email {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-left: 2px;
+
+  transform: translateY(-50%);
+}
