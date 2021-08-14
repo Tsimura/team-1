@@ -14,7 +14,7 @@
     flex-basis: calc(100% / 2 - 15px);
     // margin-bottom: 0;
   }
-  &__thub-tl-br {
+  &__thub-tl-br_products {
     display: flex;
     width: 133px;
     height: 158px;
@@ -33,7 +33,17 @@
     @include txt($fs: 14px, $fw: 400, $lh: 17px, $color: var(--color-accent));
     text-transform: uppercase;
   }
+  &__thub-tl-br_offer {
+    width: 280px;
+    height: 386px;
+    border-radius: 50px 0px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.15);
+  }
   &__txt {
     @include txt($fs: 16px, $lh: 20px);
+  }
+  &__txt-span {
+    @include txt($fs: 16px, $lh: 20px, $color: var(--color-accent));
+    text-transform: uppercase;
   }
 }
