@@ -1,3 +1,5 @@
+// СТИЛИ КОНТЕЙНЕРА, СЕКЦИЙ
+
 .modelling-container {
   @media screen and (min-width: 320px) {
     padding-left: 20px;
@@ -12,6 +14,18 @@
     padding-right: 189px;
   }
 }
+
+.creating-ways {
+  @media screen and (min-width: 320px) {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+}
+.creating-realistic {
+  padding-top: 0;
+}
+
+// СТИЛИ ЗАГОЛОВКА, ТЕКСТОВ
 .modelling-title {
   @media screen and (min-width: 320px) {
     @include title-main($fs: 24px, $lh: 30px);
@@ -42,27 +56,9 @@
 .realistic-models {
   @media screen and (min-width: 320px) and (max-width: 767px) {
     @include title-secondary($fs: 16px, $lh: 20px);
-    margin-bottom: 16px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-bottom: 24px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 52px;
   }
 }
 
-.modelling-title__description {
-  @media screen and (min-width: 320px) {
-    margin-bottom: 52px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-bottom: 50px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 100px;
-  }
-}
 .modelling-title__text {
   @media screen and (min-width: 320px) {
     margin-bottom: 16px;
@@ -72,22 +68,27 @@
     }
   }
 }
-.creating-ways {
-  @media screen and (min-width: 320px) {
-    margin-bottom: 52px;
-  }
-}
+
+// СЕКЦИЯ СПОСОБИ СТВОРЕННЯ МОДЕЛI
+
 .creating-ways__list {
   @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 32px;
   }
 }
+
+.creating-ways__picture {
+  @media screen and (min-width: 320px) {
+    display: block;
+    max-width: 280px;
+  }
+}
+
+// СЕКЦИЯ "МЫ СОЗДАЁМ РЕАЛИСТИЧНЫЕ ИЗОБРАЖЕНИЯ"
 .realistic-models__pictures {
   display: flex;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 52px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 100px;
+  @media screen and (min-width: 320px) {
+    flex-wrap: wrap;
+    flex-basis: calc((100%-10.77px) / 2);
   }
 }
