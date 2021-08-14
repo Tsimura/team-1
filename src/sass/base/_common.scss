@@ -38,3 +38,8 @@ img {
 *::after {
   box-sizing: border-box;
 }
+body {
+  font-family: var(--font-main);
+  font-style: normal;
+  color: var(--color-main);
+}
