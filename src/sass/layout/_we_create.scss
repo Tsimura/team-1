@@ -8,11 +8,14 @@
     flex-wrap: wrap;
     margin-left: 15px;
     margin-top: 15px;
+    margin-bottom: 54px;
   }
 
   &__item-products {
     flex-basis: calc(100% / 2 - 15px);
     // margin-bottom: 0;
+    // width: 100%;
+    // height: 100%;
   }
   &__thub-tl-br_products {
     display: flex;
@@ -25,12 +28,30 @@
       inset -1px -1px 16px #ffffff;
   }
 
-  &__img {
-    position: absolute;
+  &__img_products {
     position: absolute;
     top: 45px;
     right: 20px;
+    width: inherit;
+    height: inherit;
   }
+  &__pic {
+    top: 45px;
+    right: 20px;
+  }
+  &__create-maket {
+    top: 38px;
+    right: 17px;
+  }
+  &__decor {
+    top: 32px;
+    right: 45px;
+  }
+  &__3d-coub {
+    top: 24px;
+    right: 24px;
+  }
+
   &__item-products:nth-child(2n-1) {
     margin-right: 15px;
   }
@@ -38,7 +59,15 @@
     margin-bottom: 17px;
   }
   &__subtitle-products {
-    @include txt($fs: 14px, $fw: 400, $lh: 17px, $color: var(--color-accent));
+    @include txt(
+      $fs: 14px,
+      $fw: 400,
+      $lh: 17px,
+      $t-align: center,
+      $color: var(--color-accent)
+    );
+    position: absolute;
+    top: 118px;
     text-transform: uppercase;
   }
   &__thub-tl-br_offer {
@@ -47,6 +76,15 @@
     border-radius: 50px 0px;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.15);
   }
+  // &__picture {
+  //   width: 280px;
+  //   height: 386px;
+  // }
+
+  &__img_offer {
+    flex-grow: 1;
+  }
+
   &__txt {
     @include txt($fs: 16px, $lh: 20px);
   }
