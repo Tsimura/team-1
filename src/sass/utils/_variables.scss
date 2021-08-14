@@ -1,12 +1,6 @@
 :root {
-  // --font-main: "Cera Pro", sans-serif;
-  --font-secondary: "Caviar Dreams", sans-serif;
+  --font-main: 'Montserrat', sans-serif;
+  --font-secondary: 'Caviar Dreams', sans-serif;
   --color-main: #2b2b2b;
   --color-accent: #487996;
-}
-
-body {
-  font-family: var(--font-main);
-  font-style: normal;
-  color: var(--color-main);
 }

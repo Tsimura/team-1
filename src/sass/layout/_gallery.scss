@@ -35,7 +35,11 @@
   margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
+    @include title-main($fs: 36px, $lh: 45px);
     margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1444px) {
+    @include title-main($fs: 48px, $lh: 60px);
   }
 }
 
@@ -80,14 +84,18 @@
   }
 }
 
-.gallery-link-list-img {
-}
+// .gallery-link-list-img {
+// }
 
 .gallery__item-description {
   // уточнити шрифт
+  // font-weight: 300;
+  // font-size: 16px;
+  // line-height: 1.25;
+  // color: var(--color-accent);
+  @include txt($fs: 16px, $lh: 20px, $color: var(--color-accent));
 
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.25;
-  color: var(--color-accent);
+  @media screen and (min-width: 1444px) {
+    @include txt($fs: 18px, $lh: 23px, $color: var(--color-accent));
+  }
 }
