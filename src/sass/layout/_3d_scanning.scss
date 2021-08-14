@@ -1,0 +1,30 @@
+.scanning-description {
+  margin: 0 20px 16px 20px;
+}
+
+.scanning-process {
+  margin: 0 20px 16px 20px;
+}
+
+.scanning-description_title {
+  @include title-main($fs: 24px, $lh: 30px);
+}
+
+.scanning-process_title {
+  @include title-secondary($fs: 18px, $lh: 23px);
+}
+
+.scanning-description_text {
+  @include txt($fs: 16px, $lh: 20px);
+}
+
+.scanning-stage_description {
+  @include txt($fs: 14px, $fw: 400, $lh: 17px, $color: var(--color-accent));
+}
+
+.make-order-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
