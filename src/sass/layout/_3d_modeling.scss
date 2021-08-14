@@ -3,12 +3,12 @@
 .modelling-container {
   margin: 0 auto;
   @media screen and (min-width: 320px) {
-    max-width: 280px;
+    max-width: 320px;
     padding-left: 20px;
     padding-right: 20px;
   }
   @media screen and (min-width: 768px) {
-    max-width: 648px;
+    max-width: 768px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -26,18 +26,44 @@
   }
   @media screen and (min-width: 768px) {
     padding-top: 50px;
-    position: relative;
   }
   @media screen and (min-width: 1440px) {
     padding-top: 100px;
     padding-bottom: 100px;
-    position: relative;
   }
 }
-.creating-realistic {
+.creating-ways--nopadding {
   padding-top: 0;
 }
+.creating-ways--background {
+  @media screen and (min-width: 320px) {
+    background-image: url(../images/mobile/3d-modelling/mashine.jpg);
+    background-repeat: no-repeat;
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 320px),
+    (min-resolution: 192dpi) and (min-width: 320px),
+    (min-resolution: 2dppx) and (min-width: 320px) {
+    background-image: url(../images/mobile/3d-modelling/mashine@2x.jpg);
+  }
 
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/3d-modelling/mashine.jpg);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/tablet/3d-modelling/mashine@2x.jpg);
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/desktop/3d-modelling/mashine.jpg);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 1440px),
+    (min-resolution: 192dpi) and (min-width: 1440px),
+    (min-resolution: 2dppx) and (min-width: 1440px) {
+    background-image: url(../images/desktop/3d-modelling/mashine@2x.jpg);
+  }
+}
 // СТИЛИ ЗАГОЛОВКА, ТЕКСТОВ
 .modelling-title {
   @media screen and (min-width: 320px) {
@@ -166,6 +192,7 @@
 .realistic-models__pictures-item {
   @media screen and (min-width: 300px) and (max-width: 767px) {
     margin-right: 10.77px;
+    max-width: 134.62px;
     &:nth-child(2n) {
       margin-right: 0;
     }
