@@ -1,8 +1,29 @@
-<body class="background">
+<body class="background" scrol-modal>
   <header class="header header-container">
     <div class="header-menu">
       <a class="header-logo" href="./index.html">
-        <img src="./images/logo.png" alt="" width="101" height="25"></a>
+        <picture>
+          <source media="(min-width: 1444px)"srcset="./images/logo/logo-desctop.png 1x, ./images/logo/logo-desctop@2x.png 2x 2x">
+          <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.png 1x, ./images/logo/logo-tablet@2x.png 2x">
+          <source media="(max-width: 767px)" srcset="./images/logo/logo-mobile.png 1x, ./images/logo/logo-mobile@2x.png 2x">
+          <img src="#" alt="фото разработчика">
+        </picture></a>
+        <ul class="list desctop-nav">
+          <li class="desctop-nav-item">
+            <a class="link" href="">Головна</a>
+          </li>
+          <li class="desctop-nav-item">
+            <button type="button" class="modal-desctop-button">Послуги<svg class="icon-list" width="10" height="14">
+              <use class="icon-list" href="./images/project-sprite.svg#icon-list"></use>
+            </svg></button>
+          </li>
+          <li class="desctop-nav-item">
+            <a class="link" href="">Замовити</a>
+          </li>
+          <li class="desctop-nav-item">
+            <a class="link" href="">Контакти</a>
+          </li>
+        </ul>
       <ul class="list button-menu">
         <li>
           <button class="toggle-hamburger toggle-hamburger__animx" mobile-modal-open mobile-modal-close>
@@ -10,7 +31,7 @@
           </button>
         </li>
         <li class="window-tell">
-          <button class="header-button " type="button" tell-modal-open tell-modal-close>
+          <button class="header-button " type="button" tell-modal-open tell-modal-close mobile-modal-input mobile-no-scroll>
             <svg class="icon-tell" width="18" height="18">
               <use href="./images/project-sprite.svg#icon-tell"></use>
             </svg>
@@ -22,10 +43,10 @@
             <div class="numbers">
               <ul class="list">
                 <li class="tell-item">
-                  <a class="link tell-number" href="+380936432288" type="tell">+38 (093) 643 22 88</a>
+                  <a class="link tell-number" href="tel:+380936432288">+38 (093) 643 22 88</a>
                 </li>
                 <li class="tell-item">
-                  <a class="link tell-number" href="+380503454423" type="tell">+38 (050) 345 44 23</a>
+                  <a class="link tell-number" href="tel:+380503454423">+38 (050) 345 44 23</a>
                 </li>
               </ul>
             </div>
@@ -43,12 +64,12 @@
       <div class="tablet-tell">
         <ul class="list">
           <li class="tell-item">
-            <a class="link tell-number" href="+380936432288" type="tell"><svg class="icon-tell" width="10px" height="10px">
+            <a class="link tell-number" href="tel:+380936432288"><svg class="icon-tell" width="10px" height="10px">
               <use href="./images/project-sprite.svg#icon-tell"></use>
             </svg>+38 (093) 643 22 88</a>
           </li>
           <li class="tell-item">
-            <a class="link tell-number" href="+380503454423" type="tell"><svg class="icon-tell" width="10px" height="10px">
+            <a class="link tell-number" href="tel:+380503454423"><svg class="icon-tell" width="10px" height="10px">
               <use href="./images/project-sprite.svg#icon-tell"></use>
             </svg>+38 (050) 345 44 23</a>
           </li>
@@ -98,5 +119,24 @@
         </nav>
       </div>
     </div>
+
   </header>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <script>
+            foo.onclick = function () {
+                this.classList.toggle('rotate')
+              }
+          </script>-->
