@@ -1,16 +1,31 @@
 .container {
   //   width: 1200px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 
   @media screen and (min-width: 320px) {
-    max-width: 320px;
+    max-width: 767px;
   }
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    max-width: 1443px;
   }
   @media screen and (min-width: 1444px) {
     max-width: 1444px;
+  }
+}
+
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 22px 27px 19px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 638px;
+    padding: 20px 0 12px 0;
+  }
+
+  @media screen and (min-width: 1444px) {
+    max-width: 1280px;
+    padding: 40px 0 60px 0;
   }
 }
