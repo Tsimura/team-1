@@ -42,71 +42,60 @@
                 <label class="form_email" for="mail">Email</label>
                 <input class="form__input" type="email" name="user-mail" id="mail" required>
             </span>
+
+            <!-- Виды пластика -->
+
+            <span class="form__field-select">
+                <label for="species" class="select-name">Види пластика</label>
+                <select name="select " id="species" class="select">
+                    <option value="1">Поліпропілен</option>
+                    <option value="2">Полівінілхлорид</option>
+                    <option value="3">Полістирол</option>
+                    <option value="4">Акрилонітрил</option>
+                </select>
+            </span>
+
+
+            <span class="form__field-select">
+                <label for="species" class="select-name">Якість друку</label>
+                <select name="select " id="species" class="select">
+                    <option value="1">300 мікрон</option>
+                    <option value="2">200 мікрон</option>
+                    <option value="3">100 мікрон</option>
+                    <option value="4">Труднощі у виборі - ми допоможемо</option>
+                </select>
+            </span>
+
+
+            <span class="form__field-select">
+                <label for="species" class="select-name">Колір </label>
+                <select name="select " id="species" class="select">
+                    <option value="1">Синій</option>
+                    <option value="2">Червоний</option>
+                    <option value="3">Жовтий</option>
+                    <option value="4">Зелений</option>
+                </select>
+            </span>
+
+
         </div>
-        <!-- Виды пластика -->
 
 
 
 
-        <div class="form-group">
-            <div class="dropdown">
-                <button class="dropdown__button"> Види пластика</button>
-                <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="v1">ABS</li>
-                    <li class="dropdown__list-item" data-value="v2">PLA</li>
-                    <li class="dropdown__list-item" data-value="v3">PETG</li>
-                    <li class="dropdown__list-item" data-value="v4">HIPS</li>
-                </ul>
-                <input type="text" name="select-category" value="" class="dropdown__input-hidden">
-            </div>
-        </div>
 
 
-        <!-- Качество пластика -->
-
-
-
-        <div class="form-group">
-            <div class="dropdown">
-                <button class="dropdown__button"> Якість друку</button>
-                <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="q1">300 мікрон</li>
-                    <li class="dropdown__list-item" data-value="q2">200 мікрон</li>
-                    <li class="dropdown__list-item" data-value="q3">100 мікрон</li>
-                    <li class="dropdown__list-item" data-value="q4">Труднощі у виборі - ми допоможемо</li>
-                </ul>
-                <input type="text" name="select-category" value="" class="dropdown__input-hidden">
-            </div>
-        </div>
-
-
-
-
-        <!-- Цвет пластика -->
-
-        <div class="form-group">
-            <div class="dropdown">
-                <button class="dropdown__button"> Колір</button>
-                <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="c1">Чорний</li>
-                    <li class="dropdown__list-item" data-value="c2">Зелений</li>
-                    <li class="dropdown__list-item" data-value="c3">Червоний</li>
-                    <li class="dropdown__list-item" data-value="c4">Синій</li>
-                </ul>
-                <input type="text" name="select-category" value="" class="dropdown__input-hidden">
-            </div>
-        </div>
 
 
 
         <!-- Сообщение пользователя и файл -->
-        <div class="form__field">
-            <label for="text">Повідомлення</label>
-            <textarea name="uxer-text" id="text" rows="10" placeholder="Залишіть своє повідомлення"></textarea>
-        </div>
-        <div class="form__field">
+        <div class="form__field-text">
+            <label class="textarea-head" for="text">Повідомлення</label>
+            <textarea class="textarea-text" name="uxer-text" id="text" rows="10"
+                placeholder="Залишіть своє повідомлення"></textarea>
+
             <label for="file">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</label>
-            <input type="file" name="user-file" id="file">
+            <input type="file" name="user-file" id="file" class="icon-file">
         </div>
 
         <button type="submit">ВІДПРАВИТИ</button>
