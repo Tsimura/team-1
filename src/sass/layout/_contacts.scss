@@ -4,35 +4,70 @@
   padding-bottom: 76px;
 }
 .title-cont {
-  height: 30px;
-  left: 20px;
-  top: 93px;
-  margin-bottom: 16px;
-  font-size: 24px;
-  line-height: 30px;
-
   color: #487996;
+
+  @media screen and (min-width: 320px) {
+    height: 30px;
+    left: 20px;
+    top: 93px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 648px;
+    height: 45px;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  // @media screen and (min-width: 1444px);
 }
 .container-video {
-  margin-bottom: 16px;
   border-radius: 15px;
+
+  @media screen and (min-width: 320px) {
+    width: 280px;
+    height: 171px;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    // width: 247px;
+    height: 192px;
+  }
+
+  // @media screen and (min-width: 1444px);
+}
+.video-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .demonstration-list {
   margin-bottom: 36px;
   list-style: none;
 }
 .submission {
-  padding-bottom: 16px;
-  left: 20px;
-  top: 326px;
-
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
 
   color: #2b2b2b;
+
+  @media screen and (min-width: 320px) {
+    padding-bottom: 16px;
+    left: 20px;
+    top: 326px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 381px;
+    margin-left: 20px;
+  }
+  // @media screen and (min-width: 1444px);
 }
+
 .join-us {
   margin-bottom: 8px;
   height: 23px;
@@ -49,10 +84,21 @@
 .container-coments {
   padding-bottom: 26px;
 }
+// .contact-us {
+//   @media screen and (min-width: 768px) {
+//     position: relative;
+//   }
+// }
 .form {
-  width: 280px;
-  height: 554px;
-  left: 20px;
+  @media screen and (min-width: 320px) {
+    width: 280px;
+    height: 554px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  // @media screen and (min-width: 1444px);
 }
 .container-user {
   display: flex;
@@ -67,10 +113,16 @@
   margin-bottom: 44px;
 }
 .contact-form {
-  width: 280px;
   padding: 0;
   border: none;
   border-bottom: 1px solid #487996;
+
+  @media screen and (min-width: 320px) {
+    width: 280px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 420px;
+  }
 }
 .title-message {
   font-size: 16px;
@@ -91,6 +143,9 @@
 
   border: 1px solid #487996;
   border-radius: 50px 0px;
+  @media screen and (min-width: 768px) {
+    width: 420px;
+  }
 }
 .advice {
   margin-bottom: 24px;
@@ -186,3 +241,6 @@
   margin-bottom: 8px;
   color: #2b2b2b;
 }
+//  @media screen and (min-width: 320px)
+// @media screen and (min-width: 768px);
+// @media screen and (min-width: 1444px);
