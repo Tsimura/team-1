@@ -1,21 +1,101 @@
-// .gallery {
-// }
+// після зустрічі команди уточнити і при необхідності переназначити cjntainer
+.gallery {
+  padding-top: 26px;
+  padding-bottom: 26px;
 
-// .gallery__title {
-//   @include title-main($fs: 24px, $lh: 30px);
-// }
+  @media screen and (min-width: 1444px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 
-// .gallery__list {
-// }
+.gallery__container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media screen and (min-width: 1444px) {
+    max-width: 1444px;
+    padding-left: 189px;
+    padding-right: 189px;
+  }
+}
 
-// .gallery__item {
-//   width: 100%;
-// }
+.gallery__title {
+  @include title-main($fs: 24px, $lh: 30px);
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    @include title-main($fs: 36px, $lh: 45px);
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1444px) {
+    @include title-main($fs: 48px, $lh: 60px);
+  }
+}
+
+.gallery__list {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -18px;
+    margin-top: -32px;
+  }
+  @media screen and (min-width: 1444px) {
+    margin-left: -32px;
+    margin-top: -56px;
+  }
+}
+
+.gallery__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 18px;
+    margin-top: 32px;
+    flex-basis: calc((100% - 36px) / 2);
+  }
+  @media screen and (min-width: 1444px) {
+    margin-left: 32px;
+    margin-top: 56px;
+    flex-basis: calc((100% - 64px) / 2);
+  }
+}
+
+.gallery__cards {
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+}
 
 // .gallery-link-list-img {
-//   margin-bottom: 8px;
 // }
 
-// .gallery__item-description {
-//   margin-bottom: 24px;
-// }
+.gallery__item-description {
+  // уточнити шрифт
+  // font-weight: 300;
+  // font-size: 16px;
+  // line-height: 1.25;
+  // color: var(--color-accent);
+  @include txt($fs: 16px, $lh: 20px, $color: var(--color-accent));
+
+  @media screen and (min-width: 1444px) {
+    @include txt($fs: 18px, $lh: 23px, $color: var(--color-accent));
+  }
+}
