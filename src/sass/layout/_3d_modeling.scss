@@ -88,7 +88,7 @@
 // СЕКЦИЯ "МЫ СОЗДАЁМ РЕАЛИСТИЧНЫЕ ИЗОБРАЖЕНИЯ"
 .realistic-models__pictures {
   display: flex;
-  justify-content: center;
+  justify-content: stretch;
   @media screen and (min-width: 300px) {
     flex-wrap: wrap;
     flex-basis: calc((100%-10.77px) / 2);
