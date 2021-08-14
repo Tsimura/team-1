@@ -1,0 +1,120 @@
+.contacts {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.title-cont {
+  height: 30px;
+  left: 20px;
+  top: 93px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+.container-video {
+  margin-bottom: 16px;
+  border-radius: 15px;
+}
+.demonstration-list {
+  margin-bottom: 36px;
+  list-style: none;
+}
+.submission {
+  padding-bottom: 16px;
+  left: 20px;
+  top: 326px;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #2b2b2b;
+}
+// вставити смайлик
+.submission::after {
+  background-image: url();
+}
+.join-us {
+  margin-bottom: 8px;
+  height: 23px;
+  left: 20px;
+  top: 610px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  color: #487996;
+}
+.form {
+  width: 280px;
+  height: 554px;
+  left: 20px;
+}
+.container-user {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 44px;
+}
+.user-name {
+  font-size: 14px;
+  line-height: 1.42;
+}
+.container-email {
+  margin-bottom: 44px;
+}
+.contact-form {
+  width: 280px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #487996;
+}
+.title-message {
+  font-size: 16px;
+  line-height: 1.25;
+
+  text-transform: capitalize;
+
+  color: #2b2b2b;
+}
+.coments {
+  margin-top: 4px;
+  padding-top: 20px;
+  padding-left: 22px;
+  width: 280px;
+  height: 199px;
+  left: 20px;
+  top: 821px;
+
+  border: 1px solid #487996;
+  border-radius: 50px 0px;
+}
+.advice {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 125%;
+  // grey
+  color: #cdcdcd;
+}
+.btn-send {
+  width: 280px;
+  height: 56px;
+  left: 20px;
+  background: #f5f5fa;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  border-radius: 30.5px;
+  border-color: transparent;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #487996;
+}
