@@ -6,6 +6,10 @@
   margin-bottom: 16px;
 }
 
+.make-order__second-thumb {
+  margin-bottom: 52px;
+}
+
 .make-order__description {
   @include txt($fs: 16px, $lh: 20px);
   margin-bottom: 16px;
@@ -43,6 +47,8 @@
   border-bottom: 1px solid #487996;
 
   margin-bottom: 44px;
+
+  height: 24px;
 }
 
 .form__field-select::after {
@@ -66,7 +72,7 @@
   position: absolute;
   top: 50%;
   left: 1px;
-  background-color: teal;
+
   transform: translateY(-50%);
 
   @include txt($fs: 16px, $lh: 20px);
@@ -96,6 +102,20 @@
   cursor: pointer;
 
   width: 100%;
+
+  margin-left: 160px;
+}
+
+.select-name {
+  position: absolute;
+  display: block;
+
+  top: 50%;
+  left: 1px;
+
+  transform: translateY(-50%);
+
+  @include txt($fs: 16px, $lh: 20px);
 }
 
 .select::-ms-expand {
