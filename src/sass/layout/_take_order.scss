@@ -250,3 +250,87 @@
     text-align: right;
   }
 }
+
+@media screen and (min-width: 1444px) {
+  .take-order {
+    margin-bottom: 100px;
+  }
+  .make-order-gallery__scroll {
+    display: flex;
+  }
+
+  .make-order__head {
+    margin-bottom: 24px;
+  }
+  .make-order__first-thumb {
+    max-width: 515px;
+    margin-right: 32px;
+  }
+  .make-order__second-thumb {
+    max-width: 515px;
+    margin-bottom: 0;
+  }
+  .make-order__description.clean {
+    margin-bottom: 55px;
+  }
+
+  .desktop-wrapper {
+    display: flex;
+  }
+
+  .contact-us.container,
+  .information.container {
+    margin: 0;
+    padding: 0;
+  }
+  .information-scroll {
+    display: flex;
+    flex-direction: column;
+  }
+  .form {
+    max-width: 515px;
+  }
+  .logo-d {
+    max-width: 444px;
+  }
+  .information-scroll-date {
+    margin-bottom: 76px;
+  }
+  .information {
+    text-align: right;
+  }
+  .information-scroll__head {
+    text-align: right;
+    margin-bottom: 32px;
+  }
+
+  .information-scroll-mail {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1444px) and (max-width: 9000px) {
+  .desktop-wrapper.container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.pict-thumb {
+  height: 144px;
+  width: 144px;
+  border-radius: 72px 0px 0px 72px;
+}
+.gallery-car,
+.gallery-lamp,
+.gallery-colum {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.make-order-gallery__item {
+  margin-right: 42px;
+}
