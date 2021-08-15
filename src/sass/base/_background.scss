@@ -41,3 +41,38 @@
     background-image: url(../images/background/background-photo-desctop@2x.jpg);
   }
 }
+
+// Фон 3D-MODELLING
+
+.3d-modelling-page {
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/mobile/3d-modelling/mobile-modelling.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (min-width: 767px),
+    (min-resolution: 2dppx) and (min-width: 767px) {
+    background-image: url(../images/mobile/3d-modelling/mobile-modelling@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/3d-modelling/tablet-modelling.jpg);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/tablet/3d-modelling/tablet-modelling@2x.jpg);
+  }
+
+  @media screen and (min-width: 1444px) {
+    background-image: url(../images/desktop/3d-modelling/desktop-modelling.jpg);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+    (min-resolution: 192dpi) and (min-width: 1444px),
+    (min-resolution: 2dppx) and (min-width: 1444px) {
+    background-image: url(../images/desktop/3d-modelling/desktop-modelling@2x.jpg);
+  }
+}
