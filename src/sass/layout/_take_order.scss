@@ -7,6 +7,21 @@
 }
 
 .make-order__description {
+  @include txt($fs: 16px, $lh: 20px);
+  margin-bottom: 16px;
+}
+.clean {
+  margin: 0;
+}
+@media screen and (max-width: 1443px) {
+  .make-order-gallery {
+    display: none;
+  }
+}
+
+.contact-us__head {
+  @include title-main($fs: 24px, $lh: 30px);
+  margin-bottom: 16px;
 }
 
 .form__field {
@@ -87,4 +102,39 @@
 
 .icon-file {
   appearance: none;
+}
+
+// =======================contacts=======================
+
+.information-scroll__thumb {
+  margin-bottom: 24px;
+}
+.information-scroll__head {
+  @include title-main($fs: 24px, $lh: 30px);
+  margin-bottom: 8px;
+}
+
+.information-scroll-numbers__items {
+  margin-bottom: 8px;
+}
+
+.tel-link {
+  @include txt($fs: 16px, $lh: 20px);
+}
+.mail-link {
+  @include txt($fs: 16px, $lh: 20px);
+}
+
+.information-scroll-date__item {
+  margin-bottom: 8px;
+}
+
+.information-scroll-date__description {
+  @include txt($fs: 16px, $lh: 20px);
+}
+
+@media screen and (max-width: 1443px) {
+  .logo-d {
+    display: none;
+  }
 }
