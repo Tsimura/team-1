@@ -1,0 +1,140 @@
+.make-order__head {
+  @include title-main($fs: 24px, $lh: 30px);
+  margin-bottom: 16px;
+}
+.make-order__first-thumb {
+  margin-bottom: 16px;
+}
+
+.make-order__description {
+  @include txt($fs: 16px, $lh: 20px);
+  margin-bottom: 16px;
+}
+.clean {
+  margin: 0;
+}
+@media screen and (max-width: 1443px) {
+  .make-order-gallery {
+    display: none;
+  }
+}
+
+.contact-us__head {
+  @include title-main($fs: 24px, $lh: 30px);
+  margin-bottom: 16px;
+}
+
+.form__field {
+  position: relative;
+  display: flex;
+  text-align: center;
+
+  border: transparent;
+  border-bottom: 1px solid #487996;
+
+  margin-bottom: 44px;
+}
+.form__field-select {
+  position: relative;
+  display: flex;
+  text-align: center;
+
+  border: transparent;
+  border-bottom: 1px solid #487996;
+
+  margin-bottom: 44px;
+}
+
+.form__field-select::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  transform: translateY(-50%);
+
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 9.5px 0 9.5px;
+  border-color: #000000 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.form__input {
+  border: transparent;
+  width: 100%;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  appearance: none;
+
+  border: transparent;
+
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  width: 100%;
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
+.textarea-head {
+  display: block;
+}
+
+.textarea-text {
+  display: block;
+  width: 100%;
+  border: 1px solid #487996;
+  border-radius: 50px 0px;
+
+  padding-left: 20px;
+  padding-top: 22px;
+}
+
+.icon-file {
+  appearance: none;
+}
+
+// =======================contacts=======================
+
+.information-scroll__thumb {
+  margin-bottom: 24px;
+}
+.information-scroll__head {
+  @include title-main($fs: 24px, $lh: 30px);
+  margin-bottom: 8px;
+}
+
+.information-scroll-numbers__items {
+  margin-bottom: 8px;
+}
+
+.tel-link {
+  @include txt($fs: 16px, $lh: 20px);
+}
+.mail-link {
+  @include txt($fs: 16px, $lh: 20px);
+}
+
+.information-scroll-date__item {
+  margin-bottom: 8px;
+}
+
+.information-scroll-date__description {
+  @include txt($fs: 16px, $lh: 20px);
+}
+
+@media screen and (max-width: 1443px) {
+  .logo-d {
+    display: none;
+  }
+}
