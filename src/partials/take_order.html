@@ -33,14 +33,16 @@
         <!-- Имя пользователя -->
         <div class="form__wrapper">
             <span class="form__field">
-                <label class="form_name" for="name">Ім’я</label>
+
                 <input class="form__input" type="text" name="user-name" id="name" required
-                    pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}">
+                    pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}" placeholder=" ">
+                <label class="form__name" for="name">Ім’я</label>
             </span>
             <!-- Email пользователя -->
             <span class="form__field">
-                <label class="form_email" for="mail">Email</label>
-                <input class="form__input" type="email" name="user-mail" id="mail" required>
+
+                <input class="form__input" type="email" name="user-mail" id="mail" required placeholder=" ">
+                <label class="form__name" for="mail">Email</label>
             </span>
 
             <!-- Виды пластика -->
@@ -94,8 +96,12 @@
             <textarea class="textarea-text" name="uxer-text" id="text" rows="10"
                 placeholder="Залишіть своє повідомлення"></textarea>
 
-            <label for="file">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</label>
-            <input type="file" name="user-file" id="file" class="icon-file">
+            <p class="file-text">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
+            <span class="file-icon">
+                <svg>
+                    <use href=""></use>
+                </svg>
+            </span>
         </div>
 
         <button type="submit">ВІДПРАВИТИ</button>
