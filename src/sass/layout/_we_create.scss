@@ -89,7 +89,7 @@
     @include txt($fs: 16px, $lh: 20px);
   }
   &__txt-span {
-    @include txt($fs: 16px, $lh: 20px, $color: var(--color-accent));
+    @include txt($fs: 16px, $fw: 700, $lh: 20px, $color: var(--color-accent));
     text-transform: uppercase;
   }
 }
