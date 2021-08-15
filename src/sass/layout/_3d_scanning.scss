@@ -1,7 +1,24 @@
+.scanning-container {
+  margin: 0 auto;
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    padding-left: 189px;
+    padding-right: 189px;
+  }
+}
+
 .scanning-description {
   margin-top: 32px;
-  margin-left: 20px;
-  margin-right: 20px;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/tablet/3d-scanning/scan-bcg-tablet@1x.png);
@@ -29,10 +46,10 @@
   }
 }
 
-.scanning-process {
-  margin-left: 20px;
-  margin-right: 20px;
-}
+// .scanning-process {
+//   margin-left: 20px;
+//   margin-right: 20px;
+// }
 
 .scanning-process_list {
   display: flex;
@@ -67,7 +84,6 @@
 
     @media screen and (max-width: 767px) {
       flex-basis: calc((100% - 60px) / 2);
-      // margin-left: 15px;
       text-align: center;
       justify-content: center;
       height: 182.55px;
@@ -131,14 +147,16 @@
 
 .scanning-description_list {
   @media screen and (min-width: 768px) {
-    & .scanning-description_item:nth-child(3) {
+    & .scanning-description_item:last-child {
       opacity: 0.3;
     }
   }
 
   @media screen and (min-width: 1440px) {
+    & .scanning-description_item:last-child {
+      margin-left: 32px;
+    }
     display: flex;
-    margin-left: -30px;
   }
 
   &:not(:last-child) {
@@ -170,8 +188,8 @@
   }
 
   @media screen and (min-width: 1440px) {
-    flex-basis: calc((100% - 60px) / 2);
-    margin-left: 30px;
+    font-size: 18px;
+    line-height: 1.27;
   }
 }
 
