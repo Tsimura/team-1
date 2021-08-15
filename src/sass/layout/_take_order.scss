@@ -1,3 +1,14 @@
+.make-order__head {
+  @include title-main($fs: 24px, $lh: 30px);
+  margin-bottom: 16px;
+}
+.make-order__first-thumb {
+  margin-bottom: 16px;
+}
+
+.make-order__description {
+}
+
 .form__field {
   position: relative;
   display: flex;
