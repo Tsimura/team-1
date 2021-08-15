@@ -127,7 +127,7 @@
   color: $color;
 }
 
-@mixin retina($ratio: 2, $image: "../images/mobile.jpg", $width: 320px) {
+@mixin retina($ratio: 2, $image: '../images/mobile.jpg', $width: 320px) {
   @media screen and (min-device-pixel-ratio: $ratio) and (min-width: $width),
     screen and (min-resolution: 192dpi) and (min-width: $width),
     screen and (min-resolution: 2dppx) and (min-width: $width) {
