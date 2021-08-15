@@ -23,9 +23,9 @@
     />
     <link rel="stylesheet" href="./sass/main.scss" />
   </head>
-  <body>
+  <body class="background" scrol-modal>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <header class="header header-container">
+    <!-- <header class="header header-container">
     <div class="header-menu">
       <a class="header-logo" href="./index.html">
         <picture>
@@ -41,7 +41,7 @@
             media="(max-width: 767px)"
             srcset="./images/logo/logo-mobile.png 1x, ./images/logo/logo-mobile@2x.png 2x"
           />
-          <img src="#" alt="фото разработчика" /> </picture
+          <img src="#" alt="Логотип" /> </picture
       ></a>
       <ul class="list desctop-nav">
         <li class="desctop-nav-item">
@@ -165,8 +165,9 @@
         </nav>
       </div>
     </div>
-  </header>
+  </header> -->
 
+  <include src="./partials/header.html"></include>
     <include src="./partials/hero.html"></include>
     <include src="./partials/gallery.html"></include>
     <include src="./partials/more_photos.html"></include>

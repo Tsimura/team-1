@@ -1,12 +1,35 @@
+.scanning-container {
+  margin: 0 auto;
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    padding-left: 189px;
+    padding-right: 189px;
+  }
+}
+
 .scanning-description {
   margin-top: 32px;
-  margin-left: 20px;
-  margin-right: 20px;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/tablet/3d-scanning/scan-bcg-tablet@1x.png);
     background-repeat: no-repeat;
     background-position: 100% 150px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/desktop/3d-scanning/scan-bcg-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position: right;
   }
 }
 
@@ -23,10 +46,10 @@
   }
 }
 
-.scanning-process {
-  margin-left: 20px;
-  margin-right: 20px;
-}
+// .scanning-process {
+//   margin-left: 20px;
+//   margin-right: 20px;
+// }
 
 .scanning-process_list {
   display: flex;
@@ -61,7 +84,6 @@
 
     @media screen and (max-width: 767px) {
       flex-basis: calc((100% - 60px) / 2);
-      // margin-left: 15px;
       text-align: center;
       justify-content: center;
       height: 182.55px;
@@ -95,6 +117,20 @@
       content: url(/images/tablet/3d-scanning/scan4-tablet@1x.png);
     }
   }
+  @media screen and (min-width: 1440px) {
+    & .scanning-process_item:nth-child(1):before {
+      content: url(/images/desktop/3d-scanning/scan1-desktop@1x.png);
+    }
+    & .scanning-process_item:nth-child(2):before {
+      content: url(/images/desktop/3d-scanning/scan2-desktop@1x.png);
+    }
+    & .scanning-process_item:nth-child(3):before {
+      content: url(/images/desktop/3d-scanning/scan3-desktop@1x.png);
+    }
+    & .scanning-process_item:nth-child(4):before {
+      content: url(/images/desktop/3d-scanning/scan4-desktop@1x.png);
+    }
+  }
 }
 
 .scanning-description_title {
@@ -111,14 +147,16 @@
 
 .scanning-description_list {
   @media screen and (min-width: 768px) {
-    & .scanning-description_item:nth-child(3) {
+    & .scanning-description_item:last-child {
       opacity: 0.3;
     }
   }
 
   @media screen and (min-width: 1440px) {
+    & .scanning-description_item:last-child {
+      margin-left: 32px;
+    }
     display: flex;
-    margin-left: -30px;
   }
 
   &:not(:last-child) {
@@ -150,8 +188,8 @@
   }
 
   @media screen and (min-width: 1440px) {
-    flex-basis: calc((100% - 60px) / 2);
-    margin-left: 30px;
+    font-size: 18px;
+    line-height: 1.27;
   }
 }
 
