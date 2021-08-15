@@ -4,7 +4,22 @@
     <!-- Первая коробка -->
     <div class="make-order__first-thumb">
         <picture>
-            <img src="" alt="">
+            <source media="(min-width: 1444px)"
+                srcset="./images/desktop/take-order/desk-picture.webp 1x, ./images/desktop/take-order/desk-picture@2x.webp 2x"
+                type="image/webp">
+            <source media="(min-width: 1444px)"
+                srcset="./images/desktop/take-order/desk-picture.jpg 1x, ./images/desktop/take-order/desk-picture@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                srcset="./images/tablet/take-order/tab-picture.webp 1x, ./images/tablet/take-order/tab-picture@2x.webp 2x"
+                type="image/webp">
+            <source media="(min-width: 768px)"
+                srcset="./images/tablet/take-order/tab-picture.jpg 1x, ./images/tablet/take-order/tab-picture@2x.jpg 2x">
+            <source media="(max-width: 767px)"
+                srcset="./images/mobile/take-order/mob-picture.webp 1x, ./images/mobile/take-order/mob-picture@2x.webp 2x"
+                type="image/webp">
+            <source media="(max-width: 767px)"
+                srcset="./images/mobile/take-order/mob-picture.jpg 1x, ./images/mobile/take-order/mob-picture@2x.jpg 2x">
+            <img src="#" alt="геометрична фігура">
         </picture>
     </div>
     <!-- Вторая коробка -->
@@ -33,14 +48,16 @@
         <!-- Имя пользователя -->
         <div class="form__wrapper">
             <span class="form__field">
-                <label class="form_name" for="name">Ім’я</label>
+
                 <input class="form__input" type="text" name="user-name" id="name" required
-                    pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}">
+                    pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}" placeholder=" ">
+                <label class="form__name" for="name">Ім’я</label>
             </span>
             <!-- Email пользователя -->
             <span class="form__field">
-                <label class="form_email" for="mail">Email</label>
-                <input class="form__input" type="email" name="user-mail" id="mail" required>
+
+                <input class="form__input" type="email" name="user-mail" id="mail" required placeholder=" ">
+                <label class="form__name" for="mail">Email</label>
             </span>
 
             <!-- Виды пластика -->
@@ -90,15 +107,23 @@
 
         <!-- Сообщение пользователя и файл -->
         <div class="form__field-text">
-            <label class="textarea-head" for="text">Повідомлення</label>
-            <textarea class="textarea-text" name="uxer-text" id="text" rows="10"
-                placeholder="Залишіть своє повідомлення"></textarea>
+            <div class="form__field-text-wrapper">
+                <label class="textarea-head" for="text">Повідомлення</label>
+                <textarea class="textarea-text" name="uxer-text" id="text" rows="10"
+                    placeholder="Залишіть своє повідомлення"></textarea>
 
-            <label for="file">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</label>
-            <input type="file" name="user-file" id="file" class="icon-file">
+
+                <span class="file-icon">
+                    <svg class="file-clip">
+                        <use href="./images/project-sprite.svg#icon-clip"></use>
+                    </svg>
+                </span>
+            </div>
+            <p class="file-text">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
         </div>
 
-        <button type="submit">ВІДПРАВИТИ</button>
+
+        <button class="form__button" type="submit">ВІДПРАВИТИ</button>
     </form>
 </section>
 <!-- Контакты и график работы -->
@@ -108,7 +133,7 @@
     <!--  -->
 
     <!-- номера телефонов -->
-    <ul class="information-scroll">
+    <ul class="information-scroll list">
         <li class="information-scroll__thumb">
             <h3 class="information-scroll__head">ТЕЛЕФОНИ</h3>
             <ul class="information-scroll-numbers list">
@@ -123,7 +148,7 @@
         <!-- электронная почта -->
         <li class="information-scroll__thumb">
             <h3 class="information-scroll__head">Email</h3>
-            <ul class="information-scroll-mail">
+            <ul class="information-scroll-mail list">
                 <li class="information-scroll-mail__item">
                     <a class="mail-link link" href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
                 </li>
@@ -133,7 +158,7 @@
         <!-- график работы -->
         <li class="information-scroll__thumb clean">
             <h3 class="information-scroll__head">Робочий час</h3>
-            <ul class="information-scroll-date">
+            <ul class="information-scroll-date list">
                 <li class="information-scroll-date__item">
                     <p class="information-scroll-date__description">Пн-пт: з 8:00 до 19:00</p>
                 </li>
