@@ -234,6 +234,11 @@
   .form__button {
     display: flex;
     margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 16px 32px;
+    max-width: 177px;
   }
   .information-scroll__thumb {
     margin-bottom: 0;
@@ -248,6 +253,10 @@
 
   .information-scroll-date__description {
     text-align: right;
+  }
+
+  .contact-us {
+    margin-bottom: 76px;
   }
 }
 
@@ -291,7 +300,7 @@
     max-width: 515px;
   }
   .logo-d {
-    max-width: 444px;
+    width: 530px;
   }
   .information-scroll-date {
     margin-bottom: 76px;
@@ -334,3 +343,5 @@
 .make-order-gallery__item {
   margin-right: 42px;
 }
+
+// ===========================
