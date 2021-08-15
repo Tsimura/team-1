@@ -334,3 +334,71 @@
 .make-order-gallery__item {
   margin-right: 42px;
 }
+
+// ===========================
+
+@media screen and (max-width: 1443px) {
+  .emblem {
+    display: none;
+  }
+}
+.emblem {
+  display: flex;
+  flex-direction: column;
+}
+.emblem-first {
+  display: flex;
+  margin-bottom: 10px;
+}
+.emblem-second {
+  display: flex;
+}
+.emblem-item-first {
+  width: 135px;
+  height: 135px;
+  border-radius: 0px 0px 72px 0px;
+  background-color: transparent;
+  border: 1px solid blue;
+  transform: rotate(-90deg);
+  margin-right: 11px;
+}
+.emblem-item-second {
+  color: transparent;
+  width: 135px;
+  height: 135px;
+  margin-right: 11px;
+  border-radius: 0px 0px 0px 72px;
+  border: 1px solid blue;
+}
+.emblem-item-third {
+  color: transparent;
+  width: 135px;
+  height: 135px;
+  border-radius: 72px 0px;
+  border: 1px solid blue;
+}
+.emblem-item-forth {
+  color: transparent;
+  width: 135px;
+  height: 135px;
+  margin-right: 11px;
+  border-radius: 72px 0px;
+  transform: rotate(-90deg);
+  border: 1px solid blue;
+}
+.emblem-item-fifth {
+  color: transparent;
+  width: 135px;
+  height: 135px;
+  margin-right: 11px;
+
+  border-radius: 72px;
+  border: 1px solid blue;
+}
+.emblem-item-six {
+  color: transparent;
+  width: 135px;
+  height: 135px;
+  border-radius: 0px 0px 72px 0px;
+  border: 1px solid blue;
+}
