@@ -8,6 +8,12 @@
     background-repeat: no-repeat;
     background-position: 100% 150px;
   }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/desktop/3d-scanning/scan-bcg-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
 }
 
 .scanning-background {
@@ -93,6 +99,20 @@
     }
     & .scanning-process_item:nth-child(4):before {
       content: url(/images/tablet/3d-scanning/scan4-tablet@1x.png);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    & .scanning-process_item:nth-child(1):before {
+      content: url(/images/desktop/3d-scanning/scan1-desktop@1x.png);
+    }
+    & .scanning-process_item:nth-child(2):before {
+      content: url(/images/desktop/3d-scanning/scan2-desktop@1x.png);
+    }
+    & .scanning-process_item:nth-child(3):before {
+      content: url(/images/desktop/3d-scanning/scan3-desktop@1x.png);
+    }
+    & .scanning-process_item:nth-child(4):before {
+      content: url(/images/desktop/3d-scanning/scan4-desktop@1x.png);
     }
   }
 }
