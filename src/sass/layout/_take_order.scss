@@ -134,6 +134,7 @@
 
   padding-left: 20px;
   padding-top: 22px;
+  margin-bottom: 4px;
 }
 
 .icon-file {
@@ -173,4 +174,13 @@
   .logo-d {
     display: none;
   }
+}
+
+.textarea-head {
+  @include txt($fs: 16px, $lh: 20px);
+  margin-bottom: 8px;
+}
+.file-text {
+  @include txt($fs: 16px, $lh: 20px);
+  color: #cdcdcd;
 }
