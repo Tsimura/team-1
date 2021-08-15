@@ -23,15 +23,15 @@
         </li>
         <li class="desctop-nav-item">
           <div class="dropdown">
-            <button onclick="myFunction()" type="button" class="dropbtn">
-              Послуги<svg class="icon-list" width="10" height="14">
+            <button onclick="myFunction()" type="button" class="dropbtn" icon-open icon-close services-open services-close>
+              Послуги<svg class="icon-list" width="10" height="14" icon>
                 <use class="icon-list" href="./images/project-sprite.svg#icon-list"></use>
               </svg>
             </button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="./3d_modeling.html">3D Моделювання</a>
-              <a href="./3d_scanning.html">3D Сканування</a>
-              <a href="./we_create.html">3D Друк</a>
+            <div id="myDropdown" class="dropdown-content" services>
+              <a href="#">3D Моделювання</a>
+              <a href="#">3D Сканування</a>
+              <a href="#">3D Друк</a>
             </div>
           </div>
         </li>
@@ -147,29 +147,4 @@
       </div>
     </div>
   </header>
-
-<script>
-  function myFunction() {
-      document.getElementById("myDropdown").classList.toggle(".show");
-    }
-    window.onclick = function (event) {
-      if (!event.target.matches('.dropbtn')) {
-
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-</script>
-
-  <!-- <script>
-            foo.onclick = function () {
-                this.classList.toggle('rotate')
-              }
-          </script>-->
 </body>
