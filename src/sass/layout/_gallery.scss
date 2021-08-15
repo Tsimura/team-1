@@ -99,3 +99,18 @@
     @include txt($fs: 18px, $lh: 23px, $color: var(--color-accent));
   }
 }
+
+// АНИМАШКА
+
+.hide {
+  overflow: hidden;
+}
+
+.enlarge#zoomIn img {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.enlarge#zoomIn:hover img,
+.enlarge#zoomIn:focus img {
+  transform: scale(1.2);
+}
