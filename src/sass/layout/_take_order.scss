@@ -135,6 +135,7 @@
   padding-left: 20px;
   padding-top: 22px;
   margin-bottom: 4px;
+  resize: none;
 }
 
 .icon-file {
@@ -143,6 +144,9 @@
 
 // =======================contacts=======================
 
+.information {
+  margin-bottom: 76px;
+}
 .information-scroll__thumb {
   margin-bottom: 24px;
 }
