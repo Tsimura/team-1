@@ -1,4 +1,5 @@
 // після зустрічі команди уточнити і при необхідності переназначити cjntainer
+// Чорновий варіант секції для роботи, потім видалити
 .gallery {
   padding-top: 26px;
   padding-bottom: 26px;
@@ -9,26 +10,27 @@
   }
 }
 
-.gallery__container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  @media screen and (min-width: 320px) {
-    max-width: 320px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  @media screen and (min-width: 1444px) {
-    max-width: 1444px;
-    padding-left: 189px;
-    padding-right: 189px;
-  }
-}
+// Чорновий варіант контейнера для роботи, потім видалити
+// .gallery__container {
+//   width: 100%;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   @media screen and (min-width: 320px) {
+//     max-width: 320px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     max-width: 768px;
+//     padding-left: 60px;
+//     padding-right: 60px;
+//   }
+//   @media screen and (min-width: 1444px) {
+//     max-width: 1444px;
+//     padding-left: 189px;
+//     padding-right: 189px;
+//   }
+// }
 
 .gallery__title {
   @include title-main($fs: 24px, $lh: 30px);
@@ -93,11 +95,13 @@
   // font-size: 16px;
   // line-height: 1.25;
   // color: var(--color-accent);
+  text-align: justify;
   @include txt($fs: 16px, $lh: 20px, $color: var(--color-accent));
 
   @media screen and (min-width: 1444px) {
     @include txt($fs: 18px, $lh: 23px, $color: var(--color-accent));
   }
+  // text-align: justify;
 }
 
 // АНИМАШКА

@@ -15,18 +15,25 @@
             media="(max-width: 767px)"
             srcset="./images/logo/logo-mobile.png 1x, ./images/logo/logo-mobile@2x.png 2x"
           />
-          <img src="#" alt="фото разработчика" /> </picture
+          <img src="#" alt="Логотип" /> </picture
       ></a>
       <ul class="list desctop-nav">
         <li class="desctop-nav-item">
           <a class="link" href="">Головна</a>
         </li>
         <li class="desctop-nav-item">
-          <button type="button" class="modal-desctop-button">
-            Послуги<svg class="icon-list" width="10" height="14">
-              <use class="icon-list" href="./images/project-sprite.svg#icon-list"></use>
-            </svg>
-          </button>
+          <div class="dropdown">
+            <button onclick="myFunction()" type="button" class="dropbtn" icon-open icon-close services-open services-close>
+              Послуги<svg class="icon-list" width="10" height="14" icon>
+                <use class="icon-list" href="./images/project-sprite.svg#icon-list"></use>
+              </svg>
+            </button>
+            <div id="myDropdown" class="dropdown-content" services>
+              <a href="#">3D Моделювання</a>
+              <a href="#">3D Сканування</a>
+              <a href="#">3D Друк</a>
+            </div>
+          </div>
         </li>
         <li class="desctop-nav-item">
           <a class="link" href="">Замовити</a>
@@ -140,10 +147,4 @@
       </div>
     </div>
   </header>
-
-  <!-- <script>
-            foo.onclick = function () {
-                this.classList.toggle('rotate')
-              }
-          </script>-->
 </body>

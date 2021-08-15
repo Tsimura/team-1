@@ -1,12 +1,55 @@
+.scanning-container {
+  margin: 0 auto;
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    padding-left: 189px;
+    padding-right: 189px;
+  }
+}
+
 .scanning-description {
-  margin-top: 32px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 0;
 
   @media screen and (min-width: 768px) {
+    margin-top: 44px;
     background-image: url(../images/tablet/3d-scanning/scan-bcg-tablet@1x.png);
     background-repeat: no-repeat;
-    background-position: 100% 150px;
+    background-position: bottom right;
+    background-size: 241px;
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-position: bottom right;
+    background-size: 241px;
+    background-image: url(../images/tablet/3d-scanning/scan-bcg-tablet@2x.png);
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 100px;
+    margin-top: 87px;
+    background-image: url(../images/desktop/3d-scanning/scan-bcg-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-size: 515px;
+    background-position: 100% 70px;
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1440px),
+    (min-resolution: 192dpi) and (min-width: 1440px),
+    (min-resolution: 2dppx) and (min-width: 1440px) {
+    padding-bottom: 100px;
+    background-image: url(../images/desktop/3d-scanning/scan-bcg-desktop@2x.png);
   }
 }
 
@@ -21,11 +64,23 @@
     margin-top: 16px;
     background-image: url(../images/mobile/3d-scanning/scan-bcg-mobile@1x.png);
   }
+
+  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (max-width: 767px),
+    (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(../images/mobile/3d-scanning/scan-bcg-mobile@2x.png);
+  }
 }
 
 .scanning-process {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 52px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 0;
+  }
 }
 
 .scanning-process_list {
@@ -49,54 +104,251 @@
   @media screen and (min-width: 768px) {
     & .scanning-process_item {
       margin-left: 12px;
-      height: 210px;
     }
   }
 
   & .scanning-process_item {
-    padding: 15px 20px 15px 20px;
+    padding: 15px 10px 15px 10px;
     margin-top: 16px;
     box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
     border-radius: 50px 0px;
 
     @media screen and (max-width: 767px) {
       flex-basis: calc((100% - 60px) / 2);
-      // margin-left: 15px;
+      margin-left: 15px;
       text-align: center;
       justify-content: center;
-      height: 182.55px;
     }
   }
 
   & .scanning-process_item:nth-child(1):before {
-    content: url(/images/mobile/3d-scanning/scan1-mobile@1x.png);
+    content: '';
+    display: inline-block;
+    width: 94px;
+    height: 82px;
+    background-image: url(/images/mobile/3d-scanning/scan1-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   & .scanning-process_item:nth-child(2):before {
-    content: url(/images/mobile/3d-scanning/scan2-mobile@1x.png);
+    content: '';
+    display: inline-block;
+    width: 94px;
+    height: 82px;
+    background-image: url(/images/mobile/3d-scanning/scan2-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   & .scanning-process_item:nth-child(3):before {
-    content: url(/images/mobile/3d-scanning/scan3-mobile@1x.png);
+    content: '';
+    display: inline-block;
+    width: 94px;
+    height: 82px;
+    background-image: url(/images/mobile/3d-scanning/scan3-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   & .scanning-process_item:nth-child(4):before {
-    content: url(/images/mobile/3d-scanning/scan4-mobile@1x.png);
+    content: '';
+    display: inline-block;
+    width: 94px;
+    height: 82px;
+    background-image: url(/images/mobile/3d-scanning/scan4-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
-  @media screen and (min-width: 767px) {
+  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (max-width: 767px),
+    (min-resolution: 2dppx) and (max-width: 767px) {
     & .scanning-process_item:nth-child(1):before {
-      content: url(/images/tablet/3d-scanning/scan1-tablet@1x.png);
+      content: '';
+      display: inline-block;
+      width: 94px;
+      height: 82px;
+      background-image: url(/images/tablet/3d-scanning/scan1-tablet@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
     }
     & .scanning-process_item:nth-child(2):before {
-      content: url(/images/tablet/3d-scanning/scan2-tablet@1x.png);
+      content: '';
+      display: inline-block;
+      width: 94px;
+      height: 82px;
+      background-image: url(/images/tablet/3d-scanning/scan2-tablet@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
     }
     & .scanning-process_item:nth-child(3):before {
-      content: url(/images/tablet/3d-scanning/scan3-tablet@1x.png);
+      content: '';
+      display: inline-block;
+      width: 94px;
+      height: 82px;
+      background-image: url(/images/tablet/3d-scanning/scan3-tablet@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
     }
     & .scanning-process_item:nth-child(4):before {
-      content: url(/images/tablet/3d-scanning/scan4-tablet@1x.png);
+      content: '';
+      display: inline-block;
+      width: 94px;
+      height: 82px;
+      background-image: url(/images/tablet/3d-scanning/scan4-tablet@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & .scanning-process_item:nth-child(1):before {
+      content: '';
+      display: inline-block;
+      width: 94px;
+      height: 82px;
+      background-image: url(/images/tablet/3d-scanning/scan1-tablet@1x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & .scanning-process_item:nth-child(2):before {
+      content: '';
+      display: inline-block;
+      width: 94px;
+      height: 82px;
+      background-image: url(/images/tablet/3d-scanning/scan2-tablet@1x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & .scanning-process_item:nth-child(3):before {
+      content: '';
+      display: inline-block;
+      width: 94px;
+      height: 82px;
+      background-image: url(/images/tablet/3d-scanning/scan3-tablet@1x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & .scanning-process_item:nth-child(4):before {
+      content: '';
+      display: inline-block;
+      width: 94px;
+      height: 82px;
+      background-image: url(/images/tablet/3d-scanning/scan4-tablet@1x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    & .scanning-process_item:nth-child(1):before {
+      content: '';
+      display: inline-block;
+      width: 94px;
+      height: 82px;
+      background-image: url(/images/tablet/3d-scanning/scan1-tablet@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & .scanning-process_item:nth-child(2):before {
+      content: '';
+      display: inline-block;
+      width: 94px;
+      height: 82px;
+      background-image: url(/images/tablet/3d-scanning/scan2-tablet@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & .scanning-process_item:nth-child(3):before {
+      content: '';
+      display: inline-block;
+      width: 94px;
+      height: 82px;
+      background-image: url(/images/tablet/3d-scanning/scan3-tablet@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & .scanning-process_item:nth-child(4):before {
+      content: '';
+      display: inline-block;
+      width: 94px;
+      height: 82px;
+      background-image: url(/images/tablet/3d-scanning/scan4-tablet@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    & .scanning-process_item:nth-child(1):before {
+      content: '';
+      display: inline-block;
+      background-size: 177px;
+      background-image: url(/images/desktop/3d-scanning/scan1-desktop@1x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & .scanning-process_item:nth-child(2):before {
+      content: '';
+      display: inline-block;
+      background-size: 177px;
+      background-image: url(/images/desktop/3d-scanning/scan2-desktop@1x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & .scanning-process_item:nth-child(3):before {
+      content: '';
+      display: inline-block;
+      background-size: 177px;
+      background-image: url(/images/desktop/3d-scanning/scan3-desktop@1x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & .scanning-process_item:nth-child(4):before {
+      content: '';
+      display: inline-block;
+      background-size: 177px;
+      background-image: url(/images/desktop/3d-scanning/scan4-desktop@1x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1440px),
+    (min-resolution: 192dpi) and (min-width: 1440px),
+    (min-resolution: 2dppx) and (min-width: 1440px) {
+    & .scanning-process_item:nth-child(1):before {
+      content: '';
+      display: inline-block;
+      background-size: 177px;
+      background-image: url(/images/desktop/3d-scanning/scan1-desktop@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & .scanning-process_item:nth-child(2):before {
+      content: '';
+      display: inline-block;
+      background-size: 177px;
+      background-image: url(/images/desktop/3d-scanning/scan2-desktop@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & .scanning-process_item:nth-child(3):before {
+      content: '';
+      display: inline-block;
+      background-size: 177px;
+      background-image: url(/images/desktop/3d-scanning/scan3-desktop@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & .scanning-process_item:nth-child(4):before {
+      content: '';
+      display: inline-block;
+      background-size: 177px;
+      background-image: url(/images/desktop/3d-scanning/scan4-desktop@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 }
-
 .scanning-description_title {
   @include title-main($fs: 24px, $lh: 30px);
 
@@ -111,14 +363,16 @@
 
 .scanning-description_list {
   @media screen and (min-width: 768px) {
-    & .scanning-description_item:nth-child(3) {
+    & .scanning-description_item:last-child {
       opacity: 0.3;
     }
   }
 
   @media screen and (min-width: 1440px) {
+    & .scanning-description_item:last-child {
+      margin-left: 32px;
+    }
     display: flex;
-    margin-left: -30px;
   }
 
   &:not(:last-child) {
@@ -127,15 +381,16 @@
 }
 
 .scanning-process_title {
-  @include title-secondary($fs: 18px, $lh: 23px);
-  margin-top: 23px;
   margin-bottom: 16px;
+  @include title-secondary($fs: 18px, $lh: 23px);
 
   @media screen and  (min-width: 768px) {
+    margin-bottom: 24px;
     @include title-secondary ($fs: 24px, $lh: 30px);
   }
 
-  @media screen and  (min-width: 1440px) {
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 52px;
     @include title-secondary ($fs: 36px, $lh: 45px);
   }
 }
@@ -150,8 +405,8 @@
   }
 
   @media screen and (min-width: 1440px) {
-    flex-basis: calc((100% - 60px) / 2);
-    margin-left: 30px;
+    font-size: 18px;
+    line-height: 1.27;
   }
 }
 
@@ -159,6 +414,10 @@
   text-align: center;
   margin-top: 18px;
   @include txt($fs: 14px, $fw: 400, $lh: 17px, $color: var(--color-accent));
+
+  @media screen and (min-width: 1440px) {
+    @include txt($fs: 18px, $fw: 300, $lh: 23px, $color: var(--color-accent));
+  }
 }
 
 .make-order-button {
@@ -176,6 +435,11 @@
     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
   border-radius: 30.5px;
   border-color: transparent;
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 100px;
+    width: 277px;
+  }
 }
 
 .make-order {
