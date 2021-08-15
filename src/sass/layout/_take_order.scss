@@ -184,3 +184,21 @@
   @include txt($fs: 16px, $lh: 20px);
   color: #cdcdcd;
 }
+
+.file-clip {
+  position: absolute;
+  bottom: 18px;
+  right: 21px;
+  width: 20px;
+  height: 22px;
+}
+.form__field-text {
+  margin-bottom: 24px;
+}
+
+.form__field-text-wrapper {
+  position: relative;
+}
+.form__button {
+  margin-bottom: 52px;
+}
