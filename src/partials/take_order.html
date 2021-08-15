@@ -92,19 +92,23 @@
 
         <!-- Сообщение пользователя и файл -->
         <div class="form__field-text">
-            <label class="textarea-head" for="text">Повідомлення</label>
-            <textarea class="textarea-text" name="uxer-text" id="text" rows="10"
-                placeholder="Залишіть своє повідомлення"></textarea>
+            <div class="form__field-text-wrapper">
+                <label class="textarea-head" for="text">Повідомлення</label>
+                <textarea class="textarea-text" name="uxer-text" id="text" rows="10"
+                    placeholder="Залишіть своє повідомлення"></textarea>
 
+
+                <span class="file-icon">
+                    <svg class="file-clip">
+                        <use href="./images/project-sprite.svg#icon-clip"></use>
+                    </svg>
+                </span>
+            </div>
             <p class="file-text">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
-            <span class="file-icon">
-                <svg>
-                    <use href=""></use>
-                </svg>
-            </span>
         </div>
 
-        <button type="submit">ВІДПРАВИТИ</button>
+
+        <button class="form__button" type="submit">ВІДПРАВИТИ</button>
     </form>
 </section>
 <!-- Контакты и график работы -->
