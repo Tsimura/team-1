@@ -1,7 +1,7 @@
 // СТИЛИ СЕКЦИЙ 3D МОДДЕЛИНГ
 
 .creating-ways {
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 280px) {
     padding-top: 52px;
     padding-bottom: 52px;
   }
@@ -17,20 +17,21 @@
   padding-top: 0;
 }
 .creating-ways--background {
-  @media screen and (min-width: 320px) {
-    height: 566px;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 280px) and (max-width: 767px) {
+    height: 545px;
     background-image: url(../images/mobile/3d-modelling/mashine.jpg);
-    background-repeat: no-repeat;
     background-position: left 0px bottom 52px;
   }
-  @media (min-device-pixel-ratio: 2) and (min-width: 320px),
-    (min-resolution: 192dpi) and (min-width: 320px),
-    (min-resolution: 2dppx) and (min-width: 320px) {
+  @media (min-device-pixel-ratio: 2) and (min-width: 280px),
+    (min-resolution: 192dpi) and (min-width: 280px),
+    (min-resolution: 2dppx) and (min-width: 280px) {
     background-image: url(../images/mobile/3d-modelling/mashine@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/tablet/3d-modelling/mashine.jpg);
+    background-position: right 0px top 84px;
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 768px),
     (min-resolution: 192dpi) and (min-width: 768px),
@@ -40,6 +41,7 @@
 
   @media screen and (min-width: 1444px) {
     background-image: url(../images/desktop/3d-modelling/mashine.jpg);
+    background-position: right 0px top 39px;
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
     (min-resolution: 192dpi) and (min-width: 1444px),
@@ -49,7 +51,7 @@
 }
 // СТИЛИ ЗАГОЛОВКА, ТЕКСТОВ
 .modelling-title {
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 280px) {
     @include title-main($fs: 24px, $lh: 30px);
     margin-bottom: 16px;
   }
@@ -63,7 +65,7 @@
 }
 
 .creating-ways__title {
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 280px) {
     @include title-secondary($fs: 18px, $lh: 23px);
     margin-bottom: 16px;
   }
@@ -72,13 +74,11 @@
   }
   @media screen and (min-width: 1444px) {
     @include title-secondary($fs: 36px, $lh: 45px);
-    position: relative;
-    z-index: 2150;
   }
 }
 
 .realistic-models {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (min-width: 280px) and (max-width: 767px) {
     @include title-secondary($fs: 16px, $lh: 20px);
   }
 }
@@ -89,7 +89,7 @@
   }
 }
 .modelling-title__text {
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 280px) {
     margin-bottom: 16px;
     max-width: 280px;
 
@@ -111,11 +111,6 @@
 
 // СЕКЦИЯ СПОСОБИ СТВОРЕННЯ МОДЕЛI
 
-.creating-ways__list {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    margin-bottom: 32px;
-  }
-}
 .creating-ways__item {
   margin-bottom: 16px;
   &:last-child {
@@ -138,7 +133,7 @@
 .realistic-models__pictures {
   display: flex;
 
-  @media screen and (min-width: 300px) {
+  @media screen and (min-width: 280px) {
     flex-wrap: wrap;
     flex-basis: calc((100%-10.77px) / 2);
     margin-right: -10.77px;
@@ -154,7 +149,7 @@
   }
 }
 .realistic-models__pictures-item {
-  @media screen and (min-width: 300px) and (max-width: 767px) {
+  @media screen and (min-width: 280px) and (max-width: 767px) {
     margin-right: 10.77px;
     max-width: 134.62px;
     &:nth-child(2n) {
