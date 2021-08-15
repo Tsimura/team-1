@@ -1,23 +1,4 @@
-// СТИЛИ КОНТЕЙНЕРА, СЕКЦИЙ
-
-.modelling-container {
-  margin: 0 auto;
-  @media screen and (min-width: 320px) {
-    max-width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  @media screen and (min-width: 1440px) {
-    max-width: 1440px;
-    padding-left: 189px;
-    padding-right: 189px;
-  }
-}
+// СЕКЦИЙ
 
 .creating-ways {
   @media screen and (min-width: 320px) {
@@ -148,25 +129,6 @@
     margin-right: 10px;
     border-radius: 3px 0px;
     background-color: var(--color-accent);
-  }
-}
-
-.creating-ways__picture {
-  @media screen and (min-width: 320px) {
-    display: block;
-    max-width: 280px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 246px;
-    position: absolute;
-    top: 84px;
-    right: 0;
-  }
-  @media screen and (min-width: 1440px) {
-    max-width: 515px;
-    z-index: 2145;
-    top: 39px;
-    right: 0;
   }
 }
 
