@@ -1,45 +1,48 @@
 <!-- Сделать заказ -->
-<section class="make-order container">
+<section class="take-order container">
     <h1 class="make-order__head">ЗРОБИТИ ЗАМОВЛЕННЯ</h1>
-    <!-- Первая коробка -->
-    <div class="make-order__first-thumb">
-        <picture>
-            <source media="(min-width: 1444px)"
-                srcset="./images/desktop/take-order/desk-picture.webp 1x, ./images/desktop/take-order/desk-picture@2x.webp 2x"
-                type="image/webp">
-            <source media="(min-width: 1444px)"
-                srcset="./images/desktop/take-order/desk-picture.jpg 1x, ./images/desktop/take-order/desk-picture@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-                srcset="./images/tablet/take-order/tab-picture.webp 1x, ./images/tablet/take-order/tab-picture@2x.webp 2x"
-                type="image/webp">
-            <source media="(min-width: 768px)"
-                srcset="./images/tablet/take-order/tab-picture.jpg 1x, ./images/tablet/take-order/tab-picture@2x.jpg 2x">
-            <source media="(max-width: 767px)"
-                srcset="./images/mobile/take-order/mob-picture.webp 1x, ./images/mobile/take-order/mob-picture@2x.webp 2x"
-                type="image/webp">
-            <source media="(max-width: 767px)"
-                srcset="./images/mobile/take-order/mob-picture.jpg 1x, ./images/mobile/take-order/mob-picture@2x.jpg 2x">
-            <img src="#" alt="геометрична фігура">
-        </picture>
-    </div>
-    <!-- Вторая коробка -->
-    <div class="make-order__second-thumb">
-        <p class="make-order__description">На цій сторінці ви можете зробити замовлення заповнивши форму і ми
-            зв'яжемося
-            з вами.</p>
-        <p class="make-order__description clean">Наші фахівці допоможуть підібрати оптимальні для вас параметри і дадуть
-            відповідь на всі ваші запитання.</p>
 
-        <div class="make-order-gallery">
-            <ul class="make-order-gallery__scroll">
-                <li class="make-order-gallery__item"></li>
-                <li class="make-order-gallery__item"></li>
-                <li class="make-order-gallery__item"></li>
-            </ul>
+    <div class="make-order__wrapper">
+        <!-- Первая коробка -->
+        <div class="make-order__first-thumb">
+            <picture>
+                <source media="(min-width: 1444px)"
+                    srcset="./images/desktop/take-order/desk-picture.webp 1x, ./images/desktop/take-order/desk-picture@2x.webp 2x"
+                    type="image/webp">
+                <source media="(min-width: 1444px)"
+                    srcset="./images/desktop/take-order/desk-picture.jpg 1x, ./images/desktop/take-order/desk-picture@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                    srcset="./images/tablet/take-order/tab-picture.webp 1x, ./images/tablet/take-order/tab-picture@2x.webp 2x"
+                    type="image/webp">
+                <source media="(min-width: 768px)"
+                    srcset="./images/tablet/take-order/tab-picture.jpg 1x, ./images/tablet/take-order/tab-picture@2x.jpg 2x">
+                <source media="(max-width: 767px)"
+                    srcset="./images/mobile/take-order/mob-picture.webp 1x, ./images/mobile/take-order/mob-picture@2x.webp 2x"
+                    type="image/webp">
+                <source media="(max-width: 767px)"
+                    srcset="./images/mobile/take-order/mob-picture.jpg 1x, ./images/mobile/take-order/mob-picture@2x.jpg 2x">
+                <img src="#" alt="геометрична фігура">
+            </picture>
         </div>
+        <!-- Вторая коробка -->
+        <div class="make-order__second-thumb">
+            <p class="make-order__description">На цій сторінці ви можете зробити замовлення заповнивши форму і ми
+                зв'яжемося
+                з вами.</p>
+            <p class="make-order__description clean">Наші фахівці допоможуть підібрати оптимальні для вас параметри і
+                дадуть
+                відповідь на всі ваші запитання.</p>
 
+            <div class="make-order-gallery">
+                <ul class="make-order-gallery__scroll">
+                    <li class="make-order-gallery__item"></li>
+                    <li class="make-order-gallery__item"></li>
+                    <li class="make-order-gallery__item"></li>
+                </ul>
+            </div>
+
+        </div>
     </div>
-
 </section>
 <!-- Связаться с  нами (форма)-->
 <section class="contact-us container">
@@ -127,6 +130,9 @@
     </form>
 </section>
 <!-- Контакты и график работы -->
+
+
+
 <section class="information container">
     <!-- скрытый заголовок-->
     <h2 class="information__head visually-hidden">КОНТАКТИ</h2>
@@ -160,10 +166,16 @@
             <h3 class="information-scroll__head">Робочий час</h3>
             <ul class="information-scroll-date list">
                 <li class="information-scroll-date__item">
-                    <p class="information-scroll-date__description">Пн-пт: з 8:00 до 19:00</p>
+                    <p class="information-scroll-date__description">Пн-пт:</p>
+                </li>
+                <li class="information-scroll-date__item">
+                    <p class="information-scroll-date__description">з 8:00 до 19:00</p>
                 </li>
                 <li class="information-scroll-date__item clean">
-                    <p class="information-scroll-date__description">Сб, Нд: з 10:00 до 17:00</p>
+                    <p class="information-scroll-date__description">Сб, Нд:</p>
+                </li>
+                <li class="information-scroll-date__item clean">
+                    <p class="information-scroll-date__description">з 10:00 до 17:00</p>
                 </li>
             </ul>
         </li>
