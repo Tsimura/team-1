@@ -75,3 +75,6 @@
     display: flex;
   }
 }
+.more-photos__link::before {
+  content: '';
+}
