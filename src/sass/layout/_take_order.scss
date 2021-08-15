@@ -235,6 +235,9 @@
     display: flex;
     margin-left: auto;
   }
+  .information-scroll__thumb {
+    margin-bottom: 0;
+  }
 
   .information-scroll {
     display: flex;
@@ -243,7 +246,7 @@
     margin-bottom: 0;
   }
 
-  .information-scroll__thumb {
-    margin-bottom: 0;
+  .information-scroll-date__description {
+    text-align: right;
   }
 }
