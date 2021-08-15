@@ -102,9 +102,15 @@
     &__item-products:not(:last-child) {
       margin-right: 13px;
     }
-    &__item-products {
+    &__thub-tl-br_offer {
+      width: 247px;
+      height: 341px;
     }
-    &__thub-tl-br_products {
+    &__item-offer {
+      display: flex;
+    }
+    &__thub-tl-br_offer {
+      margin-right: 20px;
     }
   }
 }
