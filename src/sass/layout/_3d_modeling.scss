@@ -18,8 +18,10 @@
 }
 .creating-ways--background {
   @media screen and (min-width: 320px) {
+    height: 566px;
     background-image: url(../images/mobile/3d-modelling/mashine.jpg);
     background-repeat: no-repeat;
+    background-position: 0px 340px;
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 320px),
     (min-resolution: 192dpi) and (min-width: 320px),
