@@ -8,8 +8,6 @@
   &__list-products {
     display: flex;
     flex-wrap: wrap;
-    // margin-left: 15px;
-    // margin-top: 15px;
   }
   &__item-products {
     display: flex;
@@ -59,42 +57,29 @@
     text-transform: uppercase;
   }
 
-  // &__item-offer {
-  // width: 280px;
-  // height: 386px;
-  // border-radius: 50px 0px;
-  // box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.15);
-  // }
+  &__item-offer:not(:last-child) {
+    margin-bottom: 52px;
+  }
   &__img-offer {
-    position: absolute;
-    max-width: 120%;
-    right: 10px;
+    width: 280px;
+    height: 386px;
+    border-radius: 50px 0px;
   }
   &__border {
     width: 280px;
     height: 386px;
-    margin-left: -30px;
     border-radius: 50px 0px;
-  }
-  &__thub-tl-br_offer {
-    margin-bottom: 16px;
-  }
-  &__item-offer {
-    width: 280px;
-    height: 386px;
-  }
-  &__item-offer:not(:last-child) {
-    margin-bottom: 52px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.15);
   }
 
   &__txt {
     @include txt($fs: 16px, $lh: 20px);
-    position: relative;
-    z-index: 100;
+    display: block;
   }
-  &__txt:not(:lasr-child) {
+  &__txt:not(:last-child) {
     margin-bottom: 16px;
   }
+
   &__txt-span {
     @include txt($fs: 16px, $fw: 700, $lh: 20px, $color: var(--color-accent));
     text-transform: uppercase;
@@ -143,19 +128,41 @@
       @include title-secondary($fs: 24px, $lh: 30px);
       margin-bottom: 24px;
     }
-    &__thub-tl-br_offer {
-      width: 247px;
-      height: 341px;
+    &__creation {
+      top: 30px;
     }
-    &__thub-tl-br_offer:not(:last-child) {
-      margin-bottom: 76px;
+    &__template {
+      top: 43px;
     }
+    &__decor {
+      top: 36px;
+    }
+    &__3d-coub {
+      top: 27px;
+    }
+    &__subtitle-products {
+      top: 136px;
+    }
+
     &__item-offer {
       display: flex;
     }
-    &__thub-tl-br_offer {
+    &__item-offer:not(:lasr-child) {
+      margin-bottom: 76px;
+    }
+    &__border {
+      width: 247px;
+      height: 341px;
       margin-right: 20px;
     }
+    &__img-offer {
+      width: 247px;
+      height: 341px;
+    }
+    &__description {
+      width: 381px;
+    }
+
     &__button {
       margin-top: 52px;
     }
@@ -163,32 +170,52 @@
 }
 @media screen and (min-width: 1444px) {
   .we-create {
+    &__title {
+      @include title-main($fs: 48px, $lh: 60px);
+      margin-bottom: 24px;
+    }
     &__thub-tl-br_products {
       width: 250px;
       height: 298px;
     }
     &__item-products:not(:last-child) {
-      margin-right: 21px;
+      margin-right: 20px;
     }
-    &__title {
-      @include title-main($fs: 48px, $lh: 60px);
-      margin-bottom: 24px;
+    &__creation {
+      top: 56px;
     }
-    &__thub-tl-br_offer {
+    &__template {
+      top: 77px;
+    }
+    &__decor {
+      top: 64px;
+    }
+    &__3d-coub {
+      top: 50px;
+    }
+    &__subtitle-products {
+      top: 235px;
+    }
+    &__border {
       width: 250px;
       height: 345px;
       margin-right: 78px;
     }
-    &__thub-tl-br_offer:not(:last-child) {
+    &__border:not(:last-child) {
       margin-bottom: 100px;
     }
     &__description {
       margin-bottom: 52px;
     }
     &__txt {
-      @include txt($fs: 16px, $lh: 20px);
+      @include txt($fs: 18px, $lh: 23px);
+      display: block;
     }
-    &__txt:not(:lasr-child) {
+    &__txt-span {
+      @include txt($fs: 18px, $fw: 700, $lh: 23px, $color: var(--color-accent));
+      text-transform: uppercase;
+    }
+    &__txt:not(:last-child) {
       margin-bottom: 24px;
     }
   }
