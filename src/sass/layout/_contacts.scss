@@ -2,7 +2,6 @@
   @media screen and (min-width: 320px) {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 76px;
   }
   @media screen and (min-width: 768px) {
     padding-left: 60px;
@@ -14,11 +13,10 @@
   font-family: var(--font-main);
   @media screen and (min-width: 320px) {
     height: 30px;
-    left: 20px;
-    top: 93px;
     margin-bottom: 16px;
     font-size: 24px;
     line-height: 30px;
+    font-weight: 700px;
   }
   @media screen and (min-width: 768px) {
     width: 648px;
@@ -27,7 +25,8 @@
     font-size: 36px;
     line-height: 45px;
   }
-  // @media screen and (min-width: 1444px);
+  @media screen and (min-width: 1444px) {
+  }
 }
 .container-video {
   border-radius: 15px;
@@ -74,6 +73,7 @@
   }
   @media screen and (min-width: 768px) {
     width: 381px;
+    font-size: 15px;
     padding-left: 20px;
     padding-bottom: 16px;
     margin: 0;
@@ -105,17 +105,18 @@
   }
   @media screen and (min-width: 768px) {
     padding-bottom: 44px;
+    width: 420px;
   }
 }
-.form {
+.form-contacts {
   @media screen and (min-width: 320px) {
-    width: 280px;
+    width: 100%;
   }
   @media screen and (min-width: 768px) {
     width: 420px;
-    margin-left: 114px;
-    margin-right: auto;
     margin-bottom: 76px;
+    padding-left: 114px;
+    padding-right: 114px;
   }
   // @media screen and (min-width: 1444px);
 }
@@ -135,12 +136,6 @@
   padding: 0;
   border: none;
   border-bottom: 1px solid #487996;
-
-  &:hover,
-  &:focus {
-    border-color: transparent;
-    border-bottom: 1px solid #487996;
-  }
 
   @media screen and (min-width: 320px) {
     width: 280px;
@@ -179,22 +174,7 @@
   color: #cdcdcd;
 }
 .btn-send {
-  background: #f5f5fa;
-  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
-    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
-  border-radius: 30.5px;
-  border-color: transparent;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
-
   text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: #487996;
 
   @media screen and (min-width: 320px) {
     width: 280px;
