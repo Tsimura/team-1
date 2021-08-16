@@ -38,7 +38,7 @@
 
   margin-bottom: 44px;
 }
-.form__field-select {
+/* .form__field-select {
   position: relative;
   display: flex;
   text-align: center;
@@ -66,7 +66,7 @@
   border-width: 13px 9.5px 0 9.5px;
   border-color: #000000 transparent transparent transparent;
   pointer-events: none;
-}
+} */
 
 .form__name {
   position: absolute;
@@ -89,7 +89,7 @@
   height: 20px;
 }
 
-.select {
+/* .select {
   -webkit-appearance: none;
   -moz-appearance: none;
 
@@ -120,7 +120,7 @@
 
 .select::-ms-expand {
   display: none;
-}
+} */
 
 .textarea-head {
   display: block;
@@ -300,8 +300,30 @@
     max-width: 515px;
   }
   .logo-d {
+    display: block;
+    position: relative;
+
     width: 530px;
+    height: 325px;
+
+    /*  background-image: url(../images/desktop/pic/pic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right -80px bottom -35px;
   }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .logo-d {
+            background-image: url(../images/desktop/pic/pic@2x.png);
+    } */
+  }
+  .logo-d__thumb {
+    position: absolute;
+    top: -50px;
+    right: -85px;
+
+    pointer-events: none;
+  }
+
   .information-scroll-date {
     margin-bottom: 76px;
   }
@@ -345,3 +367,57 @@
 }
 
 // ===========================
+
+.select {
+  position: relative;
+}
+.select.is-active .select__body {
+  display: block;
+}
+.select__header {
+  border: 1px solid transparent;
+  border-bottom: 1px solid #487996;
+  display: flex;
+
+  cursor: pointer;
+}
+.select__current {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 8px;
+}
+.select__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  margin-left: auto;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 9.5px 0 9.5px;
+  border-color: #000000 transparent transparent transparent;
+}
+.select__body {
+  display: none;
+  border: 1px solid #cdcdcd;
+  border-top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+
+  z-index: 99;
+}
+
+.select__item {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+}
+.select__item:hover {
+  background-color: orange;
+}
