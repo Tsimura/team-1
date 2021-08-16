@@ -29,9 +29,11 @@
   // width: inherit;
   // height: inherit;
   // }
-  &__creation {
+  &__template {
     top: 45px;
     right: 20px;
+    width: 93px;
+    height: 76px;
   }
   &__create-maket {
     top: 38px;
@@ -89,6 +91,10 @@
   &__txt-span {
     @include txt($fs: 16px, $fw: 700, $lh: 20px, $color: var(--color-accent));
     text-transform: uppercase;
+  }
+  &__button {
+    padding: 16px 33px;
+    letter-spacing: -0.3px;
   }
 }
 @media screen and (max-width: 767px) {
