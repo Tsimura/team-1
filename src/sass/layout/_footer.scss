@@ -39,6 +39,7 @@
 
   @media screen and (min-width: 1444px) {
     flex-grow: 4;
+    margin-bottom: unset;
   }
 }
 
@@ -89,6 +90,11 @@
 
   @media screen and (min-width: 768px) {
     text-align: unset;
+    margin-bottom: unset;
+  }
+
+  @media screen and (min-width: 1444px) {
+    margin-bottom: unset;
   }
 }
 
