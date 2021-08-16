@@ -234,8 +234,21 @@
 .form__field-text-wrapper {
   position: relative;
 }
-
+// ================================================================
 @media screen and (min-width: 768px) {
+  .make-order__head {
+    @include title-main($fs: 36px, $lh: 45px);
+    margin-bottom: 24px;
+  }
+  .take-order__section-first {
+    padding-top: 50px;
+  }
+  .contact-us__head {
+    @include title-main($fs: 24px, $lh: 30px);
+
+    margin-bottom: 35px;
+  }
+
   .make-order__wrapper {
     display: flex;
     height: auto;
@@ -259,6 +272,9 @@
     max-width: 420px;
     margin: 0 auto;
   }
+  .form__field-text {
+    margin-bottom: 44px;
+  }
   .form__button {
     display: flex;
     margin-left: auto;
@@ -278,16 +294,18 @@
 
     margin-bottom: 0;
   }
+  .information-scroll__head {
+    @include title-main($fs: 24px, $lh: 30px);
+  }
 
   .information-scroll-date__description {
     text-align: right;
   }
-
-  .contact-us {
-    margin-bottom: 76px;
+  .take-order__section {
+    padding-bottom: 76px;
   }
 }
-
+// ================================================================
 @media screen and (min-width: 1444px) {
   .take-order {
     margin-bottom: 100px;
