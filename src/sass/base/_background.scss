@@ -11,11 +11,17 @@
   .background {
     background-image: url(../images/background/background-photo-mobile@2x.jpg);
   }
+  .second-bg {
+    background-image: url(../images/background/background-photo-mobile@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .background {
     background-image: url(../images/background/background-photo-tablet.jpg);
+  }
+  .second-bg {
+    background-image: url(../images/background/new-bg-tablet.jpg);
   }
 }
 
@@ -25,21 +31,37 @@
   .background {
     background-image: url(../images/background/background-photo-tablet@2x.jpg);
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .background {
-    background-image: url(../images/background/background-photo-desctop.jpg);
-    background-size: cover;
+  .second-bg {
+    background-image: url(../images/background/new-bg-tablet@2x.jpg);
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  (min-resolution: 192dpi) and (min-width: 1200px),
-  (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-width: 1444px) {
+  .background {
+    background-image: url(../images/background/background-photo-desctop.jpg);
+  }
+  .second-bg {
+    background-image: url(../images/background/new-bg-desctop.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+  (min-resolution: 192dpi) and (min-width: 1444px),
+  (min-resolution: 2dppx) and (min-width: 1444px) {
   .background {
     background-image: url(../images/background/background-photo-desctop@2x.jpg);
   }
+  .second-bg {
+    background-image: url(../images/background/new-bg-desctop@2x.jpg);
+  }
+}
+
+.second-bg {
+  background-image: url(../images/background/background-photo-mobile.jpg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 // Фон 3D-MODELLING

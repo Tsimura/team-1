@@ -16,16 +16,16 @@
 .header-container {
   width: 100%;
   margin: 0 auto;
-  padding: 32px 22px 27px 19px;
+  padding: 32px 22px 0 19px;
 
   @media screen and (min-width: 768px) {
-    max-width: 638px;
-    padding: 20px 0 12px 0;
+    max-width: 668px;
+    padding: 20px 15px 0 15px;
   }
 
   @media screen and (min-width: 1444px) {
-    max-width: 1280px;
-    padding: 40px 0 60px 0;
+    max-width: 1310px;
+    padding: 40px 15px 0 15px;
     margin-top: -25px;
   }
 }
