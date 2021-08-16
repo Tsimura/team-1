@@ -24,9 +24,9 @@
 // Анимация переворота иконки в десктопном меню
   (() => {
         const refs = {
-          openModalBtn: document.querySelector('[icon-open]'),
-          closeModalBtn: document.querySelector('[icon-close]'),
-          modal: document.querySelector('[icon]'),
+          openModalBtn: document.querySelector('[data-icon-open]'),
+          closeModalBtn: document.querySelector('[data-icon-close]'),
+          modal: document.querySelector('[data-icon]'),
         };
 
         refs.openModalBtn.addEventListener('click', toggleModal);
@@ -102,9 +102,9 @@ document.addEventListener("click", closeAllSelect);
 // Анимация мобильного меню
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[mobile-modal-open]'),
-    closeModalBtn: document.querySelector('[mobile-modal-close]'),
-    modal: document.querySelector('[mobile-modal]'),
+    openModalBtn: document.querySelector('[data-mobile-modal-open]'),
+    closeModalBtn: document.querySelector('[data-mobile-modal-close]'),
+    modal: document.querySelector('[data-mobile-modal]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -118,9 +118,9 @@ document.addEventListener("click", closeAllSelect);
 // Отключения скролла при открытом мобильном меню
 (() => {
           const refs = {
-            openModalBtn: document.querySelector('[mobile-modal-open]'),
-            closeModalBtn: document.querySelector('[mobile-modal-close]'),
-            modal: document.querySelector('[scrol-modal]'),
+            openModalBtn: document.querySelector('[data-mobile-modal-open]'),
+            closeModalBtn: document.querySelector('[data-mobile-modal-close]'),
+            modal: document.querySelector('[data-scrol-modal]'),
           };
 
           refs.openModalBtn.addEventListener('click', toggleModal);
@@ -135,9 +135,9 @@ document.addEventListener("click", closeAllSelect);
 // Анимация открытия десктопного меню навигации
     (() => {
       const refs = {
-        openModalBtn: document.querySelector('[services-open]'),
-        closeModalBtn: document.querySelector('[services-close]'),
-        modal: document.querySelector('[services]'),
+        openModalBtn: document.querySelector('[data-services-open]'),
+        closeModalBtn: document.querySelector('[data-services-close]'),
+        modal: document.querySelector('[data-services]'),
       };
 
       refs.openModalBtn.addEventListener('click', toggleModal);
@@ -151,9 +151,9 @@ document.addEventListener("click", closeAllSelect);
 // Анимация открытия меню телефонов
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[tell-modal-open]'),
-    closeModalBtn: document.querySelector('[tell-modal-close]'),
-    modal: document.querySelector('[tell-modal]'),
+    openModalBtn: document.querySelector('[data-tell-modal-open]'),
+    closeModalBtn: document.querySelector('[data-tell-modal-close]'),
+    modal: document.querySelector('[data-tell-modal]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
