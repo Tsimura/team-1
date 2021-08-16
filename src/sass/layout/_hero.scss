@@ -1,7 +1,8 @@
 .hero {
     position: relative;
     &__title {
-        font-family: var(--font-secondary);
+        // font-family: var(--font-secondary);
+        font-family: 'Caviar Dreams', sans-serif;;
         font-weight: 400;
         font-size: 18px;
         line-height: 1.16;
@@ -29,8 +30,12 @@
         margin-bottom: 32px;
         // background-color: #E5E5E5;
         @media screen and (min-width: 768px) {
+            max-width: 380px;
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 65px;}
         @media screen and (min-width: 1444px) {
+            max-width: 688px;
             margin-bottom: 100px;
         }
 
@@ -42,13 +47,19 @@
         @media screen and (min-width: 1444px) {
             margin-right: 35px;}
             }
-    &__item:last-child {
-        margin-right: 0px;
-    }
     &__picture {
-        // width: 83px;
-        // height: 83px;
-        &--top-right {
+        display: block;
+        width: 83px;
+        height: 83px;
+        @media screen and (min-width: 768px) {
+            width: 113px;
+            height: 113px;
+        }
+        @media screen and (min-width: 1444px) {
+            width: 205px;
+            height: 205px;
+        }
+    &--top-right {
             border-radius: 0px 35px 0px 0px;
             box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
         }
@@ -59,9 +70,12 @@
         &--top-bottom {
             border-radius: 0px 25px;
             box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
+            @media screen and (min-width: 1444px) {
+                border-radius: 0px 72px;}
         }}
     &__link {
     display: none;
+    cursor: pointer;
     @media screen and (min-width: 768px) {
         display: block;
         position: absolute;
@@ -98,3 +112,5 @@
         font-size: 36px;
     }
         }
+// // .slick-slide { margin: 0 15px;}
+// .slider-item img { max-width: 100%;}
