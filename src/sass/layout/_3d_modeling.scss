@@ -188,17 +188,23 @@
 .modelling-orderlink {
   display: block;
   margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    width: 280px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 277px;
+  }
 }
 .modelling-orderbutt__button {
   text-align: center;
   border: none;
   letter-spacing: -0.3px;
   @media screen and (max-width: 767px) {
-    width: 280px;
+    width: 100%;
     padding: 16px 33.5px;
   }
   @media screen and (min-width: 768px) {
-    width: 277px;
+    width: 100%;
     padding: 16px 32px;
   }
 }
