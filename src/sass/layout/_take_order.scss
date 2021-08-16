@@ -300,8 +300,30 @@
     max-width: 515px;
   }
   .logo-d {
+    display: block;
+    position: relative;
+
     width: 530px;
+    height: 325px;
+
+    /*  background-image: url(../images/desktop/pic/pic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right -80px bottom -35px;
   }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .logo-d {
+      background-image: url(../images/desktop/pic/pic@2x.png);
+    } */
+  }
+  .logo-d__thumb {
+    position: absolute;
+    top: -50px;
+    right: -85px;
+
+    pointer-events: none;
+  }
+
   .information-scroll-date {
     margin-bottom: 76px;
   }
@@ -345,3 +367,43 @@
 }
 
 // ===========================
+.field-select {
+  font-family: var(--font-secondary);
+  position: relative;
+  z-index: 11;
+  width: 100%;
+  border-bottom: 1px solid #487996;
+  padding-left: 150px;
+}
+
+.select-items {
+  width: 50px;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: -11px;
+  right: 0;
+  z-index: 99;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  & div {
+    padding-top: 20px;
+  }
+}
+
+.select-items div,
+.select-selected {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.01em;
+  color: #bdbdbd;
+  cursor: pointer;
+}
+
+.select-hide {
+  display: none;
+}
