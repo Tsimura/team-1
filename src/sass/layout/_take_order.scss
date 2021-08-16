@@ -350,17 +350,25 @@
 .pict-thumb {
   height: 144px;
   width: 144px;
-  border-radius: 72px 0px 0px 72px;
 }
 .gallery-car,
 .gallery-lamp,
 .gallery-colum {
-  display: block;
   height: 100%;
   width: 100%;
-
-  object-fit: cover;
 }
+
+/* .gallery-car {
+  border-radius: 72px 0px 0px 72px;
+  transform: rotate(180deg);
+}
+
+.gallery-colum {
+  border-radius: 72px 0px;
+}
+.gallery-lamp {
+  border-radius: 0px 0px 72px 0px;
+} */
 
 .make-order-gallery__item {
   margin-right: 42px;
