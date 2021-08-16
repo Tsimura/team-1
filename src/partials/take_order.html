@@ -138,27 +138,69 @@
                         <option value="4">Зелений</option>
                     </select>
                 </span> -->
-            </div>
 
 
-            <div class="select is-active">
-                <div class="select__header">
-                    <span class="select__current">value1</span>
-                    <div class="select__icon">x</div>
+
+                <div class="select ">
+                    <div class="select__header">
+                        <span class="select__name">Види пластика</span>
+                        <span class="select__current"> </span>
+
+                    </div>
+
+                    <div class="select__body">
+                        <div class="select__item">Поліпропілен</div>
+                        <div class="select__item">Полівінілхлорид</div>
+                        <div class="select__item">Полістирол</div>
+                        <div class="select__item">Акрилонітрил</div>
+
+                    </div>
+
                 </div>
 
-                <div class="select__body">
-                    <div class="select__item">value1</div>
-                    <div class="select__item">value2</div>
-                    <div class="select__item">value3</div>
-                    <div class="select__item">value4</div>
+                <div class="select ">
+                    <div class="select__header">
+                        <span class="select__name">Якість друку</span>
+                        <span class="select__current"> </span>
+
+                    </div>
+
+                    <div class="select__body">
+                        <div class="select__item">300 мікрон</div>
+                        <div class="select__item">200 мікрон</div>
+                        <div class="select__item">100 мікрон</div>
+                        <div class="select__item">Труднощі у виборі - ми допоможемо</div>
+
+                    </div>
 
                 </div>
 
+                <div class="select ">
+                    <div class="select__header">
+                        <span class="select__name">Колір</span>
+                        <span class="select__current"> </span>
+
+                    </div>
+
+                    <div class="select__body">
+                        <div class="select__item">Синій</div>
+                        <div class="select__item">Червоний</div>
+                        <div class="select__item">Жовтий</div>
+                        <div class="select__item">Зелений</div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
             </div>
-
-
-
 
 
 
@@ -170,11 +212,16 @@
                         placeholder="Залишіть своє повідомлення"></textarea>
 
 
-                    <span class="file-icon">
+
+
+
+                    <label class="file-icon" for="file">
                         <svg class="file-clip">
                             <use href="./images/project-sprite.svg#icon-clip"></use>
                         </svg>
-                    </span>
+                    </label>
+                    <input type="file" id="file">
+
                 </div>
                 <p class="file-text">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
             </div>
