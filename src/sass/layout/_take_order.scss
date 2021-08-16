@@ -371,20 +371,62 @@
 .select {
   position: relative;
 }
+
+.select:not(:last-child) {
+  margin-bottom: 44px;
+}
 .select.is-active .select__body {
   display: block;
+}
+
+.select.is-active.select::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  transform: translateY(-50%);
+
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 9.5px 13px 9.5px;
+  border-color: transparent transparent #000000 transparent;
+  pointer-events: none;
+}
+
+.select::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  transform: translateY(-50%);
+
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 9.5px 0 9.5px;
+  border-color: #000000 transparent transparent transparent;
+  pointer-events: none;
 }
 .select__header {
   border: 1px solid transparent;
   border-bottom: 1px solid #487996;
   display: flex;
+  align-items: center;
 
+  padding-right: 20px;
   cursor: pointer;
 }
 .select__current {
   font-size: 18px;
   line-height: 24px;
   padding: 8px;
+  display: flex;
+  margin-left: auto;
 }
 .select__icon {
   display: flex;
@@ -402,22 +444,34 @@
 }
 .select__body {
   display: none;
-  border: 1px solid #cdcdcd;
+  border-bottom: 1px solid #487996;
   border-top: 0;
   position: absolute;
   left: 0;
   right: 0;
   top: 100%;
 
+  background-color: white;
+
   z-index: 99;
 }
 
 .select__item {
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
+  @include txt($fs: 16px, $lh: 20px);
+
   padding: 8px;
 }
 .select__item:hover {
-  background-color: orange;
+  background-color: rgba(72, 121, 150, 0.5);
+}
+.select__name {
+  display: flex;
+  margin-right: auto;
+
+  @include txt($fs: 16px, $lh: 20px);
+}
+
+.form__wrapper {
+  margin-bottom: 44px;
 }
