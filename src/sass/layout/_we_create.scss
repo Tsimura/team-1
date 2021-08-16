@@ -1,4 +1,5 @@
 .we-create {
+  margin: 0 auto;
   &__title {
     @include title-main($fs: 24px, $lh: 30px);
     margin-bottom: 16px;
@@ -10,10 +11,18 @@
     // margin-left: 15px;
     // margin-top: 15px;
   }
+  &__item-products {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+
   &__thub-tl-br_products {
     display: flex;
     position: relative;
-    width: 133px;
+    justify-content: center;
+
+    width: 132px;
     height: 158px;
     border-radius: 50px 0px;
     background-color: #ffffff;
@@ -21,31 +30,20 @@
       inset -1px -1px 16px #ffffff;
   }
 
-  // &__img_products {
-  //   position: absolute;
-  //   top: 45px;
-  //   right: 20px;
-
-  // width: inherit;
-  // height: inherit;
-  // }
-  &__template {
-    top: 45px;
-    right: 20px;
-    width: 93px;
-    height: 76px;
+  &__img_products {
+    position: absolute;
   }
-  &__create-maket {
+  &__creation {
+    top: 45px;
+  }
+  &__template {
     top: 38px;
-    right: 17px;
   }
   &__decor {
     top: 32px;
-    right: 45px;
   }
   &__3d-coub {
-    top: 24px;
-    right: 24px;
+    top: 23px;
   }
 
   &__subtitle-products {
@@ -60,12 +58,16 @@
     top: 118px;
     text-transform: uppercase;
   }
-
-  &__thub-tl-br_offer {
+  &__item-offer {
     width: 280px;
     height: 386px;
     border-radius: 50px 0px;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.15);
+  }
+  &__thub-tl-br_offer {
+  }
+  &__border {
+    border-radius: 50px 0px;
   }
   &__thub-tl-br_offer {
     margin-bottom: 16px;
@@ -73,14 +75,6 @@
   &__item-offer:not(:last-child) {
     margin-bottom: 52px;
   }
-  // &__picture {
-  //   width: 280px;
-  //   height: 386px;
-  // }
-
-  // &__img_offer {
-  //   flex-grow: 1;
-  // }
 
   &__txt {
     @include txt($fs: 16px, $lh: 20px);
@@ -107,11 +101,8 @@
     }
     &__item-products {
       flex-basis: calc(100% / 2 - 15px);
-      // margin-bottom: 0;
-      // width: 100%;
-      // height: 100%;
+      margin-bottom: 0;
     }
-
     &__item-products:nth-child(2n-1) {
       margin-right: 15px;
     }
