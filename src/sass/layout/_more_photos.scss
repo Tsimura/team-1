@@ -7,26 +7,26 @@
     padding-bottom: 201px;
   }
 }
-.more-photos__container {
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 320px) {
-    max-width: 320px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  @media screen and (min-width: 1444px) {
-    max-width: 1444px;
-    padding-left: 189px;
-    padding-right: 189px;
-  }
-}
+// .more-photos__container {
+//   width: 100%;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   @media screen and (min-width: 320px) {
+//     max-width: 320px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     max-width: 768px;
+//     padding-left: 60px;
+//     padding-right: 60px;
+//   }
+//   @media screen and (min-width: 1444px) {
+//     max-width: 1444px;
+//     padding-left: 189px;
+//     padding-right: 189px;
+//   }
+// }
 .more-photos__title {
   @include title-main($fs: 24px, $lh: 30px);
   margin-bottom: 16px;
@@ -35,6 +35,7 @@
   }
   @media screen and (min-width: 1444px) {
     margin-bottom: 52px;
+    @include title-main($fs: 48px, $lh: 60px);
   }
 }
 .more-photos__list {
@@ -50,6 +51,8 @@
   }
 }
 .more-photos__item {
+  // &:hover {
+  // }
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 16px;
@@ -75,6 +78,64 @@
     display: flex;
   }
 }
-.more-photos__link::before {
-  content: '';
+
+// slider
+// .more-photos__list_slider {
+// }
+// .more-photos__item_slider {
+// }
+// .slick-slider {
+//   text-align: center;
+// }
+
+// modal window
+.more-photos-modal-window {
+  position: absolute;
+  max-width: 542px;
+  // height: 500px;
+  background-color: transparent;
+  border: transparent;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.slick-prev {
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  left: -80px;
+  width: 150px;
+  height: 500px;
+  opacity: 0;
+}
+.slick-next {
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: 542px;
+  width: 150px;
+  height: 500px;
+  opacity: 0;
+}
+.button-prev-svg {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 267px;
+  left: -76px;
+  fill: white;
+  background-color: transparent;
+}
+.button-next-svg {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 267px;
+  left: 596px;
+  fill: white;
+  background-color: transparent;
+}
+.button-close-slider {
+  width: 100%;
+  height: 100%;
 }
