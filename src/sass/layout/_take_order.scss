@@ -86,7 +86,7 @@
 .form__input {
   border: transparent;
   width: 100%;
-  height: 20px;
+  height: 24px;
 }
 
 /* .select {
@@ -420,6 +420,8 @@
 
   padding-right: 20px;
   cursor: pointer;
+
+  height: 24px;
 }
 .select__current {
   font-size: 18px;
@@ -464,6 +466,7 @@
 }
 .select__item:hover {
   background-color: rgba(72, 121, 150, 0.5);
+  color: white;
 }
 .select__name {
   display: flex;
