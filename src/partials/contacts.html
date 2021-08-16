@@ -1,4 +1,4 @@
-<section class="section__main">
+<section class="section__main container">
   <div class="contacts">
     <h2 class="title-cont">КОНТАКТИ</h2>
     <div class="video-list">
@@ -26,38 +26,45 @@
           </p>
         </li>
         <li>
-          <p class="submission">Приємного перегляду!<span>&#128521;</span></p>
+          <div class="emoji-box">
+            <p class="submission">Приємного перегляду!</p>
+            <div class="size-emoji">
+              <span class="emoji">&#128521;</span>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
     <div class="contact-join">
-      <p class="join-us">ЗВ’ЯЖІТЬСЯ З НАМИ</p>
-      <form action="#" class="form">
-        <label class="form-user"></label>
-        <div class="container-user">
-          <span>Ім’я</span>
-          <input type="text" class="contact-form" name="user-name" placeholder="Олексій" />
-        </div>
-        <div class="container-email">
-          <label class="form-email"></label>
-          <input type="text" class="contact-form" name="user-email" placeholder="Email" />
-        </div>
-        <div class="container-coments">
-          <label class="form-coments">
-            <span class="title-message">Повідомлення</span>
-            <textarea
-              class="coments"
-              name="user-massage"
-              cols="30"
-              rows="10"
-              placeholder="Залишіть своє повідомлення"
-            >
-            </textarea>
-            <p class="advice">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
-          </label>
+      <div class="join">
+        <p class="join-us">ЗВ’ЯЖІТЬСЯ З НАМИ</p>
+        <form action="#" class="form">
+          <label class="form-user"></label>
+          <div class="container-user">
+            <span>Ім’я</span>
+            <input type="text" class="contact-form" name="user-name" placeholder="Олексій" />
+          </div>
+          <div class="container-email">
+            <label class="form-email"></label>
+            <input type="text" class="contact-form" name="user-email" placeholder="Email" />
+          </div>
+          <div class="container-coments">
+            <label class="form-coments">
+              <span class="title-message">Повідомлення</span>
+              <textarea
+                class="coments"
+                name="user-massage"
+                cols="30"
+                rows="10"
+                placeholder="Залишіть своє повідомлення"
+              >
+              </textarea>
+              <p class="advice">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
+            </label>
 
-          <button class="btn-send" type="button">ВІДПРАВИТИ</button>
-        </div>
+            <button class="btn-send" type="button">ВІДПРАВИТИ</button>
+          </div>
+      </div>
       </form>
       <div class="company-link">
         <div class="contacts-nav">
