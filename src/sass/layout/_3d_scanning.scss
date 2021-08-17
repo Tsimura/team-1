@@ -42,7 +42,7 @@
     background-image: url(../images/desktop/3d-scanning/scan-bcg-desktop@1x.png);
     background-repeat: no-repeat;
     background-size: 515px;
-    background-position: 100% 70px;
+    background-position: 100% 90px;
   }
 
   @media (min-device-pixel-ratio: 2) and (min-width: 1440px),
@@ -360,14 +360,7 @@
     @include title-main ($fs: 48px, $lh: 60px);
   }
 }
-
 .scanning-description_list {
-  @media screen and (min-width: 768px) {
-    & .scanning-description_item:last-child {
-      opacity: 0.3;
-    }
-  }
-
   @media screen and (min-width: 1440px) {
     & .scanning-description_item:last-child {
       margin-left: 32px;
