@@ -27,6 +27,9 @@
     (min-resolution: 192dpi) and (min-width: 280px),
     (min-resolution: 2dppx) and (min-width: 280px) {
     background-image: url(../images/mobile/3d-modelling/mashine@2x.jpg);
+    height: 545px;
+    background-position: left 0px bottom 52px;
+    background-size: contain;
   }
 
   @media screen and (min-width: 768px) {
