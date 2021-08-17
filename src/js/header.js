@@ -118,8 +118,8 @@ document.addEventListener("click", closeAllSelect);
 // Отключения скролла при открытом мобильном меню
 (() => {
           const refs = {
-            openModalBtn: document.querySelector('[data-mobile-modal-open]'),
-            closeModalBtn: document.querySelector('[data-mobile-modal-close]'),
+            openModalBtn: document.querySelector('[data-scroll-close]'),
+            closeModalBtn: document.querySelector('[data-scroll-open]'),
             modal: document.querySelector('[data-scrol-modal]'),
           };
 
