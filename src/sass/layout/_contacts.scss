@@ -1,39 +1,78 @@
-.contacts {
-  @media screen and (min-width: 320px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  @media screen and (min-width: 1444px) {
-    padding-left: 189px;
-    padding-right: 189px;
-    // padding-bottom: 100px;
-  }
-}
+// .contacts {
+//   @media screen and (min-width: 320px) {
+//     padding-left: 20px;
+//     padding-right: 20px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     padding-left: 60px;
+//     padding-right: 60px;
+//   }
+//   @media screen and (min-width: 1444px) {
+//     padding-left: 189px;
+//     padding-right: 189px;
+//     // padding-bottom: 100px;
+//   }
+// }
+// .title-cont {
+//   color: #487996;
+//   font-family: var(--font-main);
+//   @media screen and (min-width: 320px) {
+//     height: 30px;
+//     margin-bottom: 16px;
+//     font-size: 24px;
+//     line-height: 30px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 648px;
+//     height: 45px;
+//     margin-bottom: 24px;
+//     font-size: 36px;
+//     line-height: 45px;
+//   }
+//   @media screen and (min-width: 1444px) {
+//     width: 624px;
+//     height: 60px;
+//     font-size: 48px;
+//     line-height: 1.25;
+//     margin-bottom: 24px;
+//   }
+// }
+// Заголовок
+// .title-cont {
+//   color: #487996;
+//   font-family: var(--font-main);
+//   @media screen and (min-width: 320px) {
+//     height: 30px;
+//     margin-bottom: 16px;
+//     font-size: 24px;
+//     line-height: 30px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 648px;
+//     height: 45px;
+//     margin-bottom: 24px;
+//     font-size: 36px;
+//     line-height: 45px;
+//   }
+//   @media screen and (min-width: 1444px) {
+//     width: 624px;
+//     height: 60px;
+//     font-size: 48px;
+//     line-height: 1.25;
+//     margin-bottom: 24px;
+//   }
+// }
 .title-cont {
-  color: #487996;
-  font-family: var(--font-main);
   @media screen and (min-width: 320px) {
-    height: 30px;
+    @include title-main($fs: 24px, $lh: 30px);
     margin-bottom: 16px;
-    font-size: 24px;
-    line-height: 30px;
   }
   @media screen and (min-width: 768px) {
-    width: 648px;
-    height: 45px;
+    @include title-main($fs: 36px, $lh: 45px);
     margin-bottom: 24px;
-    font-size: 36px;
-    line-height: 45px;
   }
   @media screen and (min-width: 1444px) {
-    width: 624px;
-    height: 60px;
-    font-size: 48px;
-    line-height: 1.25;
+    @include title-main($fs: 48px, $lh: 60px);
     margin-bottom: 24px;
   }
 }
@@ -48,11 +87,12 @@
 
   @media screen and (min-width: 768px) {
     height: 192px;
-    margin: 0;
+    margin-right: 20px;
   }
   @media screen and (min-width: 1444px) {
     width: 515px;
     height: 315px;
+    margin-right: 32px;
   }
 }
 .video-list {
@@ -73,36 +113,49 @@
   @media screen and (min-width: 768px) {
     margin: 0;
   }
-  @media screen and (min-width: 1444px) {
-    margin-left: 32px;
-  }
 }
-.submission {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
+// текст
+// .submission {
+//   @media screen and (min-width: 320px) {
+//     @include txt($fs: 16px, $lh: 20px);
+//     &:not(:last-child) {
+//       margin-bottom: 16px;
+//     }
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 381px;
+//     padding-left: 20px;
+//     padding-bottom: 16px;
+//     margin: 0;
+//     font-size: 15px;
+//   }
+//   @media screen and (min-width: 1444px) {
+//     width: 515px;
+//     font-size: 18px;
+//     line-height: 1.27;
+//     padding-bottom: 24px;
+//     padding-left: 0;
+//   }
+// }
 
-  color: #2b2b2b;
-
-  @media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
+  .submission {
+    @include txt($fs: 16px, $lh: 20px);
+  }
+  .submission:nth-child(2n) {
     margin-bottom: 16px;
   }
-  @media screen and (min-width: 768px) {
-    width: 381px;
-    padding-left: 20px;
-    padding-bottom: 16px;
-    margin: 0;
-    font-size: 15px;
+}
+
+@media screen and (min-width: 1444px) {
+  .submission {
+    @include txt($fs: 16px, $lh: 20px);
   }
-  @media screen and (min-width: 1444px) {
-    width: 515px;
-    font-size: 18px;
-    line-height: 1.27;
-    padding-bottom: 24px;
-    padding-left: 0;
+  .submission:nth-child(2n) {
+    margin-bottom: 24px;
   }
 }
+
 .emoji-container {
   position: relative;
 }
@@ -110,7 +163,7 @@
 .emoji-container::after {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   background-image: url(https://a.slack-edge.com/production-standard-emoji-assets/13.0/google-large/1f609@2x.png);
 
   @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -123,6 +176,24 @@
     width: 60px;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 1443px) {
+  .contact-us-new {
+    margin-top: 52px;
+  }
+  .company-link {
+    margin-top: 52px;
+  }
+  .btn-send {
+    margin-top: 23px;
+  }
+}
+.contact-us-new {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
 .join-us {
   margin-bottom: 8px;
   font-weight: 700;
@@ -160,7 +231,7 @@
 }
 .form-contacts {
   @media screen and (min-width: 320px) {
-    width: 280px;
+    // width: 280px;
   }
   @media screen and (min-width: 768px) {
     width: 420px;
@@ -250,36 +321,41 @@
   }
 }
 .btn-send {
-  background: #f5f5fa;
-  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
-    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
-  border-radius: 30.5px;
-  border-color: transparent;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
-
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: #487996;
-
-  @media screen and (min-width: 320px) {
-    width: 280px;
-    height: 56px;
-    font-size: 16px;
-    line-height: 125%;
-  }
-  @media screen and (min-width: 768px) {
-    display: inline-block;
-    width: 177px;
-    height: 56px;
-    float: right;
-  }
+  width: 280px;
+  height: 56px;
 }
+// .btn-send {
+//   background: #f5f5fa;
+//   box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+//     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+//   border-radius: 30.5px;
+//   border-color: transparent;
+//   cursor: pointer;
+//   font-weight: bold;
+//   font-size: 16px;
+//   line-height: 24px;
+//   /* identical to box height, or 150% */
+
+//   text-align: center;
+//   letter-spacing: 0.1em;
+//   text-transform: uppercase;
+
+//   color: #487996;
+
+//   @media screen and (min-width: 320px) {
+//     width: 280px;
+//     height: 56px;
+//     font-size: 16px;
+//     line-height: 125%;
+//   }
+//   @media screen and (min-width: 768px) {
+//     display: inline-block;
+//     width: 177px;
+//     height: 56px;
+//     float: right;
+//   }
+// }
+
 .title-phone {
   margin-bottom: 8px;
 
