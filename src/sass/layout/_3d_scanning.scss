@@ -1,4 +1,4 @@
-.scanning-container {
+.container {
   margin: 0 auto;
   @media screen and (min-width: 320px) {
     max-width: 320px;
@@ -411,6 +411,7 @@
 }
 
 .scanning-stage_description {
+  font: var(--font-main);
   text-align: center;
   margin-top: 18px;
   @include txt($fs: 14px, $fw: 400, $lh: 17px, $color: var(--color-accent));
