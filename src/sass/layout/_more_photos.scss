@@ -1,17 +1,18 @@
-.more-photos {
-  padding-bottom: 153px;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 129px;
-  }
-  @media screen and (min-width: 1444px) {
-    padding-bottom: 201px;
-  }
-}
+// .more-photos {
+//   padding-bottom: 153px;
+//   @media screen and (min-width: 768px) {
+//     padding-bottom: 129px;
+//   }
+//   @media screen and (min-width: 1444px) {
+//     padding-bottom: 201px;
+//   }
+// }
 .more-photos__title {
   @include title-main($fs: 24px, $lh: 30px);
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
+    @include title-main($fs: 36px, $lh: 45px);
   }
   @media screen and (min-width: 1444px) {
     margin-bottom: 52px;
