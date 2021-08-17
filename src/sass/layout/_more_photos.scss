@@ -7,7 +7,6 @@
     padding-bottom: 201px;
   }
 }
-
 .more-photos__title {
   @include title-main($fs: 24px, $lh: 30px);
   margin-bottom: 16px;
@@ -32,6 +31,8 @@
   }
 }
 .more-photos__item {
+  // &:hover {
+  // }
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 16px;
@@ -59,9 +60,6 @@
 }
 
 // slider
-.backdrop-position {
-  z-index: 100;
-}
 .more-photos__list_slider {
   @media screen and (min-width: 768px) {
     margin-left: 30%;
@@ -71,7 +69,6 @@
 // modal window
 .more-photos-modal-window {
   position: absolute;
-
   height: 500px;
   background-color: transparent;
   border: transparent;

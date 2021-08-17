@@ -1,5 +1,5 @@
 <!-- Сделать заказ -->
-<section class="take-order container">
+<section class="take-order container take-order__section-first">
     <h1 class="make-order__head">ЗРОБИТИ ЗАМОВЛЕННЯ</h1>
 
     <div class="make-order__wrapper">
@@ -87,7 +87,7 @@
 </section>
 <!-- Связаться с  нами (форма)-->
 <div class="desktop-wrapper container">
-    <section class="contact-us ">
+    <section class="contact-us take-order__section">
         <h2 class="contact-us__head">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
         <form class="form" method="POST" action="#">
             <!-- Имя пользователя -->
@@ -263,23 +263,21 @@
                 </ul>
             </li>
             <!-- график работы -->
-            <li class="information-scroll__thumb">
+            <li class="information-scroll__thumb ">
 
                 <h3 class="information-scroll__head">Робочий час</h3>
-                <ul class="information-scroll-date list">
-                    <li class="information-scroll-date__item">
-                        <p class="information-scroll-date__description">Пн-пт:</p>
-                    </li>
-                    <li class="information-scroll-date__item">
-                        <p class="information-scroll-date__description">з 8:00 до 19:00</p>
-                    </li>
-                    <li class="information-scroll-date__item clean">
+                <div class="information-scroll-date ">
+                    <div class="information-scroll-date__wrapper-first">
+                        <p class="information-scroll-date__description ">Пн-пт:</p>
+
+                        <p class="information-scroll-date__description ">з 8:00 до 19:00</p>
+                    </div>
+                    <div class="information-scroll-date__wrapper">
                         <p class="information-scroll-date__description">Сб, Нд:</p>
-                    </li>
-                    <li class="information-scroll-date__item clean">
-                        <p class="information-scroll-date__description">з 10:00 до 17:00</p>
-                    </li>
-                </ul>
+
+                        <p class="information-scroll-date__description ">з 10:00 до 17:00</p>
+                    </div>
+                </div>
             </li>
             <li>
                 <div class="logo-d">
