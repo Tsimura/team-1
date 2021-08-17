@@ -116,18 +116,13 @@
 
 // СЕКЦИЯ СПОСОБИ СТВОРЕННЯ МОДЕЛI
 
-.creating-ways__list {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 32px;
-  }
-}
 .creating-ways__item {
   margin-bottom: 16px;
   &:last-child {
     margin-bottom: 0;
   }
   &:before {
-    content: '';
+    content: "";
     display: inline-block;
     vertical-align: middle;
     width: 7px;
