@@ -145,14 +145,16 @@
   .submission:nth-child(2n) {
     margin-bottom: 16px;
   }
+  .submission {
+    padding-bottom: 16px;
+  }
 }
-
 @media screen and (min-width: 1444px) {
   .submission {
-    @include txt($fs: 16px, $lh: 20px);
+    @include txt($fs: 19px, $lh: 23px);
   }
   .submission:nth-child(2n) {
-    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
 }
 .submission-emoji {
@@ -170,17 +172,15 @@
     margin-left: 6px;
     width: 22px;
     height: 22px;
-    background-image: url(../images/emoji.png);
+    background-image: url(../images/emoji1.png);
   }
   @media screen and (min-width: 320px) {
     margin-bottom: 16px;
   }
   @media screen and (min-width: 768px) {
     width: 381px;
-    padding-left: 16px;
     margin: 0;
     font-size: 15px;
-
     &::after {
       position: unset;
       margin-left: 18px;
@@ -192,6 +192,18 @@
     line-height: 1.27;
     padding-bottom: 24px;
     padding-left: 0;
+
+    &::after {
+      position: absolute;
+      margin-left: unset;
+      width: 49px;
+      height: 49px;
+      left: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-image: url(../images/emoj@2x.png);
+      top: 109px;
+    }
   }
 }
 .emoji-container {
@@ -203,14 +215,11 @@
     margin-top: 52px;
   }
   .company-link {
-    margin-top: 52px;
-  }
-  .btn-send {
-    margin-top: 23px;
+    padding-top: 52px;
   }
 }
 .contact-us-new {
-  display: flex;
+  margin-bottom: 100px;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
@@ -331,6 +340,7 @@
   font-size: 16px;
   line-height: 125%;
   font-weight: 400px;
+  padding-bottom: 23px;
   // grey
   color: #cdcdcd;
   @media screen and (min-width: 1444px) {
@@ -342,40 +352,24 @@
   }
 }
 .btn-send {
-  width: 280px;
-  height: 56px;
+  @media screen and (min-width: 320px) {
+    width: 280px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 125%;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    width: 177px;
+    height: 56px;
+    float: right;
+  }
+  @media screen and (min-width: 1444px) {
+    width: 177px;
+    height: 56px;
+    display: inline-block;
+  }
 }
-// .btn-send {
-//   background: #f5f5fa;
-//   box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
-//     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
-//   border-radius: 30.5px;
-//   border-color: transparent;
-//   cursor: pointer;
-//   font-weight: bold;
-//   font-size: 16px;
-//   line-height: 24px;
-//   /* identical to box height, or 150% */
-
-//   text-align: center;
-//   letter-spacing: 0.1em;
-//   text-transform: uppercase;
-
-//   color: #487996;
-
-//   @media screen and (min-width: 320px) {
-//     width: 280px;
-//     height: 56px;
-//     font-size: 16px;
-//     line-height: 125%;
-//   }
-//   @media screen and (min-width: 768px) {
-//     display: inline-block;
-//     width: 177px;
-//     height: 56px;
-//     float: right;
-//   }
-// }
 
 .title-phone {
   margin-bottom: 8px;
