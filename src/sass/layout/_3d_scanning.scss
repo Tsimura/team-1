@@ -411,6 +411,7 @@
 }
 
 .scanning-stage_description {
+  font: var(--font-main);
   text-align: center;
   margin-top: 18px;
   @include txt($fs: 14px, $fw: 400, $lh: 17px, $color: var(--color-accent));
