@@ -19,4 +19,4 @@ $(document).ready(function(){
     function toggleSlider() {
       refs.slider.classList.toggle('is-hidden');
     }
-  })();
+})();
