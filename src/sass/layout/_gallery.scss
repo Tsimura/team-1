@@ -101,6 +101,7 @@
 
   @media screen and (min-width: 1444px) {
     @include txt($fs: 18px, $lh: 23px, $color: var(--color-accent));
+    letter-spacing: -0.8px;
   }
   // text-align: justify;
 }
