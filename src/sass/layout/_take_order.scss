@@ -1,17 +1,27 @@
+.take-order__section-first {
+  padding-top: 38px;
+  padding-bottom: 52px;
+}
+.take-order__section {
+  padding-bottom: 52px;
+}
+
 .make-order__head {
   @include title-main($fs: 24px, $lh: 30px);
+
   margin-bottom: 16px;
 }
 .make-order__first-thumb {
   margin-bottom: 16px;
 }
 
-.make-order__second-thumb {
+/* .make-order__second-thumb {
   margin-bottom: 52px;
 }
-
+ */
 .make-order__description {
   @include txt($fs: 16px, $lh: 20px);
+
   margin-bottom: 16px;
 }
 .clean {
@@ -24,7 +34,7 @@
 }
 
 .contact-us__head {
-  @include title-main($fs: 24px, $lh: 30px);
+  @include title-secondary($fs: 18px, $lh: 23px);
   margin-bottom: 28px;
 }
 
@@ -87,6 +97,7 @@
   border: transparent;
   width: 100%;
   height: 24px;
+  outline: none;
 }
 
 /* .select {
@@ -136,22 +147,42 @@
   padding-top: 22px;
   margin-bottom: 4px;
   resize: none;
+  outline: none;
+  &::placeholder {
+    @include txt($fs: 16px, $lh: 20px);
+
+    color: #cdcdcd;
+  }
 }
 
 .icon-file {
   appearance: none;
 }
 
+.form__button {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 16px 32px;
+  width: 100%;
+  max-width: 280px;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
 // =======================contacts=======================
 
 .information {
-  margin-bottom: 76px;
+  padding-bottom: 76px;
 }
 .information-scroll__thumb {
   margin-bottom: 24px;
 }
 .information-scroll__head {
-  @include title-main($fs: 24px, $lh: 30px);
+  @include title-secondary($fs: 18px, $lh: 23px);
   margin-bottom: 8px;
 }
 
@@ -166,12 +197,12 @@
   @include txt($fs: 16px, $lh: 20px);
 }
 
-.information-scroll-date__item {
-  margin-bottom: 8px;
-}
-
 .information-scroll-date__description {
   @include txt($fs: 16px, $lh: 20px);
+}
+.information-scroll-date__wrapper-first {
+  display: block;
+  margin-bottom: 8px;
 }
 
 @media screen and (max-width: 1443px) {
@@ -203,11 +234,21 @@
 .form__field-text-wrapper {
   position: relative;
 }
-.form__button {
-  margin-bottom: 52px;
-}
-
+// ================================================================
 @media screen and (min-width: 768px) {
+  .make-order__head {
+    @include title-main($fs: 36px, $lh: 45px);
+    margin-bottom: 24px;
+  }
+  .take-order__section-first {
+    padding-top: 50px;
+  }
+  .contact-us__head {
+    @include title-main($fs: 24px, $lh: 30px);
+
+    margin-bottom: 35px;
+  }
+
   .make-order__wrapper {
     display: flex;
     height: auto;
@@ -231,12 +272,10 @@
     max-width: 420px;
     margin: 0 auto;
   }
+  .form__field-text {
+    margin-bottom: 44px;
+  }
   .form__button {
-    display: flex;
-    margin-left: auto;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
     padding: 16px 32px;
     max-width: 177px;
   }
@@ -250,25 +289,29 @@
 
     margin-bottom: 0;
   }
+  .information-scroll__head {
+    @include title-main($fs: 24px, $lh: 30px);
+  }
 
   .information-scroll-date__description {
     text-align: right;
   }
-
-  .contact-us {
-    margin-bottom: 76px;
+  .take-order__section {
+    padding-bottom: 76px;
   }
 }
-
+// ================================================================
 @media screen and (min-width: 1444px) {
-  .take-order {
-    margin-bottom: 100px;
+  .take-order__section-first {
+    padding-top: 110px;
+    padding-bottom: 100px;
   }
   .make-order-gallery__scroll {
     display: flex;
   }
 
   .make-order__head {
+    @include title-main($fs: 48px, $lh: 60px);
     margin-bottom: 24px;
   }
   .make-order__first-thumb {
@@ -279,12 +322,40 @@
     max-width: 515px;
     margin-bottom: 0;
   }
+  .make-order__description {
+    @include txt($fs: 18px, $lh: 23px);
+  }
   .make-order__description.clean {
     margin-bottom: 55px;
   }
 
   .desktop-wrapper {
     display: flex;
+  }
+  .contact-us {
+    width: 515px;
+  }
+
+  .contact-us__head {
+    margin-left: 47px;
+    @include title-main($fs: 36px, $lh: 45px);
+  }
+
+  .textarea-text::placeholder {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .form__name,
+  .select__name,
+  .textarea-head,
+  .file-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .form__field-text {
+    margin-bottom: 24px;
   }
 
   .contact-us.container,
@@ -296,6 +367,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .form {
     max-width: 515px;
   }
@@ -324,19 +396,21 @@
     pointer-events: none;
   }
 
-  .information-scroll-date {
-    margin-bottom: 76px;
-  }
   .information {
     text-align: right;
   }
   .information-scroll__head {
+    @include title-main($fs: 36px, $lh: 45px);
     text-align: right;
-    margin-bottom: 32px;
+    margin-bottom: 18px;
   }
 
-  .information-scroll-mail {
-    margin-bottom: 32px;
+  .information-scroll__thumb {
+    margin-bottom: 30px;
+  }
+
+  .information-scroll-date__description {
+    display: inline-block;
   }
 }
 
