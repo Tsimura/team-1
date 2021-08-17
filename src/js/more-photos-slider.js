@@ -8,15 +8,15 @@ $(document).ready(function(){
 //   Закрывающий скрипт модального окна со слайдером
 (() => {
     const refs = {
-      openModalBtn: document.querySelector('[data-modal-open]'),
-      closeModalBtn: document.querySelector('[data-modal-close]'),
-      modal: document.querySelector('[data-modal]'),
+      openSliderBtn: document.querySelector('[data-slider-open]'),
+      closeSliderBtn: document.querySelector('[data-slider-close]'),
+      slider: document.querySelector('[data-slider]'),
     };
   
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
+    refs.openSliderBtn.addEventListener('click', toggleSlider);
+    refs.closeSliderBtn.addEventListener('click', toggleSlider);
   
-    function toggleModal() {
-      refs.modal.classList.toggle('is-hidden');
+    function toggleSlider() {
+      refs.slider.classList.toggle('is-hidden');
     }
   })();
