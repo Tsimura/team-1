@@ -59,65 +59,118 @@
 }
 
 // slider
-// .more-photos__list_slider {
-// }
-// .more-photos__item_slider {
-// }
-// .slick-slider {
-//   text-align: center;
-// }
+.backdrop-position {
+  z-index: 100;
+}
+.more-photos__list_slider {
+  @media screen and (min-width: 768px) {
+    margin-left: 30%;
+  }
+}
 
 // modal window
 .more-photos-modal-window {
+  position: absolute;
+
+  height: 500px;
   background-color: transparent;
   border: transparent;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 580px;
-  // @media screen and (max-width: 767px) {
-  //   width: 150px;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   width: 542px;
-  // }
-  // @media screen and (min-width: 1444px) {
-  //   width: 580px;
-  // }
+
+  @media screen and (max-width: 767px) {
+    max-width: 300px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 542px;
+  }
+  @media screen and (min-width: 1444px) {
+    max-width: 580px;
+  }
 }
 .slick-prev {
   position: absolute;
-  top: 0;
-  left: -80px;
+
   width: 150px;
   height: 500px;
-  // opacity: 0;
+  opacity: 0;
+  @media screen and (max-width: 767px) {
+    top: -100px;
+    left: -150px;
+  }
+  @media screen and (min-width: 768px) {
+    top: -100px;
+    left: -150px;
+  }
+  @media screen and (min-width: 1444px) {
+    top: -100;
+    left: -150px;
+  }
 }
 .slick-next {
   position: absolute;
-  top: 0;
-  left: 542px;
   width: 150px;
   height: 500px;
-  // opacity: 0;
+  opacity: 0;
+  @media screen and (max-width: 767px) {
+    top: -100px;
+    left: 250px;
+  }
+  @media screen and (min-width: 768px) {
+    top: -100px;
+    left: 230px;
+  }
+  @media screen and (min-width: 1444px) {
+    top: -100px;
+    left: 406px;
+  }
 }
 .button-prev-svg {
   position: absolute;
-  width: 26px;
-  height: 26px;
-  top: 267px;
-  left: -76px;
   fill: white;
   background-color: transparent;
+  @media screen and (max-width: 767px) {
+    width: 11px;
+    height: 10px;
+    top: 90px;
+    left: -10px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 26px;
+    height: 26px;
+    top: 85px;
+    left: 115px;
+  }
+  @media screen and (min-width: 1444px) {
+    width: 42px;
+    height: 42px;
+    top: 135px;
+    left: 110px;
+  }
 }
 .button-next-svg {
   position: absolute;
-  width: 26px;
-  height: 26px;
-  top: 267px;
-  left: 596px;
   fill: white;
   background-color: transparent;
+  @media screen and (max-width: 767px) {
+    width: 11px;
+    height: 10px;
+    top: 90px;
+    left: 295px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 26px;
+    height: 26px;
+    top: 85px;
+    left: 420px;
+  }
+  @media screen and (min-width: 1444px) {
+    width: 42px;
+    height: 42px;
+    top: 135px;
+    left: 590px;
+  }
 }
 .button-prev {
   padding: 0;
