@@ -37,6 +37,8 @@
         display: flex;
         justify-content: center;
         margin-bottom: 32px;
+        filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
+
         // background-color: #E5E5E5;
         @media screen and (min-width: 768px) {
             max-width: 380px;
@@ -71,15 +73,12 @@
         // }
     &--top-right {
             border-radius: 0px 35px 0px 0px;
-            filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));        
         }
     &--circle {
             border-radius: 100px;
-            filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));        
         }
     &--top-bottom {
             border-radius: 0px 25px;
-            filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));        
             @media screen and (min-width: 1444px) {
                 border-radius: 0px 72px;}
         }}
