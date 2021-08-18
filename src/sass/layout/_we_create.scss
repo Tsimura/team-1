@@ -80,10 +80,18 @@
     text-transform: uppercase;
   }
   &__button {
-    padding: 16px 33px;
-    letter-spacing: -0.3px;
+    padding: 16px 32px;
+    letter-spacing: -0.2px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  &-orderlink {
+    text-decoration: none;
+    color: var(--color-accent);
   }
 }
+
 @media screen and (max-width: 767px) {
   .we-create {
     &__title {
