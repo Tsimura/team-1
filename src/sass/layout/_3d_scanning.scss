@@ -18,15 +18,15 @@
 // }
 
 .main-section {
-  margin-right: 0;
-  margin-bottom: 71px;
+  padding-right: 0;
+  padding-bottom: 71px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 44px;
+    padding-top: 44px;
   }
 
   @media screen and (min-width: 1440px) {
-    margin-top: 87px;
+    padding-top: 87px;
   }
 }
 
