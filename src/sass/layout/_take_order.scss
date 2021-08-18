@@ -176,6 +176,10 @@
 
   font-size: 16px;
   line-height: 24px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+  }
 }
 
 // =======================contacts=======================
@@ -282,9 +286,6 @@
     padding: 16px 32px;
     max-width: 177px;
   }
-  .information-scroll__thumb {
-    margin-bottom: 0;
-  }
 
   .information-scroll {
     display: flex;
@@ -301,6 +302,13 @@
   }
   .take-order__section {
     padding-bottom: 76px;
+  }
+}
+
+.information-scroll__thumb {
+  // margin-bottom: 0;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
   }
 }
 // ================================================================
