@@ -122,7 +122,7 @@
     margin-bottom: 0;
   }
   &:before {
-    content: "";
+    content: '';
     display: inline-block;
     vertical-align: middle;
     width: 7px;
@@ -170,6 +170,7 @@
       margin-top: 16px;
     }
   }
+
   @media screen and (min-width: 768px) {
     margin-right: 12.23px;
     width: 153px;
@@ -184,25 +185,22 @@
   }
 }
 .modelling-orderlink {
-  display: block;
-  margin: 0 auto;
-  @media screen and (max-width: 767px) {
-    width: 280px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 277px;
-  }
+  text-decoration: none;
+  color: var(--color-accent);
 }
 .modelling-orderbutt__button {
+  display: block;
   text-align: center;
   border: none;
   letter-spacing: -0.3px;
+  margin: 0 auto;
+
   @media screen and (max-width: 767px) {
-    width: 100%;
+    width: 280px;
     padding: 16px 33.5px;
   }
   @media screen and (min-width: 768px) {
-    width: 100%;
+    width: 277px;
     padding: 16px 32px;
   }
 }
