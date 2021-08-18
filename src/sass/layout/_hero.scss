@@ -36,7 +36,7 @@
     &__list {
         display: flex;
         justify-content: center;
-        
+
         max-width: 280px;
         margin-bottom: 32px;
         margin-left: auto;
@@ -62,17 +62,6 @@
             margin-right: 35px;}
             }
     &__picture {
-        // display: block;
-        // width: 83px;
-        // height: 83px;
-        // @media screen and (min-width: 768px) {
-        //     width: 113px;
-        //     height: 113px;
-        // }
-        // @media screen and (min-width: 1444px) {
-        //     width: 205px;
-        //     height: 205px;
-        // }
     &--top-right {
             border-radius: 0px 35px 0px 0px;
         }
