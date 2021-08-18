@@ -36,7 +36,8 @@
   </head>
   <body class="background" data-scrol-modal>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <header class="header header-container">
+    <header class="header">
+      <div class="header-container">
       <div class="header-menu">
         <a class="header-logo" href="./index.html">
           <picture>
@@ -89,7 +90,7 @@
         <ul class="list button-menu">
           <li>
             <button
-              class="toggle-hamburger toggle-hamburger__animx"
+              class="toggle-hamburger toggle-hamburger__animx" aria-label="Open Menu"
               data-mobile-modal-open
               data-mobile-modal-close
               data-scroll-close
@@ -191,6 +192,7 @@
           </nav>
         </div>
       </div>
+     </div>
     </header>
     <main>
       <include src="./partials/hero.html"></include>
