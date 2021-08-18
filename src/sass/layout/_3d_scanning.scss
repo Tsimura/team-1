@@ -17,11 +17,23 @@
 //   }
 // }
 
+.main-section {
+  margin-right: 0;
+  margin-bottom: 71px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 44px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 87px;
+  }
+}
+
 .scanning-description {
   margin-right: 0;
 
   @media screen and (min-width: 768px) {
-    margin-top: 44px;
     background-image: url(../images/tablet/3d-scanning/scan-bcg-tablet@1x.png);
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -38,7 +50,6 @@
 
   @media screen and (min-width: 1440px) {
     padding-bottom: 100px;
-    margin-top: 87px;
     background-image: url(../images/desktop/3d-scanning/scan-bcg-desktop@1x.png);
     background-repeat: no-repeat;
     background-size: 515px;
@@ -407,7 +418,7 @@
   font: var(--font-main);
   text-align: center;
   margin-top: 18px;
-  @include txt($fs: 14px, $fw: 400, $lh: 17px, $color: var(--color-accent));
+  @include txt($fs: 12px, $fw: 400, $lh: 17px, $color: var(--color-accent));
 
   @media screen and (min-width: 1440px) {
     @include txt($fs: 18px, $fw: 300, $lh: 23px, $color: var(--color-accent));
@@ -416,7 +427,6 @@
 
 .make-order-button {
   margin-top: 51px;
-  margin-bottom: 71px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -437,8 +447,7 @@
 }
 
 .make-order {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
