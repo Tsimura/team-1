@@ -466,7 +466,7 @@
 }
 
 .select.is-active.select::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: 0;
@@ -483,7 +483,7 @@
 }
 
 .select::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: 0;
@@ -567,6 +567,6 @@
   margin-bottom: 44px;
 }
 
-input[type='file'] {
+input[type="file"] {
   display: none;
 }
