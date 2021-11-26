@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta for SEO -->
+    <meta name="description" content="Інженерна, конструкторська та дизайнерська робота. Інженерні методи аналізу та контролю якості та всіх етапах роботи. Високоточне 3D сканування. Створення точної копії на базі сканування reverse engineering. Всі цикли 3D проектування, створення фотореалістичних цифрових моделей. Ми створюємо фотореалістичні зображення моделей. Якщо Вам потрібне Ваше Власне чудо, тоді Вам до нас! ">
+    <meta name="keywords" content="3D моделювання, 3D сканування, 3D друк, прототип, макет, декор">
+    <!-- end meta for SEO -->
+    <meta name="Author" content="Night owls">
+
+    <title>3DFREEDOM</title>
+    <link rel="shortcut icon" href="/favicon.21b6e204.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+    <!-- code from site google -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="/main.07544d9b.css">
+  <script src="/main.07544d9b.js"></script><script src="/page_3d_modeling.js"></script><link rel="stylesheet" href="/src.e31bb0bc.css"></head>
+  <body class="background" data-scrol-modal="">
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <header class="header">
+      <div class="header-container">
+      <div class="header-menu">
+        <a class="header-logo" href="/index.html">
+          <picture>
+            <source media="(min-width: 1444px)" srcset="/logo-desctop.9a6e1087.png 1x,/logo-desctop@2x.ed276806.png 2x">
+            <source media="(min-width: 768px)" srcset="/logo-tablet.b0ab4935.png 1x,/logo-tablet@2x.f7924423.png 2x">
+            <source media="(max-width: 767px)" srcset="/logo-mobile.055b3415.png 1x,/logo-mobile@2x.ab5ad922.png 2x">
+            <img src="#" alt="Логотип"> </picture></a>
+        <ul class="list desctop-nav">
+          <li class="desctop-nav-item">
+            <a class="link" href="/index.html">Головна</a>
+          </li>
+          <li class="desctop-nav-item">
+            <div class="dropdown">
+              <button type="button" class="dropbtn" data-icon-open="" data-icon-close="" data-services-open="" data-services-close="">
+                Послуги<svg class="icon-list" width="10" height="14" data-icon="">
+                  <use class="icon-list" href="/project-sprite.20cdf73f.svg#icon-list"></use>
+                </svg>
+              </button>
+              <div id="myDropdown" class="dropdown-content" data-services="">
+                <a href="/page_3d_modeling.html">3D Моделювання</a>
+                <a href="/page_3d_scanning.html">3D Сканування</a>
+                <a href="/page_3d_print.html">3D Друк</a>
+              </div>
+            </div>
+          </li>
+          <li class="desctop-nav-item">
+            <a class="link" href="/page_take_order.html">Замовити</a>
+          </li>
+          <li class="desctop-nav-item">
+            <a class="link" href="/page_contacts.html">Контакти</a>
+          </li>
+        </ul>
+        <ul class="list button-menu">
+          <li>
+            <button class="toggle-hamburger toggle-hamburger__animx" aria-label="Open Menu" data-mobile-modal-open="" data-mobile-modal-close="" data-scroll-close="" data-scroll-open="">
+              <span></span>
+            </button>
+          </li>
+          <li class="window-tell">
+            <button class="header-button" type="button" data-tell-modal-open="" data-tell-modal-close="">
+              <svg class="icon-tell" width="18" height="18">
+                <use href="/project-sprite.20cdf73f.svg#icon-tell"></use>
+              </svg>
+            </button>
+            <div class="tell-menu is-hidden" data-tell-modal="">
+              <svg class="triangular-icon" width="38px" height="26px">
+                <use href="/project-sprite.20cdf73f.svg#icon-triangular"></use>
+              </svg>
+              <div class="numbers">
+                <ul class="list">
+                  <li class="tell-item">
+                    <a class="link tell-number" href="tel:+380936432288">+38 (093) 643 22 88</a>
+                  </li>
+                  <li class="tell-item">
+                    <a class="link tell-number" href="tel:+380503454423">+38 (050) 345 44 23</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="custom-select" style="width: 31px; height: 18px">
+          <select>
+            <option value="0">ENG</option>
+            <option value="1">ENG</option>
+            <option value="2">UKR</option>
+            <option value="3">RUS</option>
+          </select>
+        </div>
+        <div class="tablet-tell">
+          <ul class="list">
+            <li class="tell-item">
+              <a class="link tell-number" href="tel:+380936432288"><svg class="icon-tell" width="10px" height="10px">
+                  <use href="/project-sprite.20cdf73f.svg#icon-tell"></use>
+                </svg>
+                +38 (093) 643 22 88</a>
+            </li>
+            <li class="tell-item">
+              <a class="link tell-number" href="tel:+380503454423"><svg class="icon-tell" width="10px" height="10px">
+                  <use href="/project-sprite.20cdf73f.svg#icon-tell"></use>
+                </svg>
+                +38 (050) 345 44 23</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mobile-menu mobile-menu-container is-hidden" data-mobile-modal="">
+        <div class="container">
+          <nav class="nav-mobile-menu">
+            <ul class="list nav-mobile-list">
+              <li class="nav-mobile-item">
+                <a class="link nav-mobile-link current" href="/index.html">головна</a>
+              </li>
+              <li class="nav-mobile-item">
+                <a class="link nav-mobile-link" href="/index.html">послуги</a>
+              </li>
+              <li class="nav-mobile-item">
+                <a class="link nav-mobile-link nav-mobile-small-link" href="/page_3d_modeling.html">
+                  <span class="before-element">3D моделювання</span>
+                </a>
+              </li>
+              <li class="nav-mobile-item">
+                <a class="link nav-mobile-link nav-mobile-small-link" href="/page_3d_scanning.html">
+                  <span class="before-element">3D сканування</span>
+                </a>
+              </li>
+              <li class="nav-mobile-item">
+                <a class="link nav-mobile-link nav-mobile-small-link" href="/page_3d_print.html">
+                  <span class="before-element">3D друк</span>
+                </a>
+              </li>
+              <li class="nav-mobile-item">
+                <a class="link nav-mobile-link" href="/page_take_order.html">замовити</a>
+              </li>
+              <li class="nav-mobile-item">
+                <a class="link nav-mobile-link" href="/page_contacts.html">контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+     </div>
+    </header>
+    <main>
+      <!-- HERO -->
+<section class="hero container section__hero">
+        <h1 class="hero__title">Інженерна, конструкторська<br> та дизайнерська робота</h1>
+            <!-- <ul class="hero__list list">
+                <li class="hero__item">
+                    <picture class="hero__picture">
+                        <source media="(min-width: 1444px)" srcset="./images/desktop/hero/hero-robot.webp 1x, ./images/desktop/hero/hero-robot@2x.webp 2x" type="image/webp">
+                        <source media="(min-width: 1444px)" srcset="./images/desktop/hero/hero-robot.jpg 1x, ./images/desktop/hero/hero-robot@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./images/tablet/hero/hero-robot.webp 1x, ./images/tablet/hero/hero-robot@2x.webp 2x" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="./images/tablet/hero/hero-robot.jpg 1x, ./images/tablet/hero/hero-robot@2x.jpg 2x">
+                        <source media="(min-width: 320px)" srcset="./images/mobile/hero/hero-robot.webp 1x, ./images/mobile/hero/hero-robot@2x.webp 2x" type="image/webp">
+                        <source media="(min-width: 320px)" srcset="./images/mobile/hero/hero-robot.jpg 1x, ./images/mobile/hero/hero-robot@2x.jpg 2x">
+                        <img class="hero__picture--top-right" src="#" alt="роботизированная машина">
+                    </picture>
+                </li>
+                <li class="hero__item">
+                    <picture class="hero__picture">
+                        <source media="(min-width: 1444px)" srcset="./images/desktop/hero/hero-lamp.webp 1x, ./images/desktop/hero/hero-lamp@2x.webp 2x" type="image/webp">
+                        <source media="(min-width: 1444px)" srcset="./images/desktop/hero/hero-lamp.jpg 1x, ./images/desktop/hero/hero-lamp@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./images/tablet/hero/hero-lamp.webp 1x, ./images/tablet/hero/hero-lamp@2x.webp 2x" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="./images/tablet/hero/hero-lamp.jpg 1x, ./images/tablet/hero/hero-lamp@2x.jpg 2x">
+                        <source media="(min-width: 320px)" srcset="./images/mobile/hero/hero-lamp.webp 1x, ./images/mobile/hero/hero-lamp@2x.webp 2x" type="image/webp">
+                        <source media="(min-width: 320px)" srcset="./images/mobile/hero/hero-lamp.jpg 1x, ./images/mobile/hero/hero-lamp@2x.jpg 2x">
+                        <img class="hero__picture--circle" src="#" alt="лампа">
+                    </picture>
+                </li>
+                <li class="hero__item">
+                    <picture class="hero__picture">
+                        <source media="(min-width: 1444px)" srcset="./images/desktop/hero/hero-neonbrand.webp 1x, ./images/desktop/hero/hero-neonbrand@2x.webp 2x" type="image/webp">
+                        <source media="(min-width: 1444px)" srcset="./images/desktop/hero/hero-neonbrand.jpg 1x, ./images/desktop/hero/hero-neonbrand@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./images/tablet/hero/hero-neonbrand.webp 1x, ./images/tablet/hero/hero-neonbrand@2x.webp 2x" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="./images/tablet/hero/hero-neonbrand.jpg 1x, ./images/tablet/hero/hero-neonbrand@2x.jpg 2x">
+                        <source media="(min-width: 320px)" srcset="./images/mobile/hero/hero-neonbrand.webp 1x, ./images/mobile/hero/hero-neonbrand@2x.webp 2x" type="image/webp">
+                        <source media="(min-width: 320px)" srcset="./images/mobile/hero/hero-neonbrand.jpg 1x, ./images/mobile/hero/hero-neonbrand@2x.jpg 2x">
+                        <img class="hero__picture--top-bottom" src="#" alt="абстракция черепа">
+                    </picture>
+                </li>
+            </ul> -->
+            <div class="hero__list">
+                <div class="hero__item">
+                    <picture class="hero__picture">
+                        <source media="(min-width: 1444px)" srcset="/hero-robot.ae3c04d6.webp 1x,/hero-robot@2x.ba3daad3.webp 2x" type="image/webp">
+                        <source media="(min-width: 1444px)" srcset="/hero-robot.967ba65d.jpg 1x,/hero-robot@2x.a92443c3.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="/hero-robot.ac5e3cd1.webp 1x,/hero-robot@2x.ae61d1ae.webp 2x" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="/hero-robot.528d5d36.jpg 1x,/hero-robot@2x.2f715666.jpg 2x">
+                        <source media="(min-width: 320px)" srcset="/hero-robot.2850b01e.webp 1x,/hero-robot@2x.b2a4f9c5.webp 2x" type="image/webp">
+                        <source media="(min-width: 320px)" srcset="/hero-robot.de60bf54.jpg 1x,/hero-robot@2x.493e2ac2.jpg 2x">
+                        <img class="hero__picture--top-right" src="#" alt="роботизированная машина">
+                    </picture>
+                </div>
+                <div class="hero__item">
+                    <picture class="hero__picture">
+                        <source media="(min-width: 1444px)" srcset="/hero-lamp.6a0ded90.webp 1x,/hero-lamp@2x.555ac621.webp 2x" type="image/webp">
+                        <source media="(min-width: 1444px)" srcset="/hero-lamp.1a561701.jpg 1x,/hero-lamp@2x.f01b1e3d.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="/hero-lamp.a5384d2d.webp 1x,/hero-lamp@2x.1bbc13c2.webp 2x" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="/hero-lamp.3684f145.jpg 1x,/hero-lamp@2x.b54be4a6.jpg 2x">
+                        <source media="(min-width: 320px)" srcset="/hero-lamp.cfebdb4c.webp 1x,/hero-lamp@2x.18febdce.webp 2x" type="image/webp">
+                        <source media="(min-width: 320px)" srcset="/hero-lamp.c2947a1c.jpg 1x,/hero-lamp@2x.7bef0e46.jpg 2x">
+                        <img class="hero__picture--circle" src="#" alt="лампа">
+                    </picture>
+                </div>
+                <div class="hero__item">
+                    <picture class="hero__picture">
+                        <source media="(min-width: 1444px)" srcset="/hero-neonbrand.88bba764.webp 1x,/hero-neonbrand@2x.8f37fb37.webp 2x" type="image/webp">
+                        <source media="(min-width: 1444px)" srcset="/hero-neonbrand.75f74807.jpg 1x,/hero-neonbrand@2x.a90691ec.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="/hero-neonbrand.e48a9ece.webp 1x,/hero-neonbrand@2x.0fe5ca7b.webp 2x" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="/hero-neonbrand.ebb2e191.jpg 1x,/hero-neonbrand@2x.5ef390dd.jpg 2x">
+                        <source media="(min-width: 320px)" srcset="/hero-neonbrand.960075c3.webp 1x,/hero-neonbrand@2x.2a89b307.webp 2x" type="image/webp">
+                        <source media="(min-width: 320px)" srcset="/hero-neonbrand.f1e08b81.jpg 1x,/hero-neonbrand@2x.d7a54b49.jpg 2x">
+                        <img class="hero__picture--top-bottom" src="#" alt="абстракция черепа">
+                    </picture>
+                </div>
+            </div>
+        <a class="hero__link" href="#more-foto">
+            <svg class="hero__icon" width="9" height="14">
+                <use href="/project-sprite.20cdf73f.svg#icon-bottom"></use>
+            </svg>
+        </a>
+        <strong class="slogan">Ми втілюємо ідеї в реальність</strong>
+</section>
+      <!--ГАЛЕРЕЯ -->
+<section class="section__gallery-morephoto">
+  <div class="container">
+    <h2 class="gallery__title">ГАЛЕРЕЯ</h2>
+    <ul class="gallery__list list">
+      <li class="gallery__item">
+        <a href="#" class="enlarge">
+          <div class="gallery__cards hide">
+            <picture>
+              <source media="(min-width: 144px)" srcset="/gallery-engineering.e6e7232e.webp    1x,/gallery-engineering@2x.6a71982a.webp 2x" type="image/webp">
+              <source media="(min-width: 1444px)" srcset="/gallery-engineering.8d4899dc.jpg    1x,/gallery-engineering@2x.b1e452a3.jpg 2x">
+              <source media="(min-width: 768px)" srcset="/gallery-engineering.cf89ed11.webp    1x,/gallery-engineering@2x.54759216.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="/gallery-engineering.d2cbc302.jpg    1x,/gallery-engineering@2x.7ffe2b04.jpg 2x">
+              <source media="(max-width: 767px)" srcset="/gallery-engineering.2da1f808.webp    1x,/gallery-engineering@2x.7f3664ef.webp 2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="/gallery-engineering.c7def56e.jpg    1x,/gallery-engineering@2x.861b6943.jpg 2x">
+              <img class="gallery-link-list-img" src="#" alt="метод аналізу та контроль якості">
+            </picture>
+          </div>
+        </a>
+
+        <h3 class="gallery__item-description">Інженерні методи аналізу та контролю якості</h3>
+      </li>
+
+      <li class="gallery__item">
+        <a href="#" class="enlarge">
+          <div class="gallery__cards hide">
+            <picture>
+              <source media="(min-width: 144px)" srcset="/gallery-scanning.bd44b951.webp    1x,/gallery-scanning@2x.a7c252a4.webp 2x" type="image/webp">
+              <source media="(min-width: 1444px)" srcset="/gallery-scanning.64710b34.jpg    1x,/gallery-scanning@2x.8f8dc791.jpg 2x">
+              <source media="(min-width: 768px)" srcset="/gallery-scanning.3820b82e.webp    1x,/gallery-scanning@2x.55c6e69e.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="/gallery-scanning.0f312478.jpg    1x,/gallery-scanning@2x.9a2fd063.jpg 2x">
+              <source media="(max-width: 767px)" srcset="/gallery-scanning.847e9ff4.webp    1x,/gallery-scanning@2x.3516c830.webp 2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="/gallery-scanning.11f01ece.jpg    1x,/gallery-scanning@2x.ca9759cf.jpg 2x">
+              <img class="gallery-link-list-img" src="#" alt="сканування моделі авто">
+            </picture>
+          </div>
+        </a>
+
+        <h3 class="gallery__item-description">Високоточне 3<span lang="en">D</span> сканування</h3>
+      </li>
+
+      <li class="gallery__item">
+        <a href="#" class="enlarge">
+          <div class="gallery__cards hide">
+            <picture>
+              <source media="(min-width: 144px)" srcset="/gallery-revengineering.10bff03a.webp    1x,/gallery-revengineering@2x.9bc323e0.webp 2x" type="image/webp">
+              <source media="(min-width: 1444px)" srcset="/gallery-revengineering.643d3172.jpg    1x,/gallery-revengineering@2x.8e8d0398.jpg 2x">
+              <source media="(min-width: 768px)" srcset="/gallery-revengineering.2125a87a.webp    1x,/gallery-revengineering@2x.0fe25054.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="/gallery-revengineering.8a915efa.jpg    1x,/gallery-revengineering@2x.b5cd0180.jpg 2x">
+              <source media="(max-width: 767px)" srcset="/gallery-revengineering.c09fefcf.webp    1x,/gallery-revengineering@2x.85af6cae.webp 2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="/gallery-revengineering.1368a1b5.jpg    1x,/gallery-revengineering@2x.47c1bd50.jpg 2x">
+              <img class="gallery-link-list-img" src="#" alt="створення точної копії моделі">
+            </picture>
+          </div>
+        </a>
+
+        <h3 class="gallery__item-description">
+          Створення точної копії на базі сканування <span lang="en">reverse engineering</span>
+        </h3>
+      </li>
+
+      <li class="gallery__item">
+        <a href="#" class="enlarge">
+          <div class="gallery__cards hide">
+            <picture>
+              <source media="(min-width: 144px)" srcset="/gallery-3dprojecting.c8ffbbe5.webp    1x,/gallery-3dprojecting@2x.9150c53c.webp 2x" type="image/webp">
+              <source media="(min-width: 1444px)" srcset="/gallery-3dprojecting.7898ca2b.jpg    1x,/gallery-3dprojecting@2x.60216260.jpg 2x">
+              <source media="(min-width: 768px)" srcset="/gallery-3dprojecting.056c877e.webp    1x,/gallery-3dprojecting@2x.92ce6907.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="/gallery-3dprojecting.d4027d21.jpg    1x,/gallery-3dprojecting@2x.321029b1.jpg 2x">
+              <source media="(max-width: 767px)" srcset="/gallery-3dprojecting.9507f51d.webp    1x,/gallery-3dprojecting@2x.bea6885b.webp 2x" type="image/webp">
+              <source media="(max-width: 767px)" srcset="/gallery-3dprojecting.13c5d4a3.jpg    1x,/gallery-3dprojecting@2x.addeece1.jpg 2x">
+              <img class="gallery-link-list-img" src="#" alt="створення реалістичної моделі авто">
+            </picture>
+          </div>
+        </a>
+
+        <h3 class="gallery__item-description">
+          Всі цикли 3D проектування, створення фотореалістичних цифрових моделей
+        </h3>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section__gallery-morephoto" id="more-foto">
+  <div class="container">
+    <h2 class="more-photos__title">Більше фото</h2>
+    <!-- slider -->
+
+    <!-- more photos gallery -->
+    <ul class="more-photos__list" data-slider-open="">
+      <li class="more-photos__item list">
+        <button class="more-photos__button" href="#">
+          <picture>
+            <source media="(min-width: 1444px)" srcset="/desktop1.3134bcdd.webp    1x,/desktop1@2x.89872f49.webp 2x" type="image/webp">
+            <source media="(min-width: 1444px)" srcset="/desktop1.0dc3c2b6.jpg    1x,/desktop1@2x.ffbd8c59.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/tablet1.7ef8f74b.webp    1x,/tablet1@2x.dc97a913.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/tablet1.c6a86f1c.jpg    1x,/tablet1@2x.c22d9187.jpg 2x">
+            <source media="(max-width: 767px)" srcset="/mobile1.60bf763f.webp    1x,/mobile1@2x.55bd61b1.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="/mobile1.e0f40c6d.jpg    1x,/mobile1@2x.7742bdf4.jpg 2x">
+
+            <img class="more-photos__img" src="#" alt="Фотографії 3Д моделей">
+          </picture>
+        </button>
+      </li>
+
+      <li class="more-photos__item list">
+        <button class="more-photos__button" href="#">
+          <picture>
+            <source media="(min-width: 1444px)" srcset="/desktop2.59b641e8.webp    1x,/desktop2@2x.7d840193.webp 2x" type="image/webp">
+            <source media="(min-width: 1444px)" srcset="/desktop2.4909811f.jpg    1x,/desktop2@2x.b8f7dd02.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/tablet2.59c76bfa.webp    1x,/tablet2@2x.4e38c828.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/tablet2.10c264ac.jpg    1x,/tablet2@2x.9e517101.jpg 2x">
+            <source media="(max-width: 767px)" srcset="/mobile2.3ade9d82.webp    1x,/mobile2@2x.5d988686.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="/mobile2.6c2f42c4.jpg    1x,/mobile2@2x.d174c62a.jpg 2x">
+
+            <img class="more-photos__img" src="#" alt="Фотографії 3Д моделей">
+          </picture>
+        </button>
+      </li>
+
+      <li class="more-photos__item list">
+        <button class="more-photos__button" href="#">
+          <picture>
+            <source media="(min-width: 1444px)" srcset="/desktop3.e6e204f3.webp    1x,/desktop3@2x.09d758c6.webp 2x" type="image/webp">
+            <source media="(min-width: 1444px)" srcset="/desktop3.188b771a.jpg    1x,/desktop3@2x.d31e1c71.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/tablet3.07f04a2c.webp    1x,/tablet3@2x.2cfe52d2.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/tablet3.03919787.jpg    1x,/tablet3@2x.3a1805de.jpg 2x">
+            <source media="(max-width: 767px)" srcset="/mobile3.d81c8753.webp    1x,/mobile3@2x.0ceb3c4c.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="/mobile3.e7c3d1bb.jpg    1x,/mobile3@2x.65e2f961.jpg 2x">
+
+            <img src="#" alt="Фотографії 3Д моделей">
+          </picture>
+        </button>
+      </li>
+
+      <li class="more-photos__item more-photos__item_none list">
+        <button class="more-photos__button" href="#">
+          <picture>
+            <source media="(min-width: 1444px)" srcset="/desktop4.ef7c018c.webp    1x,/desktop4@2x.bf588906.webp 2x" type="image/webp">
+            <source media="(min-width: 1444px)" srcset="/desktop4.871fbd0f.jpg    1x,/desktop4@2x.3dd13444.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/tablet4.e62f3608.webp    1x,/tablet4@2x.03a1af9e.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/tablet4.9a8c8982.jpg    1x,/tablet4@2x.10c285e9.jpg 2x">
+
+            <img class="more-photos__img" src="#" alt="Фотографії 3Д моделей">
+          </picture>
+        </button>
+      </li>
+
+      <li class="more-photos__item more-photos__item_none list">
+        <button class="more-photos__button" href="#">
+          <picture>
+            <source media="(min-width: 1444px)" srcset="/desktop5.8b550075.webp    1x,/desktop5@2x.6a37d554.webp 2x" type="image/webp">
+            <source media="(min-width: 1444px)" srcset="/desktop5.097f9aeb.jpg    1x,/desktop5@2x.ed0407d3.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/tablet5.bbf2b172.webp    1x,/tablet5@2x.95693679.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/tablet5.8a64effb.jpg    1x,/tablet5@2x.f5f6bcf0.jpg 2x">
+
+            <img class="more-photos__img" src="#" alt="Фотографії 3Д моделей">
+          </picture>
+        </button>
+      </li>
+
+      <li class="more-photos__item more-photos__item_none list">
+        <button class="more-photos__button" href="#">
+          <picture>
+            <source media="(min-width: 1444px)" srcset="/desktop6.07f71c5e.webp    1x,/desktop6@2x.5f304926.webp 2x" type="image/webp">
+            <source media="(min-width: 1444px)" srcset="/desktop6.7cb5934b.jpg    1x,/desktop6@2x.ec656faf.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/tablet6.41f32445.webp    1x,/tablet6@2x.2bf8fa51.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/tablet6.b214144e.jpg    1x,/tablet6@2x.1c14e14b.jpg 2x">
+
+            <img class="more-photos__img" src="#" alt="Фотографії 3Д моделей">
+          </picture>
+        </button>
+      </li>
+
+      <li class="more-photos__item more-photos__item_none list">
+        <button class="more-photos__button" href="#">
+          <picture>
+            <source media="(min-width: 1444px)" srcset="/desktop7.0b21ed30.webp    1x,/desktop7@2x.4d96e492.webp 2x" type="image/webp">
+            <source media="(min-width: 1444px)" srcset="/desktop7.5b9f1c42.jpg    1x,/desktop7@2x.cb452ea5.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/tablet7.c5b2c126.webp    1x,/tablet7@2x.cdde25be.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/tablet7.12f907c2.jpg    1x,/tablet7@2x.837674f6.jpg 2x">
+
+            <img class="more-photos__img" src="#" alt="Фотографії 3Д моделей">
+          </picture>
+        </button>
+      </li>
+
+      <li class="more-photos__item more-photos__item_none list">
+        <button class="more-photos__button" href="#">
+          <picture>
+            <source media="(min-width: 1444px)" srcset="/desktop8.6c8845cb.webp    1x,/desktop8@2x.7552f2b6.webp 2x" type="image/webp">
+            <source media="(min-width: 1444px)" srcset="/desktop8.b942b213.jpg    1x,/desktop8@2x.a49fd596.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/tablet8.5145c458.webp    1x,/tablet8@2x.6cb454f6.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/tablet8.60c087ef.jpg    1x,/tablet8@2x.8565d145.jpg 2x">
+
+            <img class="more-photos__img" src="#" alt="Фотографії 3Д моделей">
+          </picture>
+        </button>
+      </li>
+
+      <li class="more-photos__item more-photos__item_none list">
+        <button class="more-photos__button" href="#">
+          <picture>
+            <source media="(min-width: 1444px)" srcset="/desktop9.9df3f8aa.webp    1x,/desktop9@2x.4ed8293d.webp 2x" type="image/webp">
+            <source media="(min-width: 1444px)" srcset="/desktop9.8f16e1f3.jpg    1x,/desktop9@2x.79588f7a.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/tablet9.fac60d86.webp    1x,/tablet9@2x.a0762f55.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/tablet9.be0c8fc7.jpg    1x,/tablet9@2x.7af2cae2.jpg 2x">
+
+            <img class="more-photos__img" src="#" alt="Фотографії 3Д моделей">
+          </picture>
+        </button>
+      </li>
+
+      <li class="more-photos__item more-photos__item_none list">
+        <button class="more-photos__button" href="#">
+          <picture>
+            <source media="(min-width: 1444px)" srcset="/desktop10.6267300d.webp    1x,/desktop10@2x.0f23b131.webp 2x" type="image/webp">
+            <source media="(min-width: 1444px)" srcset="/desktop10.277a85a2.jpg    1x,/desktop10@2x.b34f646d.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/tablet10.e1b47679.webp    1x,/tablet10@2x.9e047410.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/tablet10.4078ab63.jpg    1x,/tablet10@2x.99fb528b.jpg 2x">
+
+            <img class="more-photos__img" src="#" alt="Фотографії 3Д моделей">
+          </picture>
+        </button>
+      </li>
+
+      <li class="more-photos__item more-photos__item_none list">
+        <button class="more-photos__button" href="#">
+          <picture>
+            <source media="(min-width: 1444px)" srcset="/desktop11.4efb0903.webp    1x,/desktop11@2x.26a6194e.webp 2x" type="image/webp">
+            <source media="(min-width: 1444px)" srcset="/desktop11.59d451b0.jpg    1x,/desktop11@2x.7daf7147.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/tablet11.f4e43dc9.webp    1x,/tablet11@2x.595a6302.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/tablet11.5a52731d.jpg    1x,/tablet11@2x.756c3224.jpg 2x">
+
+            <img class="more-photos__img" src="#" alt="Фотографії 3Д моделей">
+          </picture>
+        </button>
+      </li>
+
+      <li class="more-photos__item more-photos__item_none list">
+        <button class="more-photos__button" href="#">
+          <picture>
+            <source media="(min-width: 1444px)" srcset="/desktop12.b472ed56.webp    1x,/desktop12@2x.a2044874.webp 2x" type="image/webp">
+            <source media="(min-width: 1444px)" srcset="/desktop12.7cb653b0.jpg    1x,/desktop12@2x.1822bc6c.jpg 2x">
+            <source media="(min-width: 768px)" srcset="/tablet12.55bb99b4.webp    1x,/tablet12@2x.01657f0e.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="/tablet12.4fc78d27.jpg    1x,/tablet12@2x.a5aca2e0.jpg 2x">
+
+            <img class="more-photos__img" src="#" alt="Фотографії 3Д моделей">
+          </picture>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- modal window -->
+<div class="backdrop is-hidden" data-slider="">
+  <div class="more-photos-modal-window">
+    <button class="button-prev">
+
+      <svg class="button-prev-svg">
+        <use class="icon-prev" href="/symbol-slider.105cfaa0.svg#icon-left-light">
+        </use>
+      </svg>
+    </button>
+    <button class="button-next">
+      <svg class="button-next-svg">
+        <use class="icon-next" href="/symbol-slider.105cfaa0.svg#icon-right-light">
+        </use>
+      </svg>
+    </button>
+    <button class="button-close-modal-slider" data-slider-close="">
+      <svg class="button-close-slider">
+        <use class="icon-close-black" href="/symbol-slider.105cfaa0.svg#icon-close-black">
+        </use>
+      </svg>
+    </button>
+
+    <div class="more-photos__list_slider">
+      <div class="more-photos__item_slider">
+        <picture>
+          <img class="size-photo" src="/desktop1@2x.ffbd8c59.jpg" alt="Фотографії 3Д моделей">
+        </picture>
+      </div>
+
+      <div class="more-photos__item_slider"> 
+        <picture>
+         <img class="size-photo" src="/desktop2@2x.b8f7dd02.jpg" alt="Фотографії 3Д моделей">
+        </picture>
+      </div>
+
+      <div class="more-photos__item_slider">
+        <picture>
+          <img class="size-photo" src="/desktop3@2x.d31e1c71.jpg" alt="Фотографії 3Д моделей">
+        </picture>
+      </div>
+
+      <div class="more-photos__item_slider">
+        <picture>
+          <img class="size-photo" src="/desktop4@2x.3dd13444.jpg" alt="Фотографії 3Д моделей">
+        </picture>
+      </div>
+
+      <div class="more-photos__item_slider">
+        <picture>
+          <img class="size-photo" src="/desktop5@2x.ed0407d3.jpg" alt="Фотографії 3Д моделей">
+        </picture>
+      </div>
+
+      <div class="more-photos__item_slider">
+        <picture>
+          <img class="size-photo" src="/desktop6@2x.ec656faf.jpg" alt="Фотографії 3Д моделей">
+        </picture>
+      </div>
+
+      <div class="more-photos__item_slider">
+        <picture>
+          <img class="size-photo" src="/desktop7@2x.cb452ea5.jpg" alt="Фотографії 3Д моделей">
+        </picture>
+      </div>
+
+
+      <div class="more-photos__item_slider">
+        <picture>
+          <img class="size-photo" src="/desktop8@2x.a49fd596.jpg" alt="Фотографії 3Д моделей">
+        </picture>
+      </div>
+
+      <div class="more-photos__item_slider">
+        <picture>
+          <img class="size-photo" src="/desktop9@2x.79588f7a.jpg" alt="Фотографії 3Д моделей">
+        </picture>
+      </div>
+
+      <div class="more-photos__item_slider">
+        <picture>
+          <img class="size-photo" src="/desktop10@2x.b34f646d.jpg" alt="Фотографії 3Д моделей">
+        </picture>
+
+      </div>
+      </div>
+      
+    
+  
+
+</div>
+</div>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__logo">
+      <a href="./" class="footer__logo_link link">
+      <img class="footer__logo_image" src="/logo.6023b87e.png" alt="Логотип" width="192px" height="48px">
+      </a>
+    </div>
+    <div class="nav-social-address__wrapper">
+      <nav class="footer__nav">
+        <ul class="nav__list list">
+          <li class="nav__list_item">
+            <a href="/index.html" class="nav__list_link link">Головна</a>
+          </li>
+          <li class="nav__list_item">
+            <a href="/page_3d_modeling.html" class="nav__list_link link">3D Моделювання</a>
+          </li>
+          <li class="nav__list_item">
+            <a href="/page_3d_scanning.html" class="nav__list_link link">3D Сканування</a>
+          </li>
+          <li class="nav__list_item">
+            <a href="/page_3d_print.html" class="nav__list_link link">3D Друк</a>
+          </li>
+          <li class="nav__list_item">
+            <a href="/page_take_order.html" class="nav__list_link link">Замовити</a>
+          </li>
+          <li class="nav__list_item">
+            <a href="/page_contacts.html" class="nav__list_link link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__social">
+        <ul class="social__list list">
+          <li class="social__list_item">
+            <a href="https://www.instagram.com/goitclub/" class="social__list_link link" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </li>
+          <li class="social__list_item">
+            <a href="https://www.youtube.com/channel/UCN7NQEBOUuIoXrJZzqVb58Q" class="social__list_link link" target="_blank" rel="noopener noreferrer">YouTube</a>
+          </li>
+          <li class="social__list_item">
+            <a href="https://www.facebook.com/goITclub/" class="social__list_link link" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </li>
+        </ul>
+      </div>
+      <address class="footer__address">
+        <ul class="address__list list">
+          <li class="address__list_email">
+            <p class="address__list_email-text">Email</p>
+            <a class="address__list_email-link link" href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
+          </li>
+          <li class="address__list_tel">
+            <p class="address__list_tel-text">Телефони</p>
+            <a class="address__list_tel-link link" href="tel:+380936432288">+38 (093) 643 22 88</a>
+            <a class="address__list_tel-link link" href="tel:+380503454423">+38 (050) 345 44 23</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script type="text/javascript" src="/header.4485232e.js"></script>
+
+    <!-- добавити скріпти і зняти коментарій! -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/slick-hero.9991180f.js"></script>
+    <script type="text/javascript" src="/more-photos-slider.55a781f0.js"></script>
+    <script src="/src.e31bb0bc.js"></script>
+  </body>
+</html>
